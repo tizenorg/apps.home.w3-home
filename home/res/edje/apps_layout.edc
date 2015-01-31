@@ -1,0 +1,240 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "apps_conf.edc"
+
+collections {
+	group {
+		name: "layout";
+		parts {
+			part {
+				name: "bg";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; offset: 0 0; }
+					rel2 { relative: 1.0 1.0; offset: 0 0; }
+					color: 0 0 0 0;
+					visible: 1;
+					perspective {
+						zplane: 0;
+					}
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "container";
+				type: SWALLOW;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "container_dimmer";
+				type: RECT;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "container"; }
+					rel2 { relative: 1.0 1.0; to: "container"; }
+					color_class: "AO0111";
+					visible: 1;
+				}
+			}
+			part {
+				name: "zoom";
+				type: RECT;
+				description {
+					state: "default" 0.0;
+					color: 0 0 0 0;
+					perspective {
+						zplane: -140;
+					}
+				}
+			}
+			part {
+				name: "scroller";
+				type: SWALLOW;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to, "bg"; }
+					align: 0.5 0.0;
+					visible: 1;
+					map {
+						on: 0;
+					}
+				}
+				description {
+					state: "on" 0.0;
+					inherit: "default" 0.0;
+					map {
+						on: 1;
+						perspective: "bg";
+					}
+				}
+				description {
+					state: "zoom" 0.0;
+					inherit: "on";
+					map {
+						perspective: "zoom";
+					}
+				}
+			}
+			part {
+				name: "top_checker";
+				type: SWALLOW;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 0.2; to: "bg"; }
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "bottom_checker";
+				type: SWALLOW;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.8; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+
+			part {
+				name: "blocker";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 0;
+				}
+				description {
+					state: "enable" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+		}
+		programs {
+			program {
+				name: "bg,down";
+				signal: "mouse,down,1";
+				source: "bg";
+				action: SIGNAL_EMIT "bg,down" "bg";
+			}
+			program {
+				name: "bg,up";
+				signal: "mouse,up,1";
+				source: "bg";
+				action: SIGNAL_EMIT "bg,up" "bg";
+			}
+			program {
+				signal: "show";
+				source: "checker";
+				action: STATE_SET "show" 0.0;
+				target: "top_checker";
+				target: "bottom_checker";
+			}
+			program {
+				signal: "hide";
+				source: "checker";
+				action: STATE_SET "default" 0.0;
+				target: "top_checker";
+				target: "bottom_checker";
+			}
+			program {
+				signal: "block";
+				source: "layout";
+				action: STATE_SET "enable" 0.0;
+				target: "blocker";
+			}
+			program {
+				signal: "unblock";
+				source: "layout";
+				action: STATE_SET "default" 0.0;
+				target: "blocker";
+			}
+			program {
+				signal: "show,zoom";
+				source: "scroller";
+				action: STATE_SET "on" 0.0;
+				target: "scroller";
+				after: "show,zoom,after";
+			}
+			program {
+				name: "show,zoom,after";
+				action: STATE_SET "zoom" 0.0;
+				transition: SIN_FAC 0.2 0.90;
+				target: "scroller";
+			}
+			program {
+				signal: "reset,zoom";
+				source: "scroller";
+				action: STATE_SET "on" 0.0;
+				transition: SIN_FAC 0.2 0.90;
+				target: "scroller";
+				after: "reset,zoom,after";
+			}
+			program {
+				name: "reset,zoom,after";
+				action: STATE_SET "default" 0.0;
+				target: "scroller";
+			}
+		}
+	} // layout group
+
+} // collections
+
+
+
+// End of file

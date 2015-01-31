@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<idle-clock>
+		<packageName>org.tizen.idle-clock-digital</packageName>
+		<className>org.tizen.idle-clock-digital</className>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</idle-clock>
+	<favorite>
+		<packagename>org.tizen.w-dialer2</packagename>
+		<classname>org.tizen.w-dialer2</classname>
+		<screen>1</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.message</packagename>
+		<classname>org.tizen.message</classname>
+		<screen>1</screen>
+		<cellX>1</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.w-contacts2</packagename>
+		<classname>org.tizen.w-contacts2</classname>
+		<screen>1</screen>
+		<cellX>0</cellX>
+		<cellY>1</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.wnotification2</packagename>
+		<classname>org.tizen.wnotification2</classname>
+		<screen>1</screen>
+		<cellX>1</cellX>
+		<cellY>1</cellY>
+	</favorite>
+</data>

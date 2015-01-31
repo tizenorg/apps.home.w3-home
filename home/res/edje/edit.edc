@@ -1,0 +1,169 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+
+#define PLUS_MIN 90 90
+
+styles {
+	style {
+		name: "max_text_style";
+		base: "font=TIZEN:style=Regular text_class=tizen style=shadow shadow_color=#0000004C font_size="25" color_class=AT0121 align=middle color=#FFFFFF ellipsis=1 wrap=mixed";
+	}
+}
+
+images {
+	image: "b_home_screen_widget_line.#.png" COMP;
+	image: "b_home_screen_widget_line_ef.png" COMP;
+	image: "b_home_screen_widget_plus.png" COMP;
+	image: "b_home_screen_widget_plus_ef.png" COMP;
+	image: "b_home_screen_edit_cover.png" COMP;
+	image: "b_home_screen_edit_cover_ef.png" COMP;
+}
+
+collections {
+group {
+	name: "edit";
+	parts {
+		part {
+			name: "bottom_bg";
+			type: SPACER;
+			scale: 1;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; }
+				rel2 { relative: 1.0 1.0; }
+			}
+		}
+		part {
+			name: "bg";
+			type: RECT;
+			scale: 1;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; }
+				rel2 { relative: 1.0 1.0; }
+				color_class: "AO041";
+				visible: 0;
+			}
+		}
+		part {
+			name: "scroller_region";
+			type: SPACER;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "bg"; }
+				rel2 { relative: 1.0 1.0; to, "bg"; }
+			}
+		}
+		part {
+			name: "scroller";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "scroller_region";}
+				rel2 { relative: 1.0 1.0; to, "scroller_region";}
+				visible: 1;
+			}
+		}
+		part {
+			name: "index_region";
+			type: SPACER;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 INDICATOR_START_Y/BASE_HEIGHT; to, "bg"; }
+				rel2 { relative: 1.0 (INDICATOR_START_Y+INDICATOR_HEIGHT)/BASE_HEIGHT; to, "bg"; }
+			}
+		}
+		part {
+			name: "index_clipper";
+			type: RECT;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "index_region"; }
+				rel2 { relative: 1.0 1.0; to: "index_region"; }
+				color: 255 255 255 0;
+				visible: 1;
+			}
+			description {
+				state: "init" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
+		}
+		part {
+			name: "index";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			clip_to: "index_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "index_region";}
+				rel2 { relative: 1.0 1.0; to, "index_region";}
+				visible: 1;
+			}
+		}
+	} // parts
+	programs {
+		program {
+			signal: "init";
+			source: "edit";
+			action: STATE_SET "init" 0.0;
+			target: "index_clipper";
+			transition: LINEAR 0.5;
+		}
+		program {
+			signal: "hide";
+			source: "edit";
+			action: STATE_SET "default" 0.0;
+			target: "index_clipper";
+		}
+	} // programs
+} // group
+
+group {
+	name: "proxy_item";
+	parts {
+		part {
+			name: "proxy_item";
+			type: SWALLOW;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; }
+				rel2 { relative: 1.0 1.0; }
+				min: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT;
+				max: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT;
+				visible: 1;
+			}
+		}
+	}
+} // group
+} // collections
+
+
+
+// End of file

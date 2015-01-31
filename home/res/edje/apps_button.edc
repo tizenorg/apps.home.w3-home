@@ -1,0 +1,125 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "apps_conf.edc"
+
+collections {
+	group {
+		name : "button";
+		images {
+			image: "images/b_home_screen_favorite_more_icon.png" COMP;
+		}
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+				}
+			}
+			part {
+				name : "image";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.24 0.5; to, "bg"; }
+					rel2 { relative: 0.24 0.5; to, "bg"; }
+					image {
+						normal: "images/b_home_screen_favorite_more_icon.png";
+					}
+					min: 37 37;
+					max: 37 37;
+					align: 0.5 0.5;
+					color_class: AO0351;
+				}
+			}
+			part {
+				name : "center_padding";
+				type: SPACER;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 1.0 0.0; to, "image"; }
+					rel2 { relative: 1.0 1.0; to, "image"; }
+					min: 13 69;
+					align: 0.0 0.5;
+				}
+			}
+			part {
+				name : "button_txt";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 1.0 0.0; to, "center_padding"; }
+					rel2 { relative: 1.0 1.0; to, "center_padding"; }
+					color: 255 255 255 255;
+					text {
+						font: "Tizen:style=Bold";
+						text_class: "tizen";
+						size: 27;
+						align: 0.0 0.5;
+						ellipsis: 1;
+					}
+					min: 157 69;
+					align: 0.0 0.5;
+					visible: 1;
+				}
+			}
+			part {
+				name : "event";
+				type: RECT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "bg"; }
+					rel2 { relative: 1.0 1.0; to, "bg"; }
+					color : 0 0 0 0;
+					visible : 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default";
+					color : 255 255 255 50;
+				}
+			}
+		}
+		programs {
+			program {
+				signal: "pressed";
+				source: "button";
+				action: STATE_SET "pressed" 0.0;
+				target: "event";
+			}
+			program {
+				signal: "unpressed";
+				source: "button";
+				action: STATE_SET "default" 0.0;
+				target: "event";
+			}
+		}
+	} //group
+} //collections
+
+
+
+// End of file

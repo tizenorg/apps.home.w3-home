@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<favorite>
+		<packagename>org.tizen.w-music-player.livebox</packagename>
+		<classname>org.tizen.w-music-player.livebox</classname>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.w-contacts2.dbox</packagename>
+		<classname>org.tizen.w-contacts2.dbox</classname>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>1</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.weather.widget-today</packagename>
+		<classname>org.tizen.weather.widget-today</classname>
+		<screen>0</screen>
+		<cellX>1</cellX>
+		<cellY>0</cellY>
+	</favorite>
+</data>

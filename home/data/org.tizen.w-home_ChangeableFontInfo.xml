@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FontInfoTable>
+	<FontInfo id="AT0111" style="L" size="106" />
+	<FontInfo id="AT0112" style="R" size="36" />
+	<FontInfo id="AT0121" style="R" size="28" />
+	<FontInfo id="AT0121P" style="R" size="28" />
+	<FontInfo id="AT0122" style="R" size="25" />
+	<FontInfo id="AT0122P" style="R" size="25" />
+	<FontInfo id="AT0132" style="M" size="35" />
+	<FontInfo id="AT0134" style="M" size="32" />
+	<FontInfo id="AT014" style="R" size="32" />
+	<FontInfo id="AT014P" style="R" size="32" />
+	<FontInfo id="AT014D" style="R" size="32" />
+	<FontInfo id="AT021" style="R" size="28" />
+	<FontInfo id="AT0311" style="R" size="32" />
+	<FontInfo id="AT0312" style="R" size="32" />
+	<FontInfo id="AT041S" style="R" size="28" />
+	<FontInfo id="AT041" style="R" size="28" />
+	<FontInfo id="AT043" style="R" size="32" />
+	<FontInfo id="AT043P" style="R" size="32" />
+	<FontInfo id="AT043D" style="R" size="32" />
+	<FontInfo id="AT045" style="R" size="32" />
+	<FontInfo id="AT045P" style="R" size="32" />
+	<FontInfo id="AT052S" style="R" size="22" />
+	<FontInfo id="AT052" style="R" size="22" />
+	<FontInfo id="AT053S" style="R" size="28" />
+	<FontInfo id="AT053" style="R" size="28" />
+	<FontInfo id="AT054" style="R" size="28" />
+	<FontInfo id="AT054P" style="R" size="28" />
+	<FontInfo id="AT054D" style="R" size="28" />
+	<FontInfo id="AT055" style="R" size="32" />
+	<FontInfo id="AT055P" style="R" size="32" />
+	<FontInfo id="AT056" style="R" size="32" />
+	<FontInfo id="AT056P" style="R" size="32" />
+	<FontInfo id="AT057" style="R" size="32" />
+</FontInfoTable>

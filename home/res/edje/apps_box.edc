@@ -1,0 +1,413 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "apps_conf.edc"
+
+images {
+	image: "b_home_screen_recent_icon.png" COMP;
+}
+
+
+styles {
+	style {
+		name: "button_text_style";
+		base: "font=TIZEN:style=Regular text_class=AT014 font_size="32" color_class=AT014 text_class=AT014 align=middle color=#FFFFFF ellipsis=1 wrap=mixed";
+	}
+	style {
+		name: "button_text_style,pressed";
+		base: "font=TIZEN:style=Regular text_class=AT014P font_size="32" color_class=AT014P text_class=AT014P align=middle color=#FFFFFF ellipsis=1 wrap=mixed";
+	}
+}
+
+collections {
+	group {
+		name: "box";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+				}
+			}
+			part {
+				name: "top_area";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "bg"; }
+					rel2 { relative: 1.0 0.0; to, "bg"; }
+					align: 0.0 0.0;
+					fixed: 1 1;
+					visible: 0;
+					/* Do not need buttons */
+					//min: 0 BOX_TOP_MENU_HEIGHT;
+					min: 0 BOX_TOP_HEIGHT;
+				}
+			}
+#if 0 /* Do not need buttons */
+			part {
+				name: "top_button";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "top_area"; }
+					rel2 { relative: 1.0 1.0; to, "top_area"; }
+					visible: 1;
+				}
+			}
+#endif
+			part {
+				name: "top";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to, "top_area"; }
+					rel2 { relative: 1.0 1.0; to, "top_area"; }
+					align: 0.0 0.0;
+					fixed: 1 1;
+					visible: 0;
+					min: 0 BOX_TOP_HEIGHT;
+				}
+			}
+			part {
+				name: "box";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 1.0;
+					rel1.to: "top";
+					rel2.relative: 1.0 0.0;
+					rel2.to: "bottom";
+					visible: 1;
+				}
+			}
+			part {
+				name: "bottom";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to, "bg"; }
+					rel2 { relative: 1.0 1.0; to, "bg"; }
+					align: 0.0 1.0;
+					fixed: 1 1;
+					visible: 0;
+					/* Do not need buttons */
+					//min: 0 (BOX_BOTTOM_HEIGHT+BOX_BOTTOM_MENU_HEIGHT);
+					min: 0 0;
+				}
+			}
+#if 0 /* Do not need buttons */
+			part {
+				name: "bottom_button";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 BOX_BOTTOM_HEIGHT/BOX_BOTTOM_MENU_HEIGHT; to, "bottom"; }
+					rel2 { relative: 1.0 1.0; to, "bottom"; }
+					visible: 1;
+				}
+			}
+#endif
+		}
+	}
+
+#if 0 /* Do not need bottom button */
+	group {
+		name: "bottom_button";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					min: 0 BOX_BOTTOM_MENU_HEIGHT;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "button,line";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 0.0; to: "bg"; }
+					color_class: "AO0152";
+					min: 0 1;
+					align: 0.5 0.0;
+					fixed: 1 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO0152P";
+				}
+			}
+			part {
+				name: "button,body";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color_class: "AO0151";
+					fixed: 1 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO0151P";
+				}
+			}
+			part {
+				name: "button,txt";
+				type: TEXTBLOCK;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "button,body"; offset: 16 5; }
+					rel2 { relative: 1.0 1.0; to: "button,body"; offset: -16 -5; }
+					color_class: "AT014";
+					text {
+						style: "button_text_style";
+						align: 0.0 0.5;
+					}
+					align: 0.5 0.5;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AT014P";
+					text {
+						style: "button_text_style,pressed";
+						align: 0.0 0.5;
+					}
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+		}
+
+		programs {
+			program {
+				signal: "mouse,down,1";
+				source: "focus";
+				action: STATE_SET "pressed" 0.0;
+				target: "button,line";
+				target: "button,body";
+				target: "button,txt";
+			}
+			program {
+				signal: "mouse,up,1";
+				source: "focus";
+				action: STATE_SET "default" 0.0;
+				target: "button,line";
+				target: "button,body";
+				target: "button,txt";
+			}
+			program {
+				signal: "mouse,out";
+				source: "focus";
+				action: STATE_SET "default" 0.0;
+				target: "button,line";
+				target: "button,body";
+				target: "button,txt";
+			}
+		}
+	} //button group
+
+
+	group {
+		name: "top_button";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "button,bg";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					align: 0.5 0.0;
+					min: BOX_TOP_MENU_WIDTH BOX_TOP_MENU_HEIGHT;
+					max: BOX_TOP_MENU_WIDTH BOX_TOP_MENU_HEIGHT;
+					fixed: 1 1;
+					visible: 0;
+				}
+			}
+			part {
+				name: "button,txt";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "button,bg"; }
+					rel2 { relative: 0.5 0.5; to: "button,bg"; }
+					align: 0.5 0.5;
+					visible: 1;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "button,bg"; }
+					rel2 { relative: 1.0 1.0; to: "button,bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+		}
+	} //button group
+
+	group {
+		name: "top_button_text";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.5; to: "bg"; }
+					rel2 { relative: 0.0 0.5; to: "bg"; }
+					align: 0.0 0.5;
+					min: 55 37;
+					image {
+						normal: "b_home_screen_recent_icon.png";
+					}
+					color_class: "AO017";
+					fixed: 1 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO017P";
+				}
+			}
+			part {
+				name: "txt";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 1.0 0.0; to_x: "icon"; to_y: "bg"; offset: 3 0; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color_class: "AT014";
+					text {
+						text_class: "AT014";
+						align: 0.0 0.5;
+						min: 1 0;
+					}
+					align: 0.0 0.5;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AT014P";
+					text {
+						text_class: "AT014P";
+						align: 0.0 0.5;
+						min: 1 0;
+					}
+				}
+			}
+		}
+
+		programs {
+			program {
+				signal: "press,button";
+				source: "button";
+				action: STATE_SET "pressed" 0.0;
+				target: "txt";
+				target: "icon";
+			}
+			program {
+				signal: "release,button";
+				source: "button";
+				action: STATE_SET "default" 0.0;
+				target: "txt";
+				target: "icon";
+			}
+		}
+	} //button group
+#endif
+}

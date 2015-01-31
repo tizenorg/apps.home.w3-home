@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "အက္ပ္မ်ား"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "ေနာက္ထပ္"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "၀စ္ဂ်စ္တ္"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "ထပ္ခါထပ္ခါ မလုပ္ပါႏွင့္"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "အားလုံး ဖ်က္ပစ္ပါ"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "ျဖဳတ္ရန္ မရႏိုင္ပါ။"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "ဝစ္ဂတ္အား ေရႊ႕ရန္ ဤအား ႏွိပ္ျပီး ကိုင္ထားပါ။"
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "မူလ ဖန္သားျပင္ ေျပာင္းထားသည္။"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "အခ်က္အလက္ျဖည့္သြင္းေနပါသည္…"
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "ေဒတာ တင္ရန္ မရႏိုင္ပါ။ ျပန္ၾကိဳးစားရန္ ႏွိပ္ပါ။"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "အပလီေကးရွင္းကို ေပါင္းထည့္လို႔ မရႏိုင္ပါ။ မူလ ဖန္သားျပင္ေပၚ၌ အခန္းလြတ္ေနရာ ေနာက္ထပ္ မရွိေတာ့ပါ။"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "ဝစ္ဂက္စ္ကို ေပါင္းထည့္လို႔ မရႏိုင္ပါ။ မူလ ဖန္သားျပင္ေပၚ၌ အခန္းလြတ္ေနရာ ေနာက္ထပ္ မရွိေတာ့ပါ။"
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "အပလီေကးရွင္းက ရွိႏွင့္ေနၿပီးသား ျဖစ္သည္။"
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "ဝစ္ဂက္စ္က ရွိႏွင့္ေနၿပီးသား ျဖစ္သည္။"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "ပယ္ဖ်က္ပါ"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "မူလ ဖန္သားျပင္ပုံစံကို ေျပာင္းထားၿပီးပါၿပီ။"
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ဤအပလီေကးရွင္းကို မူလ ဖန္သားျပင္မွ ဖယ္ထုတ္ပါလိမ့္မည္။ ၎ကို ကိရိယာမွ ဖ်က္ထုတ္လိမ့္မည္ မဟုတ္ပါ။"
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "အပလီေကးရွင္းကို ဖယ္ထုတ္ပါ"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "ဝစ္ဂတ္ ျဖဳတ္ပါ"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ဤျဖတ္လမ္းကို မူလ ဖန္သားျပင္မွ ျဖဳတ္ထုတ္လိမ့္မည္။ ၎ကို ကိရိယာမွ ဖ်က္ထုတ္လိမ့္မည္ မဟုတ္ပါ။"
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "အလြန္ ပါဝါေခြ်တာေရး အေနအထား"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "ဝစ္ဂက္ ထည့္မရႏိုင္ပါ။ ဝစ္ဂက္ အမ်ားဆံုး အေရအတြက္ (%d) ေရာက္ပါၿပီ။"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "အပလီေကးရွင္းကို ထည့္လို႔ မရႏိုင္ပါ။ အမ်ားဆံုး အပလီေကးရွင္း အေရအတြက္ (%d) သို႔ ေရာက္ေနပါၿပီ။"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "စာမ်က္ႏွာကုိ ေပါင္းထည့္လို႔ မရႏိုင္ပါ။"
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "ရိုးရိုး အေနအထား"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "ပါဝါ ေခၽြတာ အေနအထား ပိတ္ထားသည္။"
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "ပါဝါ ေခၽြတာျခင္း အေနအထား ရထားသည္။"
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "လတ္တေလာ အပ္မ်ား"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "အပလီေကးရွင္း ထည့္မရႏိုင္ပါ။ အပလီေကးရွင္း အမ်ားဆံုး အေရအတြက္ (%s) ေရာက္ပါၿပီ။"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "ဝစ္ဂက္ ထည့္မရႏိုင္ပါ။ ဝစ္ဂက္ အမ်ားဆံုး အေရအတြက္ (%d) ေရာက္ပါၿပီ။"
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "စာမ်က္ႏွာ ျဖဳတ္ပါ"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "ဤစာမ်က္ႏွာႏွင့္ ၎၏ ပါဝင္မႈ ျဖဳတ္မည္။"
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "ဖယ္ရွားမလား"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "ကြန္ယက္ ၀န္ေဆာင္မႈမ်ားကုိ ၀င္ေရာက္ရရန္ SIM ကဒ္ကုိ ထည့္ပါ။"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "ပိတ္ဆီး အေနအထား"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "ဖြင့္"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "ပိတ္"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "အရာဝတၳဳကို ေရြ႕ျပီး။"
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "ထည့္ရန္ ႏွစ္ခါႏွိပ္ပါ။"
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "၀ီဂ်က္ကုိ ထည့္ေပး"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "အရာဝတၳဳ ထည့္ျပီး။"
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "အရာဝတၳဳ ေရြ႕ျပီး။"
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "စာမ်က္ႏွာ %2$d ၏ %1$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "အေၾကာင္းၾကားစာ ဘုတ္အကြက္ကို ျပန္စီစဥ္လို႔ မရပါ။"
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "၎မွာ %1$d:%2$d"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "မနက္ %d.%d AM"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "မြန္းလြဲ %d.%d PM"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "ပစၥည္း အသစ္ %d ခု"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "ဝစ္ဂ်စ္ အမ်ားဆံုးအေရအတြက္ (%s) ကုိ ေရာက္ပါၿပီ။ ဝစ္ဂ်စ္အခ်ိဳ႕ကုိ ဖ်က္ၿပီး ထပ္ၾကိဳးစားပါ။"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "နာရီသုိ႔ ျပန္သြားရန္ ညာဘက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "ဝစ္ဂ်စ္မ်ားကုိ ၾကည့္ရန္ ဘယ္ဘက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "ေသာ့သုိ႔ျပန္သြားရန္ ဘယ္ဘက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "အသိေပးခ်က္မ်ားကုိ ၾကည့္ရန္ ညာဘက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s ကို တပ္ဆင္မည္လား?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "ဝစ္ဂ်စ္ အမ်ားဆံုး အေရအတြက္ (%s) သုိ႔ ေရာက္ပါၿပီ။"
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "အက္ပ္ ဗန္း ဖြင့္ရန္ ႏွစ္ခ်က္ႏွိပ္ပါ။"
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "အေၾကာင္းအရာ အသစ္ ၁ ခု"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "ဖြင့္ရန္ ႏွစ္ခ်က္ႏွိပ္ပါ။"
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "နာရီ"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "ကိရိယာ သိပ္ပူလြန္းသည္။"
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "မုိဘုိင္းကိရိယာကုိ သံုးၿပီး Gear အပလီေကးရွင္းမ်ားကုိ ေဒါင္းလုပ္ လုပ္ပါ။"
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "အိပ္ေနစဥ္"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "ေနာက္ထပ္ အပလီေကးရွင္းမ်ား ရယူျခင္း"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "ပါဝါ ေခြ်တာျခင္း + ကုိ ဖြင့္ထားစဥ္ လုပ္ေဆာင္ခ်က္ မရႏုိင္ပါ။"
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "ဖန္သားျပင္ဖတ္စက္ကို ပိတ္ထားစဥ္မွာ %s ကို သုံးလို႔ မရႏိုင္ပါ။"
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "အေႏွာင့္အယွက္ မျပဳပါႏွင့္"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "ေလယာဥ္ အေနအထားကုိ ဖြင့္ထားစဥ္ မုိဘုိင္းလ္ ေဒတာကုိ မဖြင့္ႏုိင္ပါ။ ေလယာဥ္ အေနအထားကုိ ပိတ္ၿပီး ထပ္ၾကိဳးစားပါ။"
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "နာရီသို႔ ျပန္သြားရန္ အထက္သို႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "ဤမွ်ပါပဲ! Gear ျဖင့္ လႈပ္ရွားေဆာင္ရြက္ပါ!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "မိုဘိုင္း ကြန္ယက္မ်ား"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "ေခၚဆိုမႈမ်ား ဂီယာသို႔ ဆက္ပို႔ပါ"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "စတင္ပါ"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "ထြက္ပါ"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "ႀကိဳဆိုပါသည္! သင့္ Gear အသံုးျပဳပံုကုိ သင္ယူရန္ ေအာက္ပါ ခလုတ္ကုိ ႏွိပ္ပါ။"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "ပိတ္ရန္ ေတာင္းဆုိၿပီးပါၿပီ"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "ဖြင့္ရန္ ေတာင္းဆုိၿပီးပါၿပီ"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "နာရီရွိ ညႊန္တံ အုိင္ကြန္မ်ားကုိ ၾကည့္ရန္ ထိပ္အစြန္းကုိ ေအာက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "နာရီတြင္ အက္ပ္မ်ားၾကည့္ရန္ ေအာက္ဖက္အစြန္းကို အေပၚသုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "အိုေက"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "ျပန္သြားရန္ ထိပ္အစြန္းကုိ ေအာက္သုိ႔ ပြတ္ဆြဲပါ။"
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "အပလီေကးရွင္းမ်ားကို တပ္ဆင္ရန္ (သို႔) သြင္းထားျခင္းအား ျပန္ထုတ္ရန္၊ သင့္မိုဘိုင္းကိရိယာေပၚက Samsung Gear အပလီေကးရွင္းကို သုံးပါ။"
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "ဒီတစ္ခုက ပင္မ ဖန္သားျပင္၏ အဓိက ဖြဲ႔စည္းပံုျဖစ္သည္။"
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "အားလုံးရွင္းထုတ္ပစ္ၿပီး"

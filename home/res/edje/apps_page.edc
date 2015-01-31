@@ -1,0 +1,143 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "apps_conf.edc"
+
+
+
+#define ITEM_CENTER_PART(part_name, rel_x, rel_y, off_x, off_y, align_x, align_y) \
+	part { \
+		name: "item_center_"part_name; \
+		type: SWALLOW; \
+		mouse_events: 1; \
+		description { \
+			state: "default" 0.0; \
+			rel1 { relative: (rel_x) (rel_y); offset: off_x off_y; to: "bg"; } \
+			rel2 { relative: (rel_x) (rel_y); offset: off_x off_y; to: "bg"; } \
+			align: align_x align_y; \
+			min: ITEM_WIDTH ITEM_HEIGHT; \
+			fixed: 1 1; \
+		} \
+		description { \
+			state: "edit" 0.0; \
+			inherit: "default" 0.0; \
+			min: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT; \
+		} \
+	}
+
+#define ITEM_CENTER_PROGRAM(part_name)  \
+	program { \
+		signal: "unedit"; \
+		source: "item_center_"part_name; \
+		action: STATE_SET "default" 0.0; \
+		target: "item_center_"part_name; \
+		transition: DECELERATE 0.1; \
+	} \
+	program { \
+		signal: "edit"; \
+		source: "item_center_"part_name; \
+		action: STATE_SET "edit" 0.0; \
+		target: "item_center_"part_name; \
+		transition: DECELERATE 0.1; \
+	}
+
+#define ITEM_PART(part_name, pre_center, next_center) \
+	part { \
+		name: "item_"part_name; \
+		type: SWALLOW; \
+		scale: 1; \
+		mouse_events: 1; \
+		repeat_events: 1; \
+		description { \
+			state: "default" 0.0;	\
+			visible: 1; \
+			rel1 { relative: 0.5 0.5; to: "item_center_"part_name; } \
+			rel2 { relative: 0.5 0.5; to: "item_center_"part_name; } \
+			align: 0.5 0.5; \
+			fixed: 1 1; \
+		} \
+		description { \
+			state: "prev" 0.0;	\
+			inherit: "default" 0.0;	\
+			rel1 { relative: 0.5 0.5; to: "item_center_"pre_center; } \
+			rel2 { relative: 0.5 0.5; to: "item_center_"pre_center; } \
+		} \
+		description { \
+			state: "next" 0.0;	\
+			inherit: "default" 0.0;	\
+			rel1 { relative: 0.5 0.5; to: "item_center_"next_center; } \
+			rel2 { relative: 0.5 0.5; to: "item_center_"next_center; } \
+		} \
+	}
+
+#define ITEM_PROGRAM(part_name)  \
+	program { \
+		signal: "prev"; \
+		source: "item_"part_name; \
+		action: STATE_SET "prev" 0.0; \
+		target: "item_"part_name; \
+	} \
+	program { \
+		signal: "next"; \
+		source: "item_"part_name; \
+		action: STATE_SET "next" 0.0; \
+		target: "item_"part_name; \
+	} \
+	program { \
+		signal: "return"; \
+		source: "item_"part_name; \
+		action: STATE_SET "default" 0.0; \
+		target: "item_"part_name; \
+		transition: LINEAR 0.2; \
+	}
+
+collections {
+	group {
+		name: "page";
+		parts {
+			part {
+				name: "bg";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					visible: 0;
+				}
+			}
+
+			ITEM_CENTER_PART("-1", 0.5, -0.5, 1, 0, 0.0, 0.5)
+			ITEM_CENTER_PART("0", 0.5, 0.5, 0, 0, 1.0, 0.5)
+			ITEM_CENTER_PART("1", 0.5, 0.5, 1, 0, 0.0, 0.5)
+			ITEM_CENTER_PART("2", 0.5, 1.5, 0, 0, 1.0, 0.5)
+
+			ITEM_PART("0", "-1", "1")
+			ITEM_PART("1", "0", "2")
+		}
+
+		programs {
+			ITEM_CENTER_PROGRAM("-1");
+			ITEM_CENTER_PROGRAM("0");
+			ITEM_CENTER_PROGRAM("1");
+			ITEM_CENTER_PROGRAM("2");
+
+			ITEM_PROGRAM("0")
+			ITEM_PROGRAM("1")
+		}
+	} // group
+} // collections

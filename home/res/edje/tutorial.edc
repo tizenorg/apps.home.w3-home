@@ -1,0 +1,1182 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+
+styles {
+	style {
+		name: "main_text_style";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="40" align=center valign=top color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "sub_text_style";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="32" color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "main_text_style,medium";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="38" align=center valign=top color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "sub_text_style,medium";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="30" color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "main_text_style,small";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="34" align=center valign=top color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "sub_text_style,small";
+		base: "font=TIZEN:style=REGULAR text_class=tizen font_size="24" color=#FFFFFF ellipsis=1 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+	style {
+		name: "button_text_style";
+		base: "font=TIZEN:style=BOLD text_class=tizen font_size="28" align=center color=#FFFFFF ellipsis=1.0 wrap=mixed";
+		tag: "<br/>" "\n";
+	}
+}
+
+images {
+	image: "overlay00_bg_cover.png" COMP;
+	image: "overlay01_bg_cover.png" COMP;
+	image: "overlay05_bg_cover.png" COMP;
+	image: "overlay06_bg_cover.png" COMP;
+	image: "overlay08_bg_cover.png" COMP;
+	image: "overlay_swipe_right.png" COMP;
+	image: "overlay_swipe_left.png" COMP;
+	image: "overlay_swipe_up.png" COMP;
+	image: "overlay_swipe_down.png" COMP;
+	image: "overlay_start_button.png" COMP;
+	image: "overlay_start_button_press.png" COMP;
+	image: "overlay_cue.png" COMP;
+	image: "overlay_close.png" COMP;
+	image: "overlay_button.#.png" COMP;
+	image: "overlay_button_press.#.png" COMP;
+	image: "overlay000_image.png" COMP;
+}
+
+collections {
+	group {
+		name: "tutorial";
+		parts {
+			part {
+				name: "bg_area";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					visible: 0;
+				}
+			}
+			part {
+				name: "page0";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay00_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page1";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay01_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page2";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay01_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page3";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay01_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page4";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay01_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page5";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay05_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page6";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay06_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page7";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay06_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "page8";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					image {
+						normal: "overlay08_bg_cover.png";
+					}
+					color: 255 255 255 0;
+					visible: 1;
+				}
+				description {
+					state: "in" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "structure";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 IMAGE_Y/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 0.5 IMAGE_Y/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay000_image.png";
+					}
+					min: 360 260;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+					visible: 1;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "show" 0.0;
+					color: 255 255 255 0;
+				}
+			}
+			part {
+				name: "text_area";
+				type: SPACER;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 269/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 386/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "structure" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 242/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 359/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 209/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 365/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description { // use page 8
+					state: "down,indi" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 331/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 448/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "up" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 112/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 307/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "center" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 77/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 383/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "center,done" 0.0;
+					inherit: "center" 0.0;
+					rel1 { relative: 16/BASE_WIDTH 112/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 344/BASE_WIDTH 316/BASE_HEIGHT; to: "bg_area"; }
+				}
+			}
+			part {
+				name: "text,clipper";
+				type: RECT;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					color: 255 255 255 255;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 0;
+				}
+			}
+			part {
+				name: "text";
+				type: TEXTBLOCK;
+				mouse_events: 1;
+				repeat_events: 1;
+				clip_to: "text,clipper";
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "text_area"; }
+					rel2 { relative: 1.0 1.0; to: "text_area"; }
+					align: 0.5 0.5;
+					text {
+						style: "sub_text_style";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+				description {
+					state: "sub_up" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "sub_text_style";
+						align: 0.5 0.1;
+						min: 0 1;
+					}
+				}
+				description {
+					state: "center" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "main_text_style";
+						align: 0.5 0.2;
+						min: 0 1;
+					}
+				}
+				description {
+					state: "sub_medium" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "sub_text_style,medium";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+				}
+				description {
+					state: "center_medium" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "main_text_style,medium";
+						align: 0.5 0.2;
+						min: 0 1;
+					}
+				}
+				description {
+					state: "sub_small" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "sub_text_style,small";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+				}
+				description {
+					state: "center_small" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "main_text_style,small";
+						align: 0.5 0.2;
+						min: 0 1;
+					}
+				}
+			}
+			part {
+				name: "focus,text";
+				type: SWALLOW;
+				scale : 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "text"; }
+					rel2 { relative: 1.0 1.0; to: "text"; }
+					color: 0 0 0 0;
+					visible: 1;
+			   }
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+			   }
+			}
+			part {
+				name: "swipe";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0; //right
+					rel1 { relative: 100/BASE_WIDTH 419/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 260/BASE_WIDTH 461/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay_swipe_right.png";
+					}
+					align: 0.5 0.5;
+					visible: 1;
+				}
+				description {
+					state: "left" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 100/BASE_WIDTH 419/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 260/BASE_WIDTH 461/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay_swipe_left.png";
+					}
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 159/BASE_WIDTH 384/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 201/BASE_WIDTH 464/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay_swipe_up.png";
+					}
+				}
+				description { // use page 8
+					state: "down,indi" 0.0;
+					inherit: "down" 0.0;
+					rel1 { relative: 159/BASE_WIDTH 241/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 201/BASE_WIDTH 321/BASE_HEIGHT; to: "bg_area"; }
+				}
+				description {
+					state: "up" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 159/BASE_WIDTH 16/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 201/BASE_WIDTH 96/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay_swipe_down.png";
+					}
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+				}
+			}
+			part {
+				name: "swipe_cue";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0; // hide
+					rel1 { relative: 159/BASE_WIDTH -24/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 201/BASE_WIDTH 18/BASE_HEIGHT; to: "bg_area"; }
+					image {
+						normal: "overlay_cue.png";
+					}
+					visible: 0;
+				}
+				description {
+					state: "down" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 148/BASE_WIDTH 453/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 213/BASE_WIDTH 518/BASE_HEIGHT; to: "bg_area"; }
+					visible: 1;
+				}
+				description {
+					state: "up" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 148/BASE_WIDTH -38/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 213/BASE_WIDTH 27/BASE_HEIGHT; to: "bg_area"; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "close_button";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: CLOSE_BUTTON_X/BASE_WIDTH CLOSE_BUTTON_Y/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: CLOSE_BUTTON_X/BASE_WIDTH CLOSE_BUTTON_Y/BASE_HEIGHT; to: "bg_area"; }
+					min: 66 66;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "close_button,line";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "close_button"; }
+					rel2 { relative: 0.5 0.5; to: "close_button"; }
+					image {
+						normal: "overlay_close.png";
+					}
+					min: 66 66;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "button_bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 BUTTON_LOCATION/BASE_HEIGHT; to: "bg_area"; }
+					rel2 { relative: 0.5 BUTTON_LOCATION/BASE_HEIGHT; to: "bg_area"; }
+				}
+			}
+			part {
+				name: "button";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0; // hide
+					rel1 { relative: 0.0 0.0; to: "button_text"; offset: -16 0; }
+					rel2 { relative: 1.0 1.0; to: "button_text"; offset: 16 0; }
+					min: 174 71;
+					max: 334 71;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "button_line";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0; // hide
+					rel1 { relative: 0.0 0.0; to: "button_text"; offset: -16 0; }
+					rel2 { relative: 1.0 1.0; to: "button_text"; offset: 16 0; }
+					image {
+						normal: "overlay_button.#.png";
+					}
+					min: 174 71;
+					max: 334 71;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+				description {
+					state: "press" 0.0;
+					inherit: "default" 0.0;
+					image {
+						normal: "overlay_button_press.#.png";
+					}
+					visible: 1;
+				}
+			}
+			part {
+				name: "button_text";
+				type: TEXTBLOCK;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {  // hide
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "button_bg"; }
+					rel2 { relative: 0.5 0.5; to: "button_bg"; }
+					align: 0.5 0.5;
+					text {
+						style: "button_text_style";
+						align: 0.5 0.5;
+						min: 0 0;
+					}
+					fixed: 1 1;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "focus,tutorial";
+				type: SWALLOW;
+				scale : 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg_area"; }
+					rel2 { relative: 1.0 1.0; to: "bg_area"; }
+					color: 0 0 0 0;
+					visible: 1;
+			   }
+			}
+		}// end parts
+
+		programs {
+			program { // start
+				signal: "start";
+				source: "start";
+				action: STATE_SET "center" 0.0;
+				target: "text_area";
+				after: "bg,show";
+			}
+			program {
+				name: "bg,show";
+				action: STATE_SET "in" 0.0;
+				target: "page0";
+				after: "init,show";
+			}
+			program {
+				name: "init,show";
+				action: STATE_SET "default" 0.0;
+				target: "text,clipper";
+				target: "focus,text";
+				after: "swipe,hide";
+			}
+			program {
+				name: "swipe,hide";
+				action: STATE_SET "hide" 0.0;
+				target: "swipe";
+				target: "swipe_cue";
+				after: "button,show";
+			}
+			program {
+				name: "button,show";
+				action: STATE_SET "show" 0.0;
+				target: "button";
+				target: "button_line";
+				target: "button_text";
+				target: "close_button";
+				target: "close_button,line";
+			}
+			program { // start, pressed
+				signal: "show";
+				source: "start,pressed";
+				action: STATE_SET "press" 0.0;
+				target: "button_line";
+				after: "text,hide";
+			}
+			program {
+				name: "text,hide";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				transition: LINEAR 0.5;
+				after: "button,hide";
+			}
+			program {
+				name: "button,hide";
+				action: STATE_SET "default" 0.0;
+				target: "button_line";
+				target: "button_text";
+				target: "close_button";
+				target: "close_button,line";
+				after: "tutorial,start";
+			}
+			program {
+				name: "tutorial,start";
+				action: SIGNAL_EMIT "start" "button";
+			}
+			program { // structure page
+				signal: "show";
+				source: "structure_page";
+				action: STATE_SET "default" 0.0;
+				target: "text,clipper";
+				after: "image,show";
+			}
+			program {
+				name: "image,show";
+				action: STATE_SET "show" 0.0;
+				target: "button_line";
+				target: "button_text";
+				target: "structure";
+				after: "structure_page,text";
+			}
+			program {
+				name: "structure_page,text";
+				action: STATE_SET "structure" 0.0;
+				target: "text_area";
+			}
+			program { // start 2, pressed
+				signal: "show";
+				source: "start2,pressed";
+				action: STATE_SET "press" 0.0;
+				target: "button_line";
+				after: "text2,hide";
+			}
+			program {
+				name: "text2,hide";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				target: "structure";
+				transition: LINEAR 0.5;
+				after: "button2,hide";
+			}
+			program {
+				name: "button2,hide";
+				action: STATE_SET "default" 0.0;
+				target: "structure";
+				target: "button_line";
+				target: "button_text";
+				after: "tutorial,start2";
+			}
+			program {
+				name: "tutorial,start2";
+				action: SIGNAL_EMIT "start2" "button";
+			}
+			program { // structure page out
+				signal: "hide";
+				source: "page0";
+				action: STATE_SET "default" 0.0;
+				target: "page0";
+				transition: LINEAR 0.3;
+			}
+			program { // page 1
+				signal: "show";
+				source: "page1";
+				action: STATE_SET "default" 0.0;
+				target: "page1";
+				target: "text_area";
+				target: "text,clipper";
+				target: "swipe";
+				target: "swipe_cue";
+				after: "page1,in";
+			}
+			program {
+				name: "page1,in";
+				action: STATE_SET "in" 0.0;
+				target: "page1";
+				transition: LINEAR 0.3;
+			}
+			program { // page 1 out
+				signal: "hide";
+				source: "page1";
+				action: STATE_SET "default" 0.0;
+				target: "page1";
+				transition: LINEAR 0.3;
+			}
+			program { // page 2
+				signal: "show";
+				source: "page2";
+				action: STATE_SET "default" 0.0;
+				target: "page2";
+				after: "page2,in";
+			}
+			program {
+				name: "page2,in";
+				action: STATE_SET "in" 0.0;
+				target: "page2";
+				transition: LINEAR 0.3;
+				after: "swipe,left";
+			}
+			program {
+				name: "swipe,left";
+				action: STATE_SET "left" 0.0;
+				target: "swipe";
+				after: "text,show";
+			}
+			program {
+				name: "text,show";
+				action: STATE_SET "default" 0.0;
+				target: "text,clipper";
+			}
+			program { // page 2 out
+				signal: "hide";
+				source: "page2";
+				action: STATE_SET "default" 0.0;
+				target: "page2";
+				transition: LINEAR 0.3;
+			}
+			program { // page 3
+				signal: "show";
+				source: "page3";
+				action: STATE_SET "default" 0.0;
+				target: "page3";
+				after: "page3,in";
+			}
+			program {
+				name: "page3,in";
+				action: STATE_SET "in" 0.0;
+				target: "page3";
+				transition: LINEAR 0.3;
+				after: "text,show";
+			}
+			program { // page 3 out
+				signal: "hide";
+				source: "page3";
+				action: STATE_SET "default" 0.0;
+				target: "page3";
+				transition: LINEAR 0.3;
+			}
+			program { // page 4
+				signal: "show";
+				source: "page4";
+				action: STATE_SET "default" 0.0;
+				target: "page4";
+				after: "page4,in";
+			}
+			program {
+				name: "page4,in";
+				action: STATE_SET "in" 0.0;
+				target: "page4";
+				transition: LINEAR 0.3;
+				after: "swipe,right";
+			}
+			program {
+				name: "swipe,right";
+				action: STATE_SET "default" 0.0;
+				target: "swipe";
+				after: "text,show";
+			}
+			program { // page 4 out
+				signal: "hide";
+				source: "page4";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				after: "page4,out";
+			}
+			program {
+				name: "page4,out";
+				action: STATE_SET "default" 0.0;
+				target: "page4";
+				transition: LINEAR 0.3;
+			}
+			program { // page 5
+				signal: "show";
+				source: "page5";
+				action: STATE_SET "default" 0.0;
+				target: "page5";
+				after: "page5,in";
+			}
+			program {
+				name: "page5,in";
+				action: STATE_SET "in" 0.0;
+				target: "page5";
+				transition: LINEAR 0.3;
+				after: "down";
+			}
+			program {
+				name: "down";
+				action: STATE_SET "down" 0.0;
+				target: "text_area";
+				target: "swipe";
+				target: "swipe_cue";
+				after: "text,show";
+			}
+			program { // page 5 out
+				signal: "hide";
+				source: "page5";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				after: "page5,out";
+			}
+			program {
+				name: "page5,out";
+				action: STATE_SET "default" 0.0;
+				target: "page5";
+				transition: LINEAR 0.3;
+			}
+			program { // page 6
+				signal: "show";
+				source: "page6";
+				action: STATE_SET "default" 0.0;
+				target: "page6";
+				after: "page6,in";
+			}
+			program {
+				name: "page6,in";
+				action: STATE_SET "in" 0.0;
+				target: "page6";
+				transition: LINEAR 0.3;
+				after: "up";
+			}
+			program {
+				name: "up";
+				action: STATE_SET "up" 0.0;
+				target: "text_area";
+				target: "swipe";
+				target: "swipe_cue";
+				after: "text,show";
+			}
+			program { // page 6 out
+				signal: "hide";
+				source: "page6";
+				action: STATE_SET "default" 0.0;
+				target: "page6";
+				transition: LINEAR 0.4;
+			}
+			program { // page 7
+				signal: "show";
+				source: "page7";
+				action: STATE_SET "default" 0.0;
+				target: "page7";
+				after: "page7,in";
+			}
+			program {
+				name: "page7,in";
+				action: STATE_SET "in" 0.0;
+				target: "page7";
+				transition: LINEAR 0.3;
+				after: "text,show";
+			}
+			program { // page 7 out
+				signal: "hide";
+				source: "page7";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				after: "page7,out";
+			}
+			program {
+				name: "page7,out";
+				action: STATE_SET "default" 0.0;
+				target: "page7";
+				transition: LINEAR 0.3;
+			}
+			program { // page 8
+				signal: "show";
+				source: "page8";
+				action: STATE_SET "default" 0.0;
+				target: "page8";
+				after: "page8,in";
+			}
+			program {
+				name: "page8,in";
+				action: STATE_SET "in" 0.0;
+				target: "page8";
+				transition: LINEAR 0.3;
+				after: "indicator,down";
+			}
+			program {
+				name: "indicator,down";
+				action: STATE_SET "down,indi" 0.0;
+				target: "text_area";
+				target: "swipe";
+				after: "cue,hide";
+			}
+			program {
+				name: "cue,hide";
+				action: STATE_SET "default" 0.0;
+				target: "swipe_cue";
+				after: "text,show";
+			}
+			program { // page 8 out
+				signal: "hide";
+				source: "page8";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				target: "swipe";
+				after: "page8,out";
+			}
+			program {
+				name: "page8,out";
+				action: STATE_SET "default" 0.0;
+				target: "page8";
+				transition: LINEAR 0.3;
+			}
+			program { // page 9
+				signal: "show";
+				source: "page9";
+				action: STATE_SET "default" 0.0;
+				target: "page0";
+				after: "page9,in";
+			}
+			program {
+				name: "page9,in";
+				action: STATE_SET "in" 0.0;
+				target: "page0";
+				transition: LINEAR 0.3;
+				after: "swipe,hide2";
+			}
+			program {
+				name: "swipe,hide2";
+				action: STATE_SET "hide" 0.0;
+				target: "swipe";
+				after: "button,show2";
+			}
+			program {
+				name: "button,show2";
+				action: STATE_SET "show" 0.0;
+				target: "button";
+				target: "button_line";
+				target: "button_text";
+				after: "text,center";
+			}
+			program {
+				name: "text,center";
+				action: STATE_SET "center,done" 0.0;
+				target: "text_area";
+				after: "text,show";
+			}
+			program { // page 9, pressed
+				signal: "show";
+				source: "page9,pressed";
+				action: STATE_SET "press" 0.0;
+				target: "button_line";
+				after: "text,hide2";
+			}
+			program {
+				name: "text,hide2";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+				transition: LINEAR 0.5;
+				after: "button,hide2";
+			}
+			program {
+				name: "button,hide2";
+				action: STATE_SET "default" 0.0;
+				target: "button_line";
+				target: "button_text";
+				after: "tutorial,done";
+			}
+			program {
+				name: "tutorial,done";
+				action: SIGNAL_EMIT "done" "button";
+			}
+			program {
+				signal: "standard";
+				source: "sub";
+				action: STATE_SET "default" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "up";
+				source: "sub";
+				action: STATE_SET "sub_up" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "medium";
+				source: "sub";
+				action: STATE_SET "sub_medium" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "small";
+				source: "sub";
+				action: STATE_SET "sub_small" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "standard";
+				source: "center";
+				action: STATE_SET "center" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "medium";
+				source: "center";
+				action: STATE_SET "center_medium" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "small";
+				source: "center";
+				action: STATE_SET "center_small" 0.0;
+				target: "text";
+			}
+			program {
+				signal: "show";
+				source: "text";
+				action: STATE_SET "default" 0.0;
+				target: "text,clipper";
+			}
+			program {
+				signal: "hide";
+				source: "text";
+				action: STATE_SET "hide" 0.0;
+				target: "text,clipper";
+			}
+		}// end programs
+	}// end group
+}// end collection

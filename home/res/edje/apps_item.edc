@@ -1,0 +1,428 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "apps_conf.edc"
+
+styles {
+	style {
+		name: "name_style";
+		base: "font=TIZEN:style=Regular text_class=AT0121 font_size="28" align=middle color=#FFFFFF color_class=AT0121 ellipsis=1 wrap=mixed";
+	}
+}
+
+images {
+	image: "b_home_screen_badge_large_bg.#.png" COMP;
+	image: "b_home_screen_badge_large_line.#.png" COMP;
+	image: "b_home_screen_badge_large_shadow.#.png" COMP;
+}
+
+collections {
+group {
+	name: "item";
+	parts {
+		part {
+			name: "bg";
+			type: RECT;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1.relative: 0.0 0.0;
+				rel2.relative: 1.0 1.0;
+				min: ITEM_WIDTH ITEM_HEIGHT;
+				align: 0.0 0.0;
+				color: 0 0 0 0;
+				visible: 1;
+			}
+			description {
+				state: "edit" 0.0;
+				inherit: "default" 0.0;
+				min: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT;
+			}
+		}
+		part {
+			name: "item_inner";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "bg"; }
+				rel2 { relative: 0.5 0.5; to: "bg"; }
+				align: 0.5 0.5;
+				fixed: 1 1;
+				visible: 1;
+			}
+		}
+		part {
+			name: "focus";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "bg"; }
+				rel2 { relative: 1.0 1.0; to: "bg"; }
+				color: 0 0 0 0;
+				visible: 1;
+			}
+		}
+	}
+	programs {
+		program {
+			signal: "unedit";
+			source: "item";
+			action: STATE_SET "default" 0.0;
+			target: "bg";
+		}
+		program {
+			signal: "edit";
+			source: "item";
+			action: STATE_SET "edit" 0.0;
+			target: "bg";
+		}
+	}
+}
+
+group {
+	name: "item_inner";
+	parts {
+		part {
+			name: "bg";
+			type: SPACER;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1.relative: 0.0 0.0;
+				rel2.relative: 1.0 1.0;
+				min: ITEM_WIDTH ITEM_HEIGHT;
+				fixed: 1 1;
+			}
+			description {
+				state: "edit" 0.0;
+				inherit: "default" 0.0;
+				min: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT;
+			}
+		}
+		part {
+			name: "icon";
+			type: SWALLOW;
+			scale: 1;
+			clip_to: "event,clip";
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.0; to: "bg"; }
+				rel2 { relative: 0.5 0.0; to: "bg"; }
+				min: ITEM_ICON_WIDTH ITEM_ICON_HEIGHT;
+				align: 0.5 0.0;
+				fixed: 1 1;
+				visible: 1;
+			}
+			description {
+				state: "edit" 0.0;
+				inherit: "default" 0.0;
+				min: ITEM_SMALL_ICON_WIDTH ITEM_SMALL_ICON_HEIGHT;
+			}
+		}
+		part {
+			name: "name";
+			type: TEXTBLOCK;
+			scale: 1;
+			clip_to: "event,clip";
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "icon"; }
+				rel2 { relative: 1.0 1.0; to: "bg"; }
+				color_class: "AT0121";
+				text {
+					style: "name_style";
+					min: 0 0;
+					align: 0.0 0.0;
+				}
+				visible: 1;
+			}
+			description {
+				state: "hide" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
+		}
+		part {
+			name: "badge_bg";
+			type: SPACER;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: (ITEM_BADGE_X/ITEM_WIDTH) (ITEM_BADGE_Y/ITEM_HEIGHT); to, "bg"; }
+				rel2 { relative: (ITEM_BADGE_X/ITEM_WIDTH) (ITEM_BADGE_Y/ITEM_HEIGHT); to, "bg"; }
+			}
+		}
+		part {
+			name: "badge_image";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "badge_txt"; offset: -1 -1; }
+				rel2 { relative: 1.0 1.0; to, "badge_txt"; offset: -1 -1; }
+				image {
+					normal: "b_home_screen_badge_large_bg.#.png";
+				}
+				color_class: "AO013L1";
+				min: ITEM_BADGE_W ITEM_BADGE_H;
+				fixed: 1 1;
+				visible: 0;
+			}
+			description {
+				state: "1" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+				min: ITEM_BADGE_W ITEM_BADGE_H;
+			}
+			description {
+				state: "2" 0.0;
+				inherit: "1" 0.0;
+				rel1 { relative: 0.0 0.0; to, "badge_txt"; offset: 0 -1; }
+				rel2 { relative: 1.0 1.0; to, "badge_txt"; offset: 0 -1; }
+				min: ITEM_BADGE_2W ITEM_BADGE_H;
+			}
+			description {
+				state: "3" 0.0;
+				inherit: "1" 0.0;
+				rel1 { relative: 0.0 0.0; to, "badge_txt"; offset: 0 -1; }
+				rel2 { relative: 1.0 1.0; to, "badge_txt"; offset: 0 -1; }
+				min: ITEM_BADGE_3W ITEM_BADGE_H;
+			}
+		}
+		part {
+			name: "badge_line";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "badge_image"; }
+				rel2 { relative: 1.0 1.0; to, "badge_image"; }
+				image {
+					normal: "b_home_screen_badge_large_line.#.png";
+				}
+				color_class: "AO013L2";
+				fixed: 1 1;
+				visible: 0;
+			}
+			description {
+				state: "1" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+			description {
+				state: "2" 0.0;
+				inherit: "1" 0.0;
+			}
+			description {
+				state: "3" 0.0;
+				inherit: "1" 0.0;
+			}
+		}
+		part {
+			name: "badge_shadow";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "badge_image"; }
+				rel2 { relative: 1.0 1.0; to, "badge_image"; }
+				image {
+					normal: "b_home_screen_badge_large_shadow.#.png";
+				}
+				color_class: "AO061";
+				fixed: 1 1;
+				visible: 0;
+			}
+			description {
+				state: "1" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+			description {
+				state: "2" 0.0;
+				inherit: "1" 0.0;
+			}
+			description {
+				state: "3" 0.0;
+				inherit: "1" 0.0;
+			}
+		}
+
+		part {
+			name: "badge_txt";
+			type: TEXT;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to, "badge_bg"; }
+				rel2 { relative: 0.5 0.5; to, "badge_bg"; }
+				align: 0.5 0.5;
+				color_class: "AT0132";
+				text {
+					text_class: "AT0132";
+					ellipsis: 0.0;
+					align: 0.5 0.5;
+					min: 1 1;
+				}
+				fixed: 1 1;
+				visible: 0;
+			}
+			description {
+				state: "1" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+			description {
+				state: "2" 0.0;
+				inherit: "1" 0.0;
+			}
+			description {
+				state: "3" 0.0;
+				inherit: "1" 0.0;
+			}
+		}
+		part {
+			name: "event,clip";
+			type: RECT;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to, "bg"; }
+				rel2 { relative: 1.0 1.0; to, "bg"; }
+				color: 255 255 255 255;
+				visible: 1;
+			}
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 127;
+			}
+		}
+	}
+	programs {
+		program {
+			signal: "item,pressed";
+			source: "item_inner";
+			action: STATE_SET "pressed" 0.0;
+			target: "event,clip";
+		}
+		program {
+			signal: "item,released";
+			source: "item_inner";
+			action: STATE_SET "default" 0.0;
+			target: "event,clip";
+		}
+		program {
+			signal: "name,show";
+			source: "item_inner";
+			action: STATE_SET "default" 0.0;
+			target: "name";
+		}
+		program {
+			signal: "name,hide";
+			source: "item_inner";
+			action: STATE_SET "hide" 0.0;
+			target: "name";
+		}
+		program {
+			signal: "unedit";
+			source: "item_inner";
+			action: STATE_SET "default" 0.0;
+			target: "bg";
+			target: "icon";
+		}
+		program {
+			signal: "edit";
+			source: "item_inner";
+			action: STATE_SET "edit" 0.0;
+			target: "bg";
+			target: "icon";
+		}
+		// Badge
+		program {
+			signal: "badge,on,1";
+			source: "item";
+			action: STATE_SET "1" 0.0;
+			target: "badge_image";
+			target: "badge_line";
+			target: "badge_txt";
+		}
+		program {
+			signal: "badge,on,2";
+			source: "item";
+			action: STATE_SET "2" 0.0;
+			target: "badge_image";
+			target: "badge_line";
+			target: "badge_shadow";
+			target: "badge_txt";
+		}
+		program {
+			signal: "badge,on,3";
+			source: "item";
+			action: STATE_SET "3" 0.0;
+			target: "badge_image";
+			target: "badge_line";
+			target: "badge_shadow";
+			target: "badge_txt";
+		}
+		program {
+			signal: "badge,off";
+			source: "item";
+			action: STATE_SET "default" 0.0;
+			target: "badge_image";
+			target: "badge_line";
+			target: "badge_shadow";
+			target: "badge_txt";
+		}
+	}
+}
+group {
+	name: "center";
+	parts {
+		part {
+			name: "bg";
+			type: RECT;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1.relative: 0.0 0.0;
+				rel2.relative: 1.0 1.0;
+				color: 0 0 0 0;
+				visible: 1;
+			}
+		}
+	}
+}
+
+
+}

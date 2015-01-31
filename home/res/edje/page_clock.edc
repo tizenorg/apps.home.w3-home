@@ -1,0 +1,1802 @@
+/*
+ * Samsung API
+ * Copyright (c) 2009-2015 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+
+#define HIDDEN_AREA_H 256
+#define HIDDEN_QUICKBUTTON_W (29+90+29)
+#define HIDDEN_QUICKBUTTON_H (90+7+33+33)
+#define HIDDEN_BUTTON_TRANSIT_TIME 0.35
+#define CLOCK_INDICATOR_W 65
+#define CLOCK_INDICATOR_H 65
+#define CLOCK_INDICATOR_ICON_W 60
+#define CLOCK_INDICATOR_ICON_H 60
+
+images {
+	image: "b_home_screen_clock_arrow_big.png" COMP;
+	image: "b_home_screen_clock_arrow_big_ef.png" COMP;
+	image: "Arrow_S_00015.png" COMP;
+	image: "Arrow_S_00016.png" COMP;
+	image: "Arrow_S_00017.png" COMP;
+	image: "Arrow_S_00018.png" COMP;
+	image: "Arrow_S_00019.png" COMP;
+	image: "Arrow_S_00020.png" COMP;
+	image: "Arrow_S_00021.png" COMP;
+	image: "Arrow_S_00022.png" COMP;
+	image: "Arrow_S_00023.png" COMP;
+	image: "Arrow_S_00024.png" COMP;
+	image: "Arrow_S_00025.png" COMP;
+	image: "Arrow_S_00026.png" COMP;
+	image: "Arrow_S_00027.png" COMP;
+	image: "Arrow_S_00028.png" COMP;
+	image: "Arrow_S_00029.png" COMP;
+	image: "Arrow_S_00030.png" COMP;
+	image: "Arrow_S_00031.png" COMP;
+	image: "Arrow_S_00032.png" COMP;
+	image: "Arrow_S_00033.png" COMP;
+	image: "B3_Data.png" COMP;
+	image: "do_not_ic_disturb.png" COMP;
+	image: "b_home_screen_block_btn_bg.png" COMP;
+	image: "b_home_screen_block_btn_line.png" COMP;
+	image: "b_home_screen_block_text_btn_bg.#.png" COMP;
+	image: "b_home_screen_block_text_btn_line.#.png" COMP;
+	image: "b_home_screen_block_btn_ic.png" COMP;
+	image: "b_home_screen_network_auto.png" COMP;
+	image: "b_home_screen_network_off.png" COMP;
+	image: "b_home_screen_network_on.png" COMP;
+}
+
+collections {
+
+	styles {
+		style {
+			name: "text,1,normal";
+			base: "font=Tizen text_class=AT041 font_size=32 align=center color=#FFFFFF color_class=AT044 wrap=mixed"; # ellipsis=1.0
+		}
+		style {
+			name: "text,1,pressed";
+			base: "font=Tizen text_class=AT041S font_size=32 align=center color=#FFFFFF color_class=AT044P wrap=mixed"; # ellipsis=1.0
+		}
+		style {
+			name: "name_style";
+			base: "font=TIZEN:style=Regular text_class=tizen font_size="28" align=center color=#FFFFFF color_class=AT043 ellipsis=1 wrap=mixed";
+		}
+		style {
+			name: "name_style_pressed";
+			base: "font=TIZEN:style=Regular text_class=tizen font_size="28" align=center color=#FFFFFF color_class=AT043P ellipsis=1 wrap=mixed";
+		}
+	}
+	group {
+		name: "clock_page";
+		parts {
+			part {
+				name: "clock_bg";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "item";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "clock_bg";}
+					rel2 { relative: 0.5 0.5; to: "clock_bg";}
+					fixed: 1 1;
+					visible: 1;
+					align: 0.5 0.5;
+				}
+			}
+			part {
+				name: "hidden_region";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "clock_bg";}
+					rel2 { relative: 1.0 0.0; to: "clock_bg";}
+					min: 0 HIDDEN_AREA_H;
+					fixed: 1 1;
+					align: 0.0 1.0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					min: 0 HIDDEN_AREA_H;
+					max: -1 HIDDEN_AREA_H;
+					rel1 { relative: 0.0 0.0; to: "clock_bg";}
+					rel2 { relative: 1.0 0.0; to: "clock_bg";}
+					align: 0.0 0.0;
+				}
+				description {
+					state: "show.short" 0.0;
+					inherit: "default" 0.0;
+					min: 0 HIDDEN_AREA_H;
+					max: -1 HIDDEN_AREA_H;
+					rel1 { relative: 0.0 0.0; to: "clock_bg"; offset: 0 -99;}
+					rel2 { relative: 1.0 0.0; to: "clock_bg";}
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "bottom_cue";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 0;
+				ignore_flags: ON_HOLD;
+				description {
+					state: "default" 0.0;
+					min: 75 75;
+					max: 75 75;
+					rel1 { relative: 0.5 1.0; to: "clock_bg"; }
+					rel2 { relative: 0.5 1.0; to: "clock_bg"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 0.5 1.0;
+				}
+			}
+			part {
+				name: "bottom_cue_button_bg";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					min: 106 53;
+					max: 106 53;
+					rel1 { relative: 0.5 1.0; to: "clock_bg"; offset: 0 -19;}
+					rel2 { relative: 0.5 1.0; to: "clock_bg"; offset: 0 -19;}
+					image {
+						normal: "b_home_screen_clock_arrow_big_ef.png";
+					}
+					color_class: "AO064";
+					fixed: 1 1;
+					visible: 0;
+					align: 0.5 1.0;
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "bottom_cue_button";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					min: 106 53;
+					max: 106 53;
+					rel1 { relative: 0.5 1.0; to: "clock_bg"; offset: 0 -19;}
+					rel2 { relative: 0.5 1.0; to: "clock_bg"; offset: 0 -19;}
+					image {
+						normal: "b_home_screen_clock_arrow_big.png";
+					}
+					color_class: "AO014";
+					fixed: 1 1;
+					visible: 0;
+					align: 0.5 1.0;
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "clock_bg"; }
+					rel2 { relative: 1.0 1.0; to: "clock_bg"; }
+					align: 0.0 0.0;
+					visible: 0;
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "shortcut";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				ignore_flags: ON_HOLD;
+				description {
+					state: "default" 0.0;
+					min: CLOCK_SHORTCUT_AREA_W CLOCK_SHORTCUT_AREA_W;
+					max: CLOCK_SHORTCUT_AREA_W CLOCK_SHORTCUT_AREA_W;
+					rel1 { relative: 1.0 0.0; to: "clock_bg"; }
+					rel2 { relative: 1.0 0.0; to: "clock_bg"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 1.0 0.0;
+				}
+			}
+			part {
+				name: "indicator.1";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				ignore_flags: ON_HOLD;
+				description {
+					state: "default" 0.0;
+					min: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					max: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					rel1 { relative: 0.0 0.0; to: "clock_bg"; }
+					rel2 { relative: 0.0 0.0; to: "clock_bg"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "indicator.2";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				ignore_flags: ON_HOLD;
+				description {
+					state: "default" 0.0;
+					min: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					max: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					rel1 { relative: 1.0 0.0; to_x: "indicator.1"; to_y: "clock_bg"; }
+					rel2 { relative: 1.0 0.0; to_x: "indicator.1"; to_y: "clock_bg"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "hidden_item";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				ignore_flags: ON_HOLD;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "hidden_region"; }
+					rel2 { relative: 1.0 1.0; to: "hidden_region"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "focus.bottom.cue";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bottom_cue_button"; }
+					rel2 { relative: 1.0 1.0; to: "bottom_cue_button"; }
+					align: 0.0 0.0;
+					visible: 0;
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "event_blocker";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "clock_bg"; }
+					rel2 { relative: 0.5 0.5; to: "clock_bg"; }
+					fixed: 1 1;
+					visible: 1;
+					align: 0.5 0.5;
+				}
+			}
+
+			programs {
+				program {
+					signal: "hidden.show";
+					source: "clock_bg";
+					action: STATE_SET "show" 0.0;
+					target: "hidden_region";
+					transition: SIN_FAC HIDDEN_BUTTON_TRANSIT_TIME 1.7;
+					after: "hidden.show,after";
+				}
+				program {
+					signal: "hidden.show.short";
+					source: "clock_bg";
+					action: STATE_SET "show.short" 0.0;
+					target: "hidden_region";
+					transition: SIN_FAC HIDDEN_BUTTON_TRANSIT_TIME 1.7;
+					after: "hidden.show,after";
+				}
+				program {
+					name: "hidden.show,after";
+					source: "clock_bg";
+					action: SIGNAL_EMIT "drawer,displayed" "clock_bg";
+				}
+				program {
+					signal: "hidden.hide";
+					source: "clock_bg";
+					action: STATE_SET "default" 0.0;
+					target: "hidden_region";
+					transition: DECELERATE 0.2;
+					transition: SIN_FAC HIDDEN_BUTTON_TRANSIT_TIME 1.7;
+					after: "hidden.hide,after";
+				}
+				program {
+					name: "hidden.hide,after";
+					source: "clock_bg";
+					action: SIGNAL_EMIT "drawer,hided" "clock_bg";
+				}
+				program {
+					signal: "screenreader,on";
+					source: "clock_bg";
+					action: STATE_SET "enabled" 0.0;
+					target: "focus";
+				}
+				program {
+					signal: "screenreader,off";
+					source: "clock_bg";
+					action: STATE_SET "default" 0.0;
+					target: "focus";
+				}
+				program {
+					signal: "screenreader,apps,on";
+					source: "clock_bg";
+					action: STATE_SET "enabled" 0.0;
+					target: "focus.bottom.cue";
+					target: "bottom_cue_button";
+				}
+				program {
+					signal: "screenreader,apps,off";
+					source: "clock_bg";
+					action: STATE_SET "default" 0.0;
+					target: "focus.bottom.cue";
+					target: "bottom_cue_button";
+				}
+			}
+		}
+	} // end of group
+
+	group {
+		name: "blockingmode";
+		parts {
+			part {
+				name: "bg";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					color_class: "AO053";
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "pad.top";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 53;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 0.0; to: "bg"; }
+					align: 0.0 0.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "line.1";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to: "pad.top"; }
+					rel2 { relative: 1.0 1.0; to: "pad.top"; }
+					min: 0 1;
+					max: -1 1;
+					fixed: 1 1;
+					align: 0.0 1.0;
+					color_class: "AO057";
+				}
+			}
+			part {
+				name: "area.content";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "pad.top"; }
+					rel2 { relative: 1.0 1.0; to_x: "bg"; to_y: "bg"; }
+					align: 0.0 0.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "area.button.1";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 99;
+					max: -1 99;
+					rel1 { relative: 0.0 0.0; to_x:"area.content"; to_y:"area.content";}
+					rel2 { relative: 1.0 0.0; to_x:"area.content"; to_y:"area.content";}
+					align: 0.0 0.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "line.2";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to: "area.button.1"; }
+					rel2 { relative: 1.0 1.0; to: "area.button.1"; }
+					min: 0 1;
+					max: -1 1;
+					fixed: 1 1;
+					align: 0.0 1.0;
+					color_class: "AO057";
+				}
+			}
+			part {
+				name: "line.3";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					min: 0 2;
+					max: -1 2;
+					fixed: 1 1;
+					align: 0.0 1.0;
+					color_class: "AO0531";
+				}
+			}
+			part {
+				name: "area.button.2";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 100;
+					max: -1 100;
+					rel1 { relative: 0.0 1.0; to_x:"area.content"; to_y: "line.2";}
+					rel2 { relative: 1.0 1.0; to_x:"area.content"; to_y: "line.2";}
+					align: 0.0 0.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "button.1";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "area.button.1";}
+					rel2 { relative: 1.0 1.0; to: "area.button.1";}
+					fixed: 1 1;
+					visible: 1;
+					align: 0.0 0.0;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+				}
+			}
+			part {
+				name: "button.2";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "area.button.2";}
+					rel2 { relative: 1.0 1.0; to: "area.button.2";}
+					fixed: 1 1;
+					visible: 1;
+					align: 0.0 0.0;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+				}
+			}
+		}
+		programs {
+			program {
+				signal: "button.1.show";
+				source: "prog";
+				script {
+					set_state(PART:"button.1", "default", 0.0);
+				}
+			}
+			program {
+				signal: "button.1.hide";
+				source: "prog";
+				script {
+					set_state(PART:"button.1", "hide", 0.0);
+				}
+			}
+			program {
+				signal: "button.2.hide";
+				source: "prog";
+				script {
+					set_state(PART:"button.2", "hide", 0.0);
+				}
+			}
+		}
+	} // end of group
+	group {
+		styles {
+			style {
+				name: "dnd,title,normal";
+				base: "font=Tizen text_class=AT044 font_size=32 align=center color=#FFFFFF color_class=AT056 wrap=mixed"; # ellipsis=1.0
+			}
+			style {
+				name: "dnd,title,pressed";
+				base: "font=Tizen text_class=AT044 font_size=32 align=center color=#FFFFFF color_class=AT056P wrap=mixed"; # ellipsis=1.0
+			}
+			style {
+				name: "dnd,title,enabled";
+				base: "font=Tizen text_class=AT044 font_size=32 align=center color=#FFFFFF color_class=AT055 wrap=mixed"; # ellipsis=1.0
+			}
+			style {
+				name: "dnd,title,enabled,pressed";
+				base: "font=Tizen text_class=AT044 font_size=32 align=center color=#FFFFFF color_class=AT055P wrap=mixed"; # ellipsis=1.0
+			}
+		}
+		name: "hidden_item_blocking_mode";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					min: 0 100;
+					max: -1 100;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "pad.top";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 0 16;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 0.0; to: "bg"; }
+					align: 0.0 0.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "pad.left";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 14 0;
+					fixed: 1 1;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 0.0 1.0; to: "bg"; }
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "pad.right";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 14 0;
+					fixed: 1 1;
+					rel1 { relative: 1.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					align: 1.0 0.0;
+				}
+			}
+			part {
+				name: "area.icon";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					min: 332 69;
+					max: 332 69;
+					fixed: 1 1;
+					rel1 { relative: 1.0 1.0; to_x:"pad.left"; to_y: "pad.top";}
+					rel2 { relative: 0.0 1.0; to_x:"pad.right"; to_y: "pad.top";}
+					align: 0.0 0.0;
+				}
+			}
+			part {
+				name: "icon.bg";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { to: "area.icon"; }
+					rel2 { to: "area.icon"; }
+					image {
+						normal: "b_home_screen_block_text_btn_bg.#.png";
+					}
+					color_class: "AO084L1";
+					fixed: 1 1;
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO084L1P";
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO083L1";
+				}
+				description {
+					state: "enabled_pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO083L1P";
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { to: "area.icon"; }
+					rel2 { to: "area.icon"; }
+					image {
+						normal: "b_home_screen_block_text_btn_line.#.png";
+					}
+					color_class: "AO084L2";
+					fixed: 1 1;
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO084L2P";
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO083L2";
+				}
+				description {
+					state: "enabled_pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO083L2P";
+				}
+			}
+			part {
+				name: "name";
+				type: TEXTBLOCK;
+				scale: 1;
+				multiline: 1;
+				description {
+					state: "default" 0.0;
+					min: 300 38;
+					max: 300 38;
+					fixed: 1 1;
+					rel1 { relative: 0.5 0.5; to:"icon";}
+					rel2 { relative: 0.5 0.5; to:"icon";}
+					text {
+						style: "dnd,title,normal";
+						align: 0.5 0.5;
+					}
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					text { style: "dnd,title,pressed"; }
+					visible: 1;
+				}
+				description {
+					state: "enabled" 0.0;
+					inherit: "default" 0.0;
+					text { style: "dnd,title,enabled"; }
+					visible: 1;
+				}
+				description {
+					state: "enabled_pressed" 0.0;
+					inherit: "default" 0.0;
+					text { style: "dnd,title,enabled,pressed"; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+		}
+		programs {
+			script {
+				public g_icon_enabled;
+				public g_is_graytone;
+			}
+			program {
+				signal: "gray,enable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 1);
+				}
+			}
+			program {
+				signal: "gray,disable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 0);
+				}
+			}
+			program {
+				signal: "icon,enable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 1);
+					set_state(PART:"icon.bg", "enabled", 0.0);
+					set_state(PART:"icon", "enabled", 0.0);
+					set_state(PART:"name", "enabled", 0.0);
+				}
+			}
+			program {
+				signal: "icon,disable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 0);
+					set_state(PART:"icon.bg", "default", 0.0);
+					set_state(PART:"icon", "default", 0.0);
+					set_state(PART:"name", "default", 0.0);
+				}
+			}
+			program {
+				signal: "mouse,down,1";
+				source: "focus";
+				script {
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon.bg", "enabled_pressed", 0.0);
+							set_state(PART:"icon", "enabled_pressed", 0.0);
+							set_state(PART:"name", "enabled_pressed", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "enabled_pressed", 0.0);
+							set_state(PART:"icon", "enabled_pressed", 0.0);
+							set_state(PART:"name", "enabled_pressed", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon.bg", "pressed", 0.0);
+							set_state(PART:"icon", "pressed", 0.0);
+							set_state(PART:"name", "pressed", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "pressed", 0.0);
+							set_state(PART:"icon", "pressed", 0.0);
+							set_state(PART:"name", "pressed", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,up,1";
+				source: "focus";
+				script {
+					if (get_int(g_is_graytone) == 1) {
+						if (get_int(g_icon_enabled) == 1) {
+							set_state(PART:"icon.bg", "enabled", 0.0);
+							set_state(PART:"icon", "enabled", 0.0);
+							set_state(PART:"name", "enabled", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "default", 0.0);
+							set_state(PART:"icon", "default", 0.0);
+							set_state(PART:"name", "default", 0.0);
+						}
+					} else {
+						if (get_int(g_icon_enabled) == 1) {
+							set_state(PART:"icon.bg", "enabled", 0.0);
+							set_state(PART:"icon", "enabled", 0.0);
+							set_state(PART:"name", "enabled", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "default", 0.0);
+							set_state(PART:"icon", "default", 0.0);
+							set_state(PART:"name", "default", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,out";
+				source: "focus";
+				script {
+					if (get_int(g_is_graytone) == 1) {
+						if (get_int(g_icon_enabled) == 1) {
+							set_state(PART:"icon.bg", "enabled", 0.0);
+							set_state(PART:"icon", "enabled", 0.0);
+							set_state(PART:"name", "enabled", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "default", 0.0);
+							set_state(PART:"icon", "default", 0.0);
+							set_state(PART:"name", "default", 0.0);
+						}
+					} else {
+						if (get_int(g_icon_enabled) == 1) {
+							set_state(PART:"icon.bg", "enabled", 0.0);
+							set_state(PART:"icon", "enabled", 0.0);
+							set_state(PART:"name", "enabled", 0.0);
+						} else {
+							set_state(PART:"icon.bg", "default", 0.0);
+							set_state(PART:"icon", "default", 0.0);
+							set_state(PART:"name", "default", 0.0);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	group {
+		name: "bottom_cue";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name: "cue_clip";
+				type: RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "bg"; }
+					rel2 { relative: 1.0 1.0; to, "bg"; }
+					align: 0.0 0.0;
+					color: 0 0 0 0;
+					visible: 1;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
+			part {
+				name: "cue";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				clip_to: "cue_clip";
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "bg"; }
+					rel2 { relative: 1.0 1.0; to, "bg"; }
+					image {
+						normal: "Arrow_S_00033.png";
+					}
+					fixed: 1 1;
+					visible: 0;
+				}
+				description {
+					state: "idle" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+				}
+				description {
+					state: "work" 0.0;
+					inherit: "default" 0.0;
+					image {
+						normal: "Arrow_S_00033.png";
+						tween: "Arrow_S_00015.png";
+						tween: "Arrow_S_00016.png";
+						tween: "Arrow_S_00017.png";
+						tween: "Arrow_S_00018.png";
+						tween: "Arrow_S_00019.png";
+						tween: "Arrow_S_00020.png";
+						tween: "Arrow_S_00021.png";
+						tween: "Arrow_S_00022.png";
+						tween: "Arrow_S_00023.png";
+						tween: "Arrow_S_00024.png";
+						tween: "Arrow_S_00025.png";
+						tween: "Arrow_S_00026.png";
+						tween: "Arrow_S_00027.png";
+						tween: "Arrow_S_00028.png";
+						tween: "Arrow_S_00029.png";
+						tween: "Arrow_S_00030.png";
+						tween: "Arrow_S_00031.png";
+						tween: "Arrow_S_00032.png";
+						tween: "Arrow_S_00033.png";
+					}
+					visible: 1;
+				}
+			}
+		}
+
+		programs {
+			script {
+				public g_is_enabled;
+				public g_anim_count;
+			}
+			program{
+				name: "cue,enable";
+				in: 1.0 0.0;
+				signal: "cue,enable";
+				source: "prog";
+				script {
+					if (get_int(g_is_enabled) == 0) {
+						set_int(g_is_enabled, 1);
+						set_int(g_anim_count, 0);
+
+						stop_programs_on(PART:"cue");
+
+						run_program(PROGRAM:"anim,cue,fadeout");
+						run_program(PROGRAM:"anim,cue,image");
+					} else {
+						set_int(g_anim_count, 0);
+					}
+				}
+			}
+			program{
+				name: "cue,disable";
+				signal: "cue,disable";
+				source: "prog";
+				script {
+					set_int(g_is_enabled, 0);
+					set_int(g_anim_count, 0);
+
+					stop_programs_on(PART:"cue");
+
+					run_program(PROGRAM:"anim,cue,fadein");
+				}
+			}
+			program {
+				name: "anim,cue,fadeout";
+				signal: "anim,cue,fadeout";
+				action: STATE_SET "show" 0.0;
+				target: "cue_clip";
+			}
+			program {
+				name: "anim,cue,fadein";
+				signal: "anim,cue,fadein";
+				action: STATE_SET "default" 0.0;
+				target: "cue_clip";
+			}
+			program {
+				name: "anim,cue,image";
+				action: STATE_SET "work" 0.0;
+				target: "cue";
+				transition: DECELERATE 1.3;
+				after: "anim,cue,image,idle";
+			}
+			program {
+				name: "anim,cue,image,idle";
+				action: STATE_SET "idle" 0.0;
+				target: "cue";
+				after: "anim,cue,image,restart";
+			}
+			program {
+				name: "anim,cue,image,restart";
+				in: 0.5 0.0;
+				script {
+					set_int(g_anim_count, get_int(g_anim_count) + 1);
+
+					if (get_int(g_is_enabled) == 1) {
+						run_program(PROGRAM:"anim,cue,image");
+					}
+					if (get_int(g_anim_count) >= 1) {
+						run_program(PROGRAM:"cue,disable");
+					}
+				}
+			}
+		}
+	} // end of group
+	group {
+		name: "modem_off_icon";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "bg"; }
+					rel2 { relative: 0.5 0.5; to: "bg"; }
+					image {
+						normal: "B3_Data.png";
+					}
+					//color_class: "AO013L2";
+					color: 255 255 255 255;
+					min: CLOCK_INDICATOR_ICON_W CLOCK_INDICATOR_ICON_H;
+					max: CLOCK_INDICATOR_ICON_W CLOCK_INDICATOR_ICON_H;
+					align: 0.5 0.5;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					align: 0.0 0.0;
+					visible: 1;
+				}
+			}
+		}
+	}
+	group {
+		name: "dnd_icon";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "bg"; }
+					rel2 { relative: 0.5 0.5; to: "bg"; }
+					image {
+						normal: "do_not_ic_disturb.png";
+					}
+					min: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					max: CLOCK_INDICATOR_W CLOCK_INDICATOR_H;
+					align: 0.5 0.5;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					align: 0.0 0.0;
+					visible: 1;
+				}
+			}
+		}
+	}
+	group {
+		name: "item_1";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					min: HIDDEN_QUICKBUTTON_W HIDDEN_QUICKBUTTON_H;
+					max: HIDDEN_QUICKBUTTON_W HIDDEN_QUICKBUTTON_H;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name : "color_clip_icon";
+				type : RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					fixed: 1 1;
+					rel1 {
+						to: "icon";
+					}
+					rel2 {
+						to: "icon";
+					}
+					align: 0.5 0.5;
+					color_class: "AO056L4";
+				}
+				description {
+					state: "off" 0.0;
+					inherit: "default" 0.0;
+				}
+				description {
+					state: "off_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4P";
+				}
+				description {
+					state: "on" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L3";
+				}
+				description {
+					state: "on_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L3P";
+				}
+				description {
+					state: "e_off" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4";
+				}
+				description {
+					state: "e_off_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4P";
+				}
+				description {
+					state: "e_on" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L5";
+				}
+				description {
+					state: "e_on_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L5P";
+				}
+			}
+			part {
+				name: "icon_bg_1";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_block_btn_bg.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+					color_class: "AO056L1";
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L1P";
+				}
+			}
+			part {
+				name: "icon_bg_2";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_block_btn_line.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+					color_class: "AO056L2";
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L1P";
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				clip_to: "color_clip_icon";
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_block_btn_ic.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "name";
+				type: TEXTBLOCK;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					min: HIDDEN_QUICKBUTTON_W 70;
+					max: HIDDEN_QUICKBUTTON_W 70;
+					rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "icon"; offset: 0 7; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					text {
+						style: "name_style";
+						align: 0.5 0.5;
+					}
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "name_style_pressed";
+						align: 0.5 0.5;
+					}
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+		}
+		programs {
+			script {
+				public g_icon_enabled;
+				public g_is_graytone;
+			}
+			program {
+				signal: "gray,enable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 1);
+					if (get_int(g_icon_enabled) == 1) {
+						set_state(PART:"color_clip_icon", "e_on", 0.0);
+					} else {
+						set_state(PART:"color_clip_icon", "e_off", 0.0);
+					}
+				}
+			}
+			program {
+				signal: "gray,disable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 0);
+					if (get_int(g_icon_enabled) == 1) {
+						set_state(PART:"color_clip_icon", "on", 0.0);
+					} else {
+						set_state(PART:"color_clip_icon", "off", 0.0);
+					}
+				}
+			}
+			program {
+				signal: "icon,enable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 1);
+					set_state(PART:"color_clip_icon", "on", 0.0);
+				}
+			}
+			program {
+				signal: "icon,disable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 0);
+					set_state(PART:"color_clip_icon", "off", 0.0);
+				}
+			}
+			program {
+				signal: "mouse,down,1";
+				source: "focus";
+				script {
+					set_state(PART:"name", "pressed", 0.0);
+					set_state(PART:"icon_bg_1", "pressed", 0.0);
+					set_state(PART:"icon_bg_2", "pressed", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on_p", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on_p", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off_p", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off_p", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,up,1";
+				source: "focus";
+				script {
+					set_state(PART:"name", "default", 0.0);
+					set_state(PART:"icon_bg_1", "default", 0.0);
+					set_state(PART:"icon_bg_2", "default", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,out";
+				source: "focus";
+				script {
+					set_state(PART:"name", "default", 0.0);
+					set_state(PART:"icon_bg_1", "default", 0.0);
+					set_state(PART:"icon_bg_2", "default", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off", 0.0);
+						}
+					}
+				}
+			}
+		}
+	}
+	group {
+		name: "item_2";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.relative: 0.0 0.0;
+					rel2.relative: 1.0 1.0;
+					min: HIDDEN_QUICKBUTTON_W HIDDEN_QUICKBUTTON_H;
+					max: HIDDEN_QUICKBUTTON_W HIDDEN_QUICKBUTTON_H;
+					fixed: 1 1;
+				}
+			}
+			part {
+				name : "color_clip_icon";
+				type : RECT;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					fixed: 1 1;
+					rel1 {
+						to: "icon";
+					}
+					rel2 {
+						to: "icon";
+					}
+					align: 0.5 0.5;
+					color_class: "AO056L4";
+				}
+				description {
+					state: "off" 0.0;
+					inherit: "default" 0.0;
+				}
+				description {
+					state: "off_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4P";
+				}
+				description {
+					state: "on" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L3";
+				}
+				description {
+					state: "on_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L3P";
+				}
+				description {
+					state: "e_off" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4";
+				}
+				description {
+					state: "e_off_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L4P";
+				}
+				description {
+					state: "e_on" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L5";
+				}
+				description {
+					state: "e_on_p" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L5P";
+				}
+			}
+			part {
+				name: "icon_bg_1";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_block_btn_bg.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+					color_class: "AO056L1";
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L1P";
+				}
+			}
+			part {
+				name: "icon_bg_2";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_block_btn_line.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+					color_class: "AO056L2";
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO056L1P";
+				}
+			}
+			part {
+				name: "icon";
+				type: IMAGE;
+				scale: 1;
+				clip_to: "color_clip_icon";
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; }
+					rel2 { relative: 0.5 0.0; to: "bg"; }
+					image {
+						normal: "b_home_screen_network_off.png";
+					}
+					min: 90 90;
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+				}
+				description {
+					state: "off" 0.0;
+					inherit: "default" 0.0;
+					image {
+						normal: "b_home_screen_network_off.png";
+					}
+				}
+				description {
+					state: "on" 0.0;
+					inherit: "default" 0.0;
+					image {
+						normal: "b_home_screen_network_on.png";
+					}
+				}
+				description {
+					state: "auto" 0.0;
+					inherit: "default" 0.0;
+					image {
+						normal: "b_home_screen_network_auto.png";
+					}
+				}
+			}
+			part {
+				name: "name";
+				type: TEXTBLOCK;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					min: HIDDEN_QUICKBUTTON_W 70;
+					max: HIDDEN_QUICKBUTTON_W 70;
+					rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "icon"; offset: 0 7; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					text {
+						style: "name_style";
+						align: 0.5 0.5;
+					}
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					text {
+						style: "name_style_pressed";
+						align: 0.5 0.5;
+					}
+				}
+			}
+			part {
+				name: "focus";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 0;
+					visible: 1;
+				}
+			}
+		}
+		programs {
+			script {
+				public g_icon_enabled;
+				public g_is_graytone;
+			}
+			program {
+				signal: "gray,enable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 1);
+					if (get_int(g_icon_enabled) == 1) {
+						set_state(PART:"color_clip_icon", "e_on", 0.0);
+					} else {
+						set_state(PART:"color_clip_icon", "e_off", 0.0);
+					}
+				}
+			}
+			program {
+				signal: "gray,disable";
+				source: "prog";
+				script {
+					set_int(g_is_graytone, 0);
+					if (get_int(g_icon_enabled) == 1) {
+						set_state(PART:"color_clip_icon", "on", 0.0);
+					} else {
+						set_state(PART:"color_clip_icon", "off", 0.0);
+					}
+				}
+			}
+			program {
+				signal: "icon,enable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 1);
+					set_state(PART:"color_clip_icon", "on", 0.0);
+				}
+			}
+			program {
+				signal: "icon,disable";
+				source: "prog";
+				script {
+					set_int(g_icon_enabled, 0);
+					set_state(PART:"color_clip_icon", "off", 0.0);
+				}
+			}
+			program {
+				signal: "icon,set,off";
+				source: "prog";
+				script {
+					set_state(PART:"icon", "off", 0.0);
+				}
+			}
+			program {
+				signal: "icon,set,on";
+				source: "prog";
+				script {
+					set_state(PART:"icon", "on", 0.0);
+				}
+			}
+			program {
+				signal: "icon,set,auto";
+				source: "prog";
+				script {
+					set_state(PART:"icon", "auto", 0.0);
+				}
+			}
+			program {
+				signal: "mouse,down,1";
+				source: "focus";
+				script {
+					set_state(PART:"name", "pressed", 0.0);
+					set_state(PART:"icon_bg_1", "pressed", 0.0);
+					set_state(PART:"icon_bg_2", "pressed", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on_p", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on_p", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off_p", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off_p", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,up,1";
+				source: "focus";
+				script {
+					set_state(PART:"name", "default", 0.0);
+					set_state(PART:"icon_bg_1", "default", 0.0);
+					set_state(PART:"icon_bg_2", "default", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off", 0.0);
+						}
+					}
+				}
+			}
+			program {
+				signal: "mouse,out";
+				source: "focus";
+				script {
+					set_state(PART:"name", "default", 0.0);
+					set_state(PART:"icon_bg_1", "default", 0.0);
+					set_state(PART:"icon_bg_2", "default", 0.0);
+					if (get_int(g_icon_enabled) == 1) {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_on", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "on", 0.0);
+						}
+					} else {
+						if (get_int(g_is_graytone) == 1) {
+							set_state(PART:"icon_bg_2", "e_off", 0.0);
+						} else {
+							set_state(PART:"icon_bg_2", "off", 0.0);
+						}
+					}
+				}
+			}
+		}
+	}
+} // end of collection

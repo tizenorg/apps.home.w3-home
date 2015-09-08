@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "应用程序"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "下一步"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "桌面小组件"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "不重复"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "删除全部"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "无法移除。"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "点击并按住小组件以进行移动"
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "主屏已更改。"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "载入中…"
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "无法载入数据。轻敲以重试。"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "无法添加应用程序。主屏幕无更多空间。"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "无法添加小组件。主屏幕无更多空间。"
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "应用程序已存在。"
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "小组件已存在。"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "取消"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "主屏幕布局已更改。"
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "该应用程序将从主屏幕移除。它不会从设备删除。"
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "移除应用程序"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "移除小组件"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "该小组件将从主屏幕移除。它不会从设备删除。"
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "超级省电模式"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "无法添加小组件。已达到最大小组件数 (%d)。"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "无法添加应用程序。已达到最大应用程序数 (%d)。"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "无法添加页面。"
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "普通模式"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "省电模式已禁用"
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "已启动省电模式"
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "最近应用程序"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "无法添加应用程序。已达到最大应用程序数 (%s)。"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "无法添加小组件。已达到最大小组件数 (%s)。"
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "移除页面"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "将移除该页面及其内容。"
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "移除"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "插入 SIM 卡以访问网络服务。"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "阻止模式"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "打开"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "关闭"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "项目已移动。"
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "双击以添加。"
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "添加小组件"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "项目已添加。"
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "项目已移除。"
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "第 %1$d 页，共 %2$d 页"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "无法重新排列通知板项目"
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "现在时间 %1$d:%2$d。"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "上午 %d点 %d分。"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "下午 %d点 %d分。"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d 个新项目"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "已达到最大小组件数量 (%s)。删除部分小组件并重试。"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "向右滑动以返回时钟。"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "向左滑动以查看小组件。"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "向左滑动以返回时钟。"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "向右滑动以查看通知。"
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "是否卸载 %s？"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "已达到最大小组件数 (%s)"
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "双击以打开应用程序托盘。"
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 个新项目"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "双击以启用。"
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "时钟"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "设备温度过高。"
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "使用移动设备下载 Gear 应用程序"
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "睡眠时"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "获得更多应用程序"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "省电模式 + 启用时无法使用动作"
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s 在屏幕阅读器启用时不可用。"
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "请勿打扰"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "飞行模式启用时无法打开移动数据。禁用飞行模式并重试。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "向上滑动以返回时钟。"
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "就是这样！欢迎使用 Gear！"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "移动网络"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "转移呼叫至 Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "开始"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "退出"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "欢迎！点击下方的按钮以了解如何使用您的 Gear。"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "已请求禁用"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "已请求启用"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "向下滑动顶部边缘以在时钟上查看指示图标。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "向上滑动底部边缘以在时钟上查看应用程序。"
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "确定"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "向下滑动顶部边缘以返回。"
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "在时钟上，从顶部边缘向下滑动以显示指示图标。"
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "在时钟上，从底部边缘向上滑动以查看应用程序。"
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "从时钟向右滑动以查看通知。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "向左滑动以返回时钟。"
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "从时钟向左滑动以查看小组件。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "向右滑动以返回时钟。"
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "从时钟向上滑动以查看应用程序。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "向下滑动以返回时钟。"
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "从时钟向下滑动以查看时刻栏。"
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "向上滑动以返回时钟。"
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "时钟为您的主屏幕。点击下方以开始。"
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "若要安装或卸载应用程序，请在您的移动设备上使用 Samsung Gear 应用程序。"
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "这是主屏幕的主要结构。"
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "这是您的主屏布局。"
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "空白"

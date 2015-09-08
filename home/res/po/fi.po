@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Sovellukset"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Seuraava"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Pienoisohjelma"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Älä toista."
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Poista kaikki"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Ei voi poistaa."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Siirrä pienoisohjelmaa painamalla jonkin aikaa."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Alkunäyttö vaihdettu."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Ladataan..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Tietoja ei voi ladata. Yritä napauttamalla uudelleen."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Sovellusta ei voi lisätä. Alkunäytössä ei ole enää tilaa."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Pienoisohjelmaa ei voi lisätä. Alkunäytössä ei ole enää tilaa."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Sovellus on jo olemassa."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Pienoisohjelma on jo olemassa."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Peruuta"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Alkunäytön asettelu muutettu."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Tämä sovellus poistetaan alkunäytöstä. Sitä ei poisteta laitteesta."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Poista sovellus"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Poista pienoisohj."
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Tämä pienoisohjelma poistetaan alkunäytöstä. Sitä ei poisteta laitteesta."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Er. teh. virransäästötila"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Pienoisohjelmaa ei voi lisätä. Pienoisohjelmien enimmäismäärä (%d) saavutettu."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Sovellusta ei voi lisätä. Sovellusten enimmäismäärä (%d) on saavutettu."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Sivua ei voi lisätä."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Normaali tila"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Virransäästötila on poistettu käytöstä."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Virransäästötila käytössä."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Viim. sov."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Sovellusta ei voi lisätä. Sovellusten enimmäismäärä (%s) on saavutettu."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Pienoisohjelmaa ei voi lisätä. Pienoisohjelmien enimmäismäärä (%s) on saavutettu."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Poista sivu"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Tämä sivu ja sen sisältö poistetaan."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Poista"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Pääset verkkopalveluihin asettamalla SIM-kortin paikalleen."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Estotila"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Päällä"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Pois"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Kohde siirretty."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Lisää kaksoisnapauttamalla."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Lisää pienoisohjelma"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Kohde lisätty."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Kohde poistettu."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Sivu %1$d/%2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Ilmoitustaulun kohteiden järjestystä ei voi muuttaa."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Kello on %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Nyt on klo %d:%d ap."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Nyt on klo %d:%d ip."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d uutta kohdetta"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "Pienoisohjelmien enimmäismäärä (%s) on saavutettu. Poista pienoisohjelmia ja yritä uudelleen."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Palaa kelloon pyyhkäisemällä oikealle."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Näytä pienoisohj. pyyhk. vasemmalle."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Palaa kelloon pyyhk. vasemmalle."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Näytä ilmoitukset pyyhk. oikealle."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Poistetaanko kohteen %s asennus?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Pienoisohjelmien enimmäismäärä (%s) on saavutettu."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Avaa sovelluspalkki kaksoisnapauttamalla."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 uusi kohde"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Ota käyttöön kaksoisnapauttamalla."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Kello"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "Laitteen lämpötila on liian korkea."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Lataa Gear-sovelluksia mobiililaitteella."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Nukkuessa"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Hae lisää sovelluksia"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Toiminto ei ole käytettävissä, kun Virransäästö + on käytössä."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s ei ole käytettävissä, kun Näytönlukija on käytössä."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Älä häiritse"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Mobiilidataa ei voi käyttää lentotilassa. Poista lentotila käytöstä ja yritä uudelleen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Palaa kelloon pyyhkäisemällä ylöspäin."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Hienoa! Aloita Gearin käyttö!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Matkapuh.verkot"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Soitons. Geariin"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Käynnistä"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Poistu"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Tervetuloa! Perehdy Gearin käyttöön napauttamalla painiketta."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "Pyydetty poistamaan käytöstä"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "Pyydetty ottamaan käyttöön"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Näytä ilmaisinkuv. kellossa pyyhk. yläreunasta alaspäin."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Näytä sovellukset kellossa pyyhk. alareunasta ylöspäin."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Palaa pyyhkäisemällä yläreunasta alaspäin."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Jos haluat asentaa sovelluksia tai poistaa niiden asennuksen, käytä mobiililaitteessa olevaa Samsung Gear -sovellusta."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Tämä on alkunäytön päärakenne."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Tyhjä"

@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Aplicacions"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Seg"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "No repetir"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Esborrar tot"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "No es pot eliminar"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Mantenir tocat un widget per moure'l"
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Ha canviat la pantalla d'inici"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Carregant..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "No es poden carregar les dades. Toqui per tornar-ho a intentar."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "No es pot afegir l'aplicació. No hi ha més lloc a la pantalla d'inici."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "No es pot afegir el widget. No hi ha més lloc a la pantalla d'inici."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "L'aplicació ja existeix."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "El widget ja existeix."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Cancel·lar"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "S'ha canviat el disseny de la pantalla d'inici."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "S'eliminarà aquesta aplicació de la pantalla d'inici. No s'esborrarà del dispositiu."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Eliminar aplicació"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Eliminar widget"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "S'eliminarà aquest widget de la pantalla d'inici. No s'esborrarà del dispositiu."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Mode estalvi ultra energ"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "No es pot afegir el widget. S'ha assolit el nombre màxim de widgets (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "No es pot afegir l'aplicació. S'ha assolit el nombre màxim d'aplicacions (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "No es pot afegir pàgina."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Mode normal"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Mode d'estalvi d'energia deshabilitat."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Mode d'estalvi d'energia habilitat."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Aplic recent"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "No es pot afegir l'aplicació. S'ha assolit el nombre màxim d'aplicacions (%s)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "No es pot afegir el widget. S'ha assolit el nombre màxim de widgets (%s)."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Eliminar pàgina"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "S'eliminarà aquesta pàgina i el seu contingut."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Eliminar"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Insereixi la targeta SIM per a accedir als serveis de xarxa"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Mode de bloqueig"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Activat"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Desactivat"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Element mogut."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Toqui dos cops per afegir."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Afegir widget"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Element afegit."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Element esborrat."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Pàgina %1$d de %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "No es pot canviar l'ordre dels elements de la pissarra de notificacions."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Són les %1$d:%2$d"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Són les %d:%d AM"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Són les %d:%d PM"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d elements nous"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "S'ha assolit el nombre màxim de widgets (%s). Esborri'n alguns i torni-ho a intentar."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Desplaci dreta per tornar a rellotge."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Desplaci a esquerra per veure widgets."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Desplaci esq per tornar a rellotge."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Desplaci a dreta per veure notific."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Desinstal·lar %s?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "S'ha assolit el nombre màxim de widgets (%s)."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Toqui dos cops per obrir la safata d'aplicacions."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 element nou"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Toqui dues vegades per habilitar."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Rellotge"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "La temperatura del dispositiu és massa alta"
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Descarregar aplicacions de Gear amb el dispositiu mòbil."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Mentre dorm"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Obtenir més aplicacions"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Acció no disponible amb Estalvi energia + habilitat."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s no està disponible mentre el Lector de pantalla estigui habilitat."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "No molestar"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "No pot activar dades mòbils amb mode Vol habilitat. Deshab mode Vol i torni a intentar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Desplaci amunt per tornar a rellotge."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Ja està! Entri a Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Xarxes mòbils"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Desv truc a Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Iniciar"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Sortir"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Benvingut! Toqui el botó següent per informació sobre Gear."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "S'ha sol·licitat que es deshabiliti"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "S'ha sol·licitat que s'habiliti"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Desplaci's cap avall per veure icon d'indic al rellotge."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Desplaci's cap amunt per veure aplicacions al rellotge."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "Acceptar"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Desplaci's avall des de dalt per tornar."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Per instal·lar o desinstal·lar aplicacions, utilitzi l'aplicació Samsung Gear al dispositiu mòbil."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Aquesta és l'estructura principal de la pantalla d'inici."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Buit"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shortcutapp>
+	<item>
+		<AppName>@IDS_IDLE_BODY_APPS</AppName>
+		<PackageName>org.tizen.w-home</PackageName>
+		<ClassName>org.tizen.w-home</ClassName>
+		<ImageFileName>org.tizen.w-home.png</ImageFileName>
+		<SettingFileName>null</SettingFileName>
+		<IsAppWidget>false</IsAppWidget>
+		<PreLoad>true</PreLoad>
+	</item>
+</Shortcutapp>
+

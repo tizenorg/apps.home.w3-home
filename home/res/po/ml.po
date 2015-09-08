@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "ആപ്ലിക്കേഷനുകൾ"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "അടുത്തത്"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "വിജറ്റ്"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "ആവർത്തിക്കേണ്ട."
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "എല്ലാം ഇല്ലാതാക്കുക"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "നീക്കം ചെയ്യാന്‍ ആവുന്നില്ല."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "ഒരു വിജറ്റ് നീക്കുന്നതിന് അതിൽ സ്പർശിച്ചുപിടിക്കുക."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "ഹോം സ്ക്രീന്‍ മാറ്റി."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "ലോഡ്‌ ചെയ്യുന്നു..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "ഡാറ്റ ലോഡുചെയ്യാന്‍ കഴിയുന്നില്ല. വീണ്ടും ശ്രമിക്കുന്നതിന് ടാപ്പുചെയ്യുക"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "ആപ്ലിക്കേഷൻ ചേർക്കാനാവില്ല. ഹോം സ്ക്രീനിൽ ഇനിയും സ്ഥലമില്ല."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "വിജറ്റ് ചേർ‌ക്കാനാവില്ല. ഹോം സ്ക്രീനിൽ ഇനിയും സ്ഥലമില്ല."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "ആപ്ലിക്കേഷൻ നേരത്തേതന്നെ നിലവിലുണ്ട്."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "വിജറ്റ് നേരത്തേതന്നെ നിലവിലുണ്ട്."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "റദ്ദാക്കുക"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "ഹോം സ്ക്രീൻ ലേഔട്ട് മാറ്റി."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ഈ ആപ്ലിക്കേഷൻ ഹോം സ്ക്രീനിൽ നിന്ന് നീക്കം ചെയ്യപ്പെടും. ഉപകരണത്തിൽ നിന്ന് അത് നീക്കംചെയ്യപ്പെടുകയില്ല."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "ആപ്ലിക്കേഷൻ നീക്കംചെയ്യുക"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "വിജറ്റ് നീക്കംചെയ്യുക"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ഈ വിജറ്റ് ഹോം സ്ക്രീനിൽ നിന്ന് നീക്കം ചെയ്യപ്പെടും. ഉപകരണത്തിൽ നിന്ന് അത് നീക്കംചെയ്യപ്പെടുകയില്ല."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "അൾട്രാ പവർ സേവിംഗ് മോഡ്"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "വിജറ്റ് ചേർ‌ക്കാനാവില്ല. വിജറ്റുകളുടെ എണ്ണം പരമാവധിയിൽ (%d) എത്തി."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "ആപ്ലിക്കേഷൻ ചേർക്കാനാകില്ല. ആപ്ലിക്കേഷനുകളുടെ പരമാവധി എണ്ണം (%d) എത്തി."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "പേജ് ചേർക്കാനാവില്ല."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "സാധാരണ മോഡ്"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "പവർ ലാഭിക്കൽ മോഡ് അപ്രാപ്തമാക്കി."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "പവർ സേവിംഗ് മോഡ് പ്രാപ്തമാക്കി."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "അടുത്തിടെ ഉപയോഗിച്ച ആപ്ലിക്കേഷനുകൾ"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "ആപ്ലിക്കേഷൻ ചേർക്കാനാവില്ല. ആപ്ലിക്കേഷനുകളുടെ എണ്ണം പരമാവധിയിൽ (%s) എത്തി."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "വിജറ്റ് ചേർ‌ക്കാനാവില്ല. വിജറ്റുകളുടെ എണ്ണം പരമാവധിയിൽ (%s) എത്തി."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "പേജ് നീക്കംചെയ്യുക"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "ഈ പേജും ഇതിലെ ഉള്ളടക്കവും നീക്കംചെയ്യപ്പെടും."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "നീക്കംചെയ്യുക"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "നെറ്റ്‌വര്‍ക്ക് സേവനങ്ങള്‍ ആക്സസുചെയ്യാന്‍ SIM  കാര്‍ഡ് തിരുകുക"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "തടയൽ മോഡ്"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "ഓണ്‍‌"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "ഓഫ്"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "ഇനം നീക്കി."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "ചേർക്കുന്നതിന് ഇരട്ട ടാപ്പുചെയ്യുക."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "വിജറ്റ് ചേര്‍ക്കുക"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "ചേർത്ത ഇനം."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "ഇനം നീക്കംചെയ്യപ്പെട്ടു."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "%2$d ല്‍ പേജ് %1$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "അറിയിപ്പ് ബോർഡ് ഇനങ്ങളുടെ ക്രമം മാറ്റാനാവില്ല."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "ഇത് %1$d:%2$d ആണ്."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "ഇപ്പോള്‍ %d:%d AM."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "ഇപ്പോള്‍ %d:%d PM."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d പുതിയ ഇനങ്ങള്‍"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "വിജറ്റുകളുടെ എണ്ണം പരമാവധിയിൽ (%s) എത്തി. ഏതാനും വിജറ്റുകൾ ഇല്ലാതാക്കി വീണ്ടും ശ്രമിക്കുക."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "ക്ലോക്കിലേക്ക് മടങ്ങുന്നതിന് വലത്തോട്ട് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "വിജറ്റുകൾ കാണുന്നതിന് ഇടത്തോട്ട് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "ക്ലോക്കിലേക്ക് മടങ്ങുന്നതിന് ഇടത്തോട്ട് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "അറിയിപ്പുകൾ കാണുന്നതിന് വലത്തോട്ട് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s അണ്‍‌ഇന്‍സ്റ്റാള്‍ചെയ്യണോ?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "വിജറ്റുകളുടെ എണ്ണം പരമാവധിയിൽ (%s) എത്തി."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "ആപ്ലിക്കേഷൻ ട്രേ തുറക്കുന്നതിന് രണ്ടുതവണ സ്പർശിക്കുക."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 പുതിയ ഇനം"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "പ്രാപ്തമാക്കുന്നതിന് രണ്ടുതവണ സ്പർശിക്കുക."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "ക്ലോക്ക്"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "ഉപകരണത്തിന്‍റെ താപനില വളരെ ഉയര്‍ന്നതാണ്."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "മൊബൈൽ ഉപകരണം ഉപയോഗിച്ച് ഗിയർ ആപ്ലിക്കേഷനുകൾ ഡൗൺലോഡ് ചെയ്യുക."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "ഉറങ്ങുമ്പോൾ"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "കൂടുതൽ ആപ്ലിക്കേഷനുകൾ നേടുക"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "പവർ സേവിംഗ് + പ്രാപ്തമാക്കിയിരിക്കുന്ന സമയത്ത് പ്രവർത്തനം ലഭ്യമല്ല."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "സ്ക്രീൻ റീഡർ പ്രാപ്തമാക്കിയിരിക്കുന്ന സമയത്ത് %s ലഭ്യമല്ല."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "ശല്യപ്പെടുത്തരുത്"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "ഫ്ലൈറ്റ് മോഡ് പ്രാപ്തമാക്കിയിരിക്കുന്ന സമയത്ത് മൊബൈൽ ഡാറ്റ ഓൺ ചെയ്യാനാവില്ല. ഫ്ലൈറ്റ് മോഡ് അപ്രാപ്തമാക്കി വീണ്ടും ശ്രമിക്കുക."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "ക്ലോക്കിലേക്ക് തിരികെ പോകുന്നതിന് മുകളിലേക്ക് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "അതുതന്നെ! ഗിയറിൽ പ്രവേശിക്കുക!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "മൊബൈൽ നെറ്റ്‍വർക്കുകൾ"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "ഗിയറിലേക്ക് കോളുകൾ ഫോർവേഡ് ചെയ്യുക"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "ആരംഭിക്കുക"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "പുറത്തുകടക്കുക"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "സ്വാഗതം! നിങ്ങളുടെ ഗിയർ ഉപയോഗിക്കുന്നത് എങ്ങനെയെന്നറിയുന്നതിന് താഴെയുള്ള ബട്ടണിൽ സ്പർശിക്കുക."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "അപ്രാപ്തമാക്കുന്നതിന് അഭ്യർത്ഥിച്ചു"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "പ്രാപ്തമാക്കുന്നതിന് അഭ്യർത്ഥിച്ചു"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "ക്ലോക്കിൽ ഇൻഡിക്കേറ്റർ ഐക്കണുകളെ കാണുന്നതിന് മുകളിലെ അരുകിൽ നിന്ന് താഴേയ്ക്ക് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "ആപ്ലിക്കേഷനുകളെ ക്ലോക്കിൽ കാണുന്നതിന് താഴത്തെ അരുകിൽ നിന്ന് മുകളിലേക്ക് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "ശരി"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "പിന്നോട്ട് പോവുന്നതിന് മുകളിലെ അരുകിൽ നിന്ന് താഴേയ്ക്ക് സ്വൈപ് ചെയ്യുക."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "ആപ്ലിക്കേഷനുകൾ ഇൻസ്റ്റാൾ ചെയ്യാനോ അൺഇൻസ്റ്റാൾ ചെയ്യാനോ, നിങ്ങളുടെ മൊബൈൽ ഉപകരണത്തിലെ Samsung Gear ആപ്ലിക്കേഷൻ ഉപയോഗിക്കുക."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "ഇതാണ് ഹോം സ്ക്രീനിന്‍റെ പ്രധാന ഘടന."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "ശൂന്യം"

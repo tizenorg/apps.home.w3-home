@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "ఆప్స్"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "తర్వాత"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "విడ్జెట్"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "పునరావృతం చేయవద్దు."
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "అన్నింటినీ తొలగించు"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "తీసివేయడం సాధ్యం కాదు."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "దీన్ని తరలించేందుకు ఒక విడ్జెట్‌ను నొక్కి పట్టి ఉంచండి."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "హోమ్ స్క్రీన్ మారింది."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "లోడ్ అవుతోంది..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "డేటాను లోడ్ చేయడం సాధ్యం కాదు. మళ్లీ ప్రయత్నించడానికి ట్యాప్ చేయండి."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "అప్లికేషన్‌ని జోడించడం సాధ్యం కాదు. హోమ్ స్క్రీన్‌లో గది లేదు."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "విడ్జెట్‌ను జోడించడం సాధ్యం కాదు. హోమ్ స్క్రీన్‌లో గది లేదు."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "అప్లికేషన్ ఇప్పటికే ఉంది."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "విడ్జెట్ ఇప్పటికే ఉంది."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "రద్దు"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "హోమ్ స్క్రీన్ లేఅవుట్ మార్చబడింది."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ఈ అప్లికేషన్ హోమ్ స్క్రీన్ నుండి తీసివేయబడుతుంది. ఇది పరికరం నుండి తొలగించబడదు."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "అప్లికేషన్‌ని తీసివేయి"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "విడ్జెట్‌ని తీసివేయి"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "ఈ విడ్జెట్ హోమ్ స్క్రీన్ నుండి తీసివేయబడుతుంది. ఇది పరికరం నుండి తొలగించబడదు."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "అసాధారణ శక్తి ఆదా మోడ్"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "విడ్జెట్‌ను జోడించడం సాధ్యం కాదు. విడ్జెట్‌ల గరిష్ట సంఖ్యను (%d) చేరుకున్నారు."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "అప్లికేషన్‌ని జోడించడం సాధ్యం కాదు. అప్లికేషన్‌ల గరిష్ట సంఖ్యను (%d) చేరుకున్నారు."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "పేజీని జోడించడం సాధ్యం కాదు."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "సాధారణ మోడ్"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "శక్తి ఆదా మోడ్ నిలిపివేయబడింది."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "శక్తి ఆదా మోడ్ ప్రారంభించబడింది."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "ఇటీవలి అప్లికేషన్‌లు"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "అప్లికేషన్‌ని జోడించడం సాధ్యం కాదు. అప్లికేషన్‌ల గరిష్ట సంఖ్యను (%s) చేరుకున్నారు."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "విడ్జెట్‌ను జోడించడం సాధ్యం కాదు. విడ్జెట్‌ల గరిష్ట సంఖ్యను (%s) చేరుకున్నారు."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "పేజీని తీసివేయి"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "ఈ పేజీ మరియు దీని కంటెంట్ తీసివేయబడుతుంది."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "తీసివేయి"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "నెట్వర్క్ సేవలను ప్రాప్తి చేసేందుకు SIM కార్డును చొప్పించండి."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "నిరోధిత మోడ్"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "ఆన్"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "ఆఫ్"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "ఐటెమ్ తరలించబడింది."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "జోడించడానికి రెండుసార్లు నొక్కండి."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "విడ్జెట్‌ను జోడించండి"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "ఐటెమ్ జోడించబడింది."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "ఐటెమ్ తరలించబడింది."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "%2$d లో %1$d పేజీ"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "నోటిఫికేషన్ బోర్డ్ అంశాల క్రమాన్ని మార్చలేరు."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "ఇది %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "ఇప్పుడు %d:%d AM."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "ఇప్పుడు %d:%d PM."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d కొత్త ఐటెమ్‌లు"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "విడ్జెట్‌ల గరిష్ట సంఖ్యను (%s) చేరుకున్నారు. కొన్ని విడ్జెట్‌లను తొలగించి, మళ్లీ ప్రయత్నించండి."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "గడియారానికి తిరిగి వెళ్లడానికి కుడివైపుకి స్వైప్ చేయండి."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "విడ్జెట్‌లను వీక్షించడానికి ఎడమవైపుకి స్వైప్ చేయండి."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "గడియారానికి తిరిగి వెళ్లడానికి ఎడమవైపుకి స్వైప్ చేయండి."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "నోటిఫికేషన్‌లను వీక్షించడానికి కుడివైపుకి స్వైప్ చేయండి."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s వ్యవస్థాపనను తొలగించబడాలా?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "విడ్జెట్‌ల గరిష్ట సంఖ్యను (%s) చేరుకున్నారు."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "అప్లికేషన్ ట్రేని తెరవడానికి డబుల్ ట్యాప్ చేయండి."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 కొత్త ఐటెమ్"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "ప్రారంభించడానికి రెండుసార్లు ట్యాప్ చేయండి."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "గడియారం"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "పరికర ఉష్ణోగ్రత చాలా ఎక్కువగా ఉంది."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "మొబైల్ పరికరాన్ని ఉపయోగించి గేర్ అప్లికేషన్‌లను డౌన్‌లోడ్ చేయండి."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "నిద్రపోతున్నప్పుడు"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "మరిన్ని అప్లికేషన్‌లను పొందండి"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "శక్తి ఆదా + ప్రారంభించబడినప్పుడు చర్య అందుబాటులో ఉండదు."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "స్క్రీన్ రీడర్ ప్రారంభించబడినప్పుడు %s అందుబాటులో ఉండదు."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "అంతరాయం కలిగించవద్దు"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "వైమానిక మోడ్ ప్రారంభించబడినప్పుడు మొబైల్ డేటాని ఆన్ చేయడం సాధ్యం కాదు. వైమానిక మోడ్‌ను నిలిపివేసి, మళ్లీ ప్రయత్నించండి."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "గడియారానికి తిరిగి వెళ్లడానికి ఎగువకు స్వైప్ చేయండి."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "అంతే! గేర్‌లో ప్రవేశించండి!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "మొబైల్ నెట్‌వర్క్‌లు"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "గేర్‌కు కాల్‌లను ఫార్వార్డ్ చేయి"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "మొదలు"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "నిష్క్రమణ"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "స్వాగతం! మీ గేర్‌ను ఎలా ఉపయోగించాలో తెలుసుకోవడానికి దిగువ బటన్‌ను ట్యాప్ చేయండి."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "నిలిపివేయడానికి అభ్యర్థించబడింది"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "ప్రారంభించడానికి అభ్యర్థించబడింది"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "గడియారంలో సూచిక చిహ్నాలను చూడటానికి ఎగువ అంచును దిగువకు స్వైప్ చేయండి."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "గడియారంలో అప్లికేషన్‌లను వీక్షించడానికి దిగువ అంచును ఎగువకు స్వైప్ చేయండి."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "సరే"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "వెనుకకు వెళ్లడానికి ఎగువ అంచును దిగువకు స్వైప్ చేయండి."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "అప్లికేషన్‌లను ఇన్‌స్టాల్ లేదా అన్ఇన్‌స్టాల్ చేయడానికి, మీ మొబైల్ పరికరంలో Samsung Gear అప్లికేషన్‌ను ఉపయోగించండి."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "ఇది హోమ్ స్క్రీన్ యొక్క ప్రధాన నిర్మాణం."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "ఖాళీ"

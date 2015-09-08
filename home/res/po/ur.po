@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "ایپلیکیشنز"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "اگلا"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "وڈجیٹ"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "نہ دہرائیں"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "سب حذف کریں"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "ہٹانے سے قاصر۔"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "اسے منتقل کرنے کے لیے کسی وجٹ کو دبائیں یا دبا کر رکھیں"
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "ہوم اسکرین تبدیل ہوگئی۔"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "لوڈنگ..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "ڈیٹا لوڈ کرنے سے قاصر۔ پھرکوشش کرنے کے لئے تھپتھپائیں۔"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "اپلیکیشن شامل کرنے سے قاصر۔ ہوم اسکرین پر مزید جگہ نہیں ہے۔"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "ویجٹ لوڈ کرنے سے قاصر۔ ہوم اسکرین پر مزید جگہ نہیں ہے۔"
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "اپلیکیشن پہلے سے ہی موجود ہے۔"
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "ویجٹ پہلے سے ہی موجود ہے۔"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "منسوخ"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "ہوم اسکرین کا خاکہ تبدیل ہوگیا۔"
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "یہ اپلیکیشن ہوم اسکرین سے ہٹا دیاجائے گا۔ یہ آلے سے حذف نہیں ہوگا۔"
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "اپلیکیشن ہٹائیں"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "ویجٹ ہٹائیں"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "یہ ویجٹ ہوم اسکرین سے ہٹا دیاجائے گا۔ یہ آلے سے حذف نہیں ہوگا۔"
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "الٹرا پاور کی بچت کرنے والی وضع"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "ویجیٹ شامل کرنے سے قاصر۔ ویجیٹس کی زیادہ سے زیادہ تعداد (%d) کو پہنچ گیا۔"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "ایپلی کیشن شامل کرنے سے قاصر۔ ایپلی کیشنز کی زیادہ سے زیادہ تعداد (%d) تک پہنچ گئے ہیں۔"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "صفحہ شامل کرنے سے قاصر۔"
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "نارمل موڈ"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "پاور بچت وضع غیر فعال ہے۔"
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "بچلی کی بچت کی وضع فعال ہے۔"
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "حالیہ ایپلیکیشنز"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "ایپلی کیشن شامل کرنے میں ناکامی۔ زیادہ سے زیادہ ایپلی کیشنوں کی حد (%s) پہنچ گئی۔"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "ویجٹ شامل کرنے میں ناکامی۔ زیادہ سے زیادہ ویجٹ کی حد (%s) پہنچ گئی۔"
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "صفحہ ہٹائیں"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "یہ صفحہ اور اس کا مواد ہٹا دیا جائے گا۔"
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "ہٹائیں"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "نیٹورک سروس استعمال کے لیے SIM کارڈ ڈالیں"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "مسدود کرنے والی وضع"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "آن"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "آف"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "شے منتقل کی گئی۔"
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "شامل کرنے کے لیےدوہری تھپکی دیں۔"
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "وجیٹ اضافہ کریں"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "شے اضافہ کی گئی۔"
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "شے ہٹادی گئی۔"
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "صفحہ %1$d از %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "اطلاعاتی بورڈ اشیاء کو دوبارہ ترتیب نہیں دے سکتا۔"
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "یہ ہے %1$d:%2$d"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "اب وقت ہوا ہے %d:%d AM"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "اب وقت ہوا ہے %d:%d PM"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d نئی آئٹم"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "وجیٹس کی زیادہ سے زیادہ تعداد (%s) کو پہنچ گیا ہے۔ کچھ وجیٹس حذف کریں اور دوبارہ کوشش کریں۔"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "گھڑی پر واپس جانے کے لیے  دائیں سوائپ کریں۔"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "ویجٹس دیکھنے کیلئے بائیں سوائپ کریں۔"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "گھڑی پر واپس جانے کے لیے بائیں سوائپ کریں۔"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "اطلاعات دیکھنے کے لیے دائیں سوائپ کریں۔"
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s نا تنصیب کریں؟"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "وجیٹس کی زیادہ سے زیادہ تعداد (%s) کو پہنچ گیا۔"
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "ایپ ٹرے کھولنے کیلئے دو بار تھپتھپائیں۔"
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1نئی شے"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "اہل کرنے کیلئے دو بار تھپتھپائیں۔"
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "گھڑی"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "آلہ کا درجہ حرارت بہت زیادہ ہے"
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "موبائل آلے کا استعمال کرتے ہوئے Gear ایپلیکیشن ڈاؤن لوڈ کریں۔"
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "سوتے وقت"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "مزید ایپلیکیشن حاصل کریں"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "جب پاور بچت + اہل ہو تو یہ عمل دستیاب نہیں ہے۔"
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s اسکرین ریڈر اہل ہونے کے دوران دستیاب نہیں ہے۔"
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "پریشان نہ کریں"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "فلائٹ موڈ اہل ہونے کی صورت میں موبائل ڈیٹا چالو کرنے سے قاصر۔ فلائٹ موڈ نااہل کریں اور دوبارہ کوشش کریں۔"
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "گھڑی پر واپس جانے کے لیے اوپر کی جانب سوائپ کریں۔"
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "بالکل درست! Gear میں داخل ہوں!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "موبائل نیٹ ورکس"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "گیئر کو کالز فارورڈ کریں"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "شروع"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "نکلنا"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "خوش آمدید! اپنا Gear استعمال کرنے کا طریقہ جاننے کے لیے ذیل کے بٹن پر تھپکی دیں۔"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "نااہل کرنے کی درخواست کی گئی"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "اہل بنانے کے لئے درخواست کی گئی"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "گھڑی پر انڈیکیٹر آئیکنز دیکھنے کے لیے اوپری کنارے کو نیچے کی جانب سوائپ کریں۔"
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "گھڑی پر ایپس دیکھنے کے لیے نچلے سرے کو اوپر سوائپ کریں۔"
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "ٹھیک ہے"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "واپس جانے کے لیے اوپری کنارے کو نیچے جانب سوائپ کریں۔"
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "ایپلیکیشنز کی تنصیب یا نا تنصیب کرنے کے لیے، اپنے آلہ پر Samsung Gear ایپلیکیشن کا استعمال کریں۔"
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "یہ ہوم اسکرین کی مرکزی بناوٹ ہے۔"
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "خالی"

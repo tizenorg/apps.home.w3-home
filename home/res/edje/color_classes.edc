@@ -1,0 +1,683 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+color_classes {
+	color_class {
+		name: "AO0111";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO0112";
+		color: 0 0 0 165;
+	}
+	color_class {
+		name: "AO0121L1";
+		color: 21 191 52 255;
+	}
+	color_class {
+		name: "AO0121L1P";
+		color: 21 191 52 127;
+	}
+	color_class {
+		name: "AO0121L2";
+		color: 8 181 224 255;
+	}
+	color_class {
+		name: "AO0121L2P";
+		color: 8 181 224 127;
+	}
+	color_class {
+		name: "AO0121L3";
+		color: 23 144 237 255;
+	}
+	color_class {
+		name: "AO0121L3P";
+		color: 23 144 237 127;
+	}
+	color_class {
+		name: "AO0121L4";
+		color: 255 161 0 255;
+	}
+	color_class {
+		name: "AO0121L4P";
+		color: 255 161 0 127;
+	}
+	color_class {
+		name: "AO0121L5";
+		color: 255 114 0 255;
+	}
+	color_class {
+		name: "AO0121L5P";
+		color: 255 114 0 127;
+	}
+	color_class {
+		name: "AO0121L6";
+		color: 255 59 0 255;
+	}
+	color_class {
+		name: "AO0121L6P";
+		color: 255 59 0 127;
+	}
+	color_class {
+		name: "AO0121L7";
+		color: 160 91 239 255;
+	}
+	color_class {
+		name: "AO0121L7P";
+		color: 160 91 239 127;
+	}
+	color_class {
+		name: "AO0121L8";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO0121L8P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO0122L1";
+		color: 255 255 255 255;
+	}
+	color_class {
+		name: "AO0122L2";
+		color: 61 61 61 255;
+	}
+	color_class {
+		name: "AO0123L1";
+		color: 51 51 51 255;
+	}
+	color_class {
+		name: "AO0123L2";
+		color: 160 160 160 255;
+	}
+	color_class {
+		name: "AO013L1";
+		color: 255 106 0 255;
+	}
+	color_class {
+		name: "AO013L2";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO014";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO14P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO014P";
+		color: 249 249 249 127;
+	}
+	color_class {
+		name: "AO0151";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO0151P";
+		color: 0 0 0 165;
+	}
+	color_class {
+		name: "AO0151D";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO0152";
+		color: 0 0 0 76;
+	}
+	color_class {
+		name: "AO0152P";
+		color: 0 0 0 38;
+	}
+	color_class {
+		name: "AO0152D";
+		color: 0 0 0 25;
+	}
+	color_class {
+		name: "AO0161";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO0161P";
+		color: 0 0 0 165;
+	}
+	color_class {
+		name: "AO0161D";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO0162";
+		color: 212 213 214 76;
+	}
+	color_class {
+		name: "AO0162P";
+		color: 212 213 214 76;
+	}
+	color_class {
+		name: "AO0162D";
+		color: 212 213 214 76;
+	}
+	color_class {
+		name: "AO021";
+		color: 127 127 127 255;
+	}
+	color_class {
+		name: "AO021S";
+		color: 165 63 56 255;
+	}
+	color_class {
+		name: "AO022";
+		color: 0 105 147 255;
+	}
+	color_class {
+		name: "AO023";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO024";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO024P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO0251L1";
+		color: 255 255 255 255;
+	}
+	color_class {
+		name: "AO0251L2";
+		color: 61 61 61 255;
+	}
+	color_class {
+		name: "AO0252L1";
+		color: 51 51 51 255;
+	}
+	color_class {
+		name: "AO0252L2";
+		color: 160 160 160 255;
+	}
+	color_class {
+		name: "AO031";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO032";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO0321";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO032S";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO033";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO033P";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO034";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO034P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO035";
+		color: 201 221 220 255;
+	}
+	color_class {
+		name: "AO035P";
+		color: 201 221 220 127;
+	}
+	color_class {
+		name: "AO041";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO042";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO043";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO044L1";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO044L2";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO044L3";
+		color: 255 0 0 255;
+	}
+	color_class {
+		name: "AO045";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO046";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO047";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO0481";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO0482";
+		color: 0 0 0 25;
+	}
+	color_class {
+		name: "AO051S";
+		color: 155 234 18 229;
+	}
+	color_class {
+		name: "AO051";
+		color: 0 0 0 229;
+	}
+	color_class {
+		name: "AO051D";
+		color: 155 234 18 127;
+	}
+	color_class {
+		name: "AO052L1S";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO052L1";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO052L1D";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO052L2S";
+		color: 160 141 56 255;
+	}
+	color_class {
+		name: "AO052L2";
+		color: 45 45 45 255;
+	}
+	color_class {
+		name: "AO052L2D";
+		color: 160 141 56 127;
+	}
+	color_class {
+		name: "AO053";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO0531";
+		color: 54 77 84 255;
+	}
+	color_class {
+		name: "AO054L1S";
+		color: 0 20 28 255;
+	}
+	color_class {
+		name: "AO054L1";
+		color: 0 20 28 255;
+	}
+	color_class {
+		name: "AO054L1D";
+		color: 0 20 28 127;
+	}
+	color_class {
+		name: "AO054L2S";
+		color: 172 234 0 229;
+	}
+	color_class {
+		name: "AO054L2";
+		color: 255 255 255 255;
+	}
+	color_class {
+		name: "AO054L2D";
+		color: 255 255 255 127;
+	}
+	color_class {
+		name: "AO056L1";
+		color: 25 25 25 255;
+	}
+	color_class {
+		name: "AO056L1P";
+		color: 25 25 25 127;
+	}
+	color_class {
+		name: "AO056L2";
+		color: 76 76 76 255;
+	}
+	color_class {
+		name: "AO056L2P";
+		color: 76 76 76 127;
+	}
+	color_class {
+		name: "AO056L3";
+		color: 186 255 0 255;
+	}
+	color_class {
+		name: "AO056L3P";
+		color: 186 255 0 127;
+	}
+	color_class {
+		name: "AO056L4";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO056L4P";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AO056L5";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO056L5P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO057";
+		color: 56 56 56 255;
+	}
+	color_class {
+		name: "AO058";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO058P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO058D";
+		color: 0 0 0 38;
+	}
+	color_class {
+		name: "AO061";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO062";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AO062P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO063";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO064";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO064P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO065";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AO0661";
+		color: 0 0 0 25;
+	}
+	color_class {
+		name: "AO0662";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AO0663";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AO0664";
+		color: 255 255 255 127;
+	}
+	color_class {
+		name: "AO081S";
+		color: 178 255 0 76;
+	}
+	color_class {
+		name: "AO081";
+		color: 212 213 214 76;
+	}
+	color_class {
+		name: "AO081D";
+		color: 212 213 214 38;
+	}
+	color_class {
+		name: "AO082";
+		color: 0 0 0 178;
+	}
+	color_class {
+		name: "AO082P";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AO082D";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO083L1";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO083L1P";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO083L2";
+		color: 186 255 0 255;
+	}
+	color_class {
+		name: "AO083L2P";
+		color: 186 255 0 127;
+	}
+	color_class {
+		name: "AO084L1";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO084L1P";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO084L2";
+		color: 158 158 158 178;
+	}
+	color_class {
+		name: "AO084L2P";
+		color: 158 158 158 89;
+	}
+	color_class {
+		name: "AO085L1";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO085L2";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AO086L1";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO086L1P";
+		color: 0 0 0 102;
+	}
+	color_class {
+		name: "AO086L2";
+		color: 0 0 0 178;
+	}
+	color_class {
+		name: "AO086L2P";
+		color: 0 0 0 89;
+	}
+	color_class {
+		name: "AT0111";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0112";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0121";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0121P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT0122";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0122P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT0131";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0132";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0133";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0134";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT014";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT014P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT014D";
+		color: 0 0 0 51;
+	}
+	color_class {
+		name: "AT021";
+		color: 249 249 249 255;
+	}
+	color_class {
+		name: "AT0311";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT0312";
+		color: 255 255 255 127;
+	}
+	color_class {
+		name: "AT041S";
+		color: 178 255 0 255;
+	}
+	color_class {
+		name: "AT041";
+		color: 0 0 0 153;
+	}
+	color_class {
+		name: "AT041D";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AT043";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT043P";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT043D";
+		color: 0 0 0 38;
+	}
+	color_class {
+		name: "AT045";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT045P";
+		color: 0 0 0 255;
+	}
+	color_class {
+		name: "AT054";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT054P";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AT054D";
+		color: 0 0 0 20;
+	}
+	color_class {
+		name: "AT055";
+		color: 186 255 0 255;
+	}
+	color_class {
+		name: "AT055P";
+		color: 186 255 0 127;
+	}
+	color_class {
+		name: "AT056";
+		color: 0 0 0 127;
+	}
+	color_class {
+		name: "AT056P";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "AT057";
+		color: 0 0 0 63;
+	}
+	color_class {
+		name: "B018E";
+		color: 165 63 56 178;
+	}
+	color_class {
+		name: "B019";
+		color: 165 63 56 255;
+	}
+}

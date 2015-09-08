@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" package="@PACKAGE_NAME@" version="0.1.0" install-location="internal-only" support-mode="screen-reader" support-reset="true|res/home_reset.sh" api-version="2.3.1">
+	<label>W-Home</label>
+	<author email="ys4610.ko@samsung.com" href="www.samsung.com">Youngsub Ko</author>
+	<author email="jinny.yoon@samsung.com" href="www.samsung.com">Jin Yoon</author>
+	<description>W-Home Application</description>
+	<ui-application appid="@PACKAGE_NAME@" exec="@BINDIR@/@PROJECT_NAME@" nodisplay="true" multiple="false" type="capp" taskmanage="false" process-pool="false">
+		<category name="http://tizen.org/category/homeapp"></category>
+		<icon>org.tizen.w-home.png</icon>
+		<icon section="small">org.tizen.w-home.small.png</icon>
+		<label>W-Home</label>
+	</ui-application>
+	<privileges>
+		<privilege>http://tizen.org/privilege/setting</privilege>
+		<privilege>http://tizen.org/privilege/power</privilege>
+		<privilege>http://tizen.org/privilege/notification</privilege>
+		<privilege>http://tizen.org/privilege/application.launch</privilege>
+		<privilege>http://tizen.org/privilege/messaging.read</privilege>
+		<privilege>http://tizen.org/privilege/messaging.write</privilege>
+		<privilege>http://tizen.org/privilege/contact.read</privilege>
+	</privileges>
+</manifest>

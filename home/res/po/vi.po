@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Ứng dụng"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Tiếp"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Không lặp lại"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Xóa tất cả"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Không thể xóa."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Chạm và giữ để di chuyển widget."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Màn hình chờ đã thay đổi."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Đang tải…"
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Không thể tải dữ liệu. Hãy chạm để thử lại."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Không thể thêm ứng dụng. Không còn chỗ trên màn hình chờ."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Không thể thêm widget. Không còn chỗ trên màn hình chờ."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Ứng dụng đã tồn tại."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Widget đã tồn tại."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Thoát"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Bố cục màn hình chờ đã thay đổi."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Sẽ xóa ứng dụng này khỏi màn hình chờ. Nó sẽ không bị xóa khỏi thiết bị."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Xóa ứng dụng"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Xóa widget"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Sẽ xóa widget này khỏi màn hình chờ. Nó sẽ không bị xóa khỏi thiết bị."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Chế độ siêu tiết kiệm pin"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Không thể thêm widget. Đã đạt đến số widget tối đa (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Không thể thêm ứng dụng. Đã đạt số ứng dụng tối đa (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Không thể thêm trang."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Chế độ Bình thường"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Đã tắt chế độ tiết kiệm pin."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Đã bật chế độ tiết kiệm pin."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Ứng dụng gần đây"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Không thể thêm ứng dụng. Đã đạt đến số ứng dụng tối đa (%s)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Không thể thêm widget. Đã đạt đến số widget tối đa (%s)."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Xóa trang"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Trang này và nội dung của trang sẽ bị xóa."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Gỡ bỏ"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Gắn thẻ SIM để truy cập mạng."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Chế độ chặn"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Bật"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Tắt"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Đã di chuyển mục."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Chạm hai lần để thêm."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Thêm widget"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Mục đã được thêm."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Mục đã bị xóa."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Trang %1$d / %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Không thể sắp xếp lại các mục trên bảng thông báo."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Bây giờ là %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Bây giờ là %d:%d SA."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Bây giờ là %d:%d CH."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d mục mới"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "Đã đạt số widget tối đa (%s). Hãy xóa một số widget và thử lại."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Vuốt sang phải để trở về đồng hồ."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Vuốt sang trái để xem widget."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Vuốt sang trái để trở về đồng hồ."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Vuốt sang phải để xem thông báo."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Gỡ cài đặt %s?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Đã đạt số widget tối đa (%s)."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Chạm hai lần để mở khay ứng dụng."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 mục mới"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Chạm hai lần để bật."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Đồng hồ"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "Nhiệt độ thiết bị quá cao."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Tải về ứng dụng Gear bằng thiết bị di động."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Khi đang ngủ"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Tải thêm ứng dụng"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Không có Hành động khi đang bật Tiết kiệm pin +."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s không khả dụng khi đang bật Trình đọc màn hình."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Không làm phiền"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Không thể bật Dữ liệu di động khi đang bật chế độ Máy bay. Hãy tắt chế độ Máy bay và thử lại."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Vuốt lên để trở về đồng hồ."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Xong rồi! Hãy bắt đầu trải nghiệm Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Mạng di động"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Ch.tiếp c.gọi đến Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Bắt đầu"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Đóng"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Chào mừng bạn! Hãy chạm phím bên dưới để học cách sử dụng Gear."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "Đã yêu cầu tắt"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "Đã yêu cầu bật"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Vuốt từ cạnh trên cùng xuống để xem các biểu tượng chỉ báo trên đồng hồ."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Vuốt từ cạnh dưới cùng lên để xem các ứng dụng trên đồng hồ."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Vuốt từ cạnh trên cùng xuống để trở về."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "Trên đồng hồ, vuốt xuống từ cạnh trên cùng để đến biểu tượng chỉ báo."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "Trên đồng hồ, vuốt lên từ cạnh dưới cùng để xem ứng dụng."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "Từ đồng hồ, vuốt sang phải để xem thông báo."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Vuốt sang trái để trở về đồng hồ."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "Từ đồng hồ, vuốt sang trái để xem widget."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Vuốt sang phải để trở về đồng hồ."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "Từ đồng hồ, vuốt lên để xem ứng dụng."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Vuốt xuống để trở về đồng hồ."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "Từ đồng hồ, vuốt xuống để xem thanh Khoảnh khắc."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Vuốt lên để trở về đồng hồ."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "Đồng hồ là màn hình chờ của bạn. Chạm vào bên dưới để bắt đầu."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Để cài đặt hoặc gỡ cài đặt ứng dụng, hãy dùng ứng dụng Samsung Gear trên thiết bị di động."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Đây là cấu trúc chính của màn hình chờ."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "Đây là bố trí màn hình chờ của bạn."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Trống"

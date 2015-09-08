@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<idle-clock>
+		<packageName>org.tizen.idle-clock-digital</packageName>
+		<className>org.tizen.idle-clock-digital</className>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</idle-clock>
+	<favorite>
+		<packageName>org.tizen.clocksetting</packageName>
+		<className>org.tizen.clocksetting</className>
+		<screen>1</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<more-apps>
+		<packageName>org.tizen.w-launcher-app</packageName>
+		<className>org.tizen.w-launcher-app</className>
+		<screen>1</screen>
+		<cellX>1</cellX>
+		<cellY>0</cellY>
+	</more-apps>
+</data>

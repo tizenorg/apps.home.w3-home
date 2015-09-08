@@ -1,0 +1,8 @@
+<manifest>
+    <define>
+        <domain name="org.tizen.w-home"/>
+    </define>
+    <request>
+        <domain name="org.tizen.w-home"/>
+    </request>
+</manifest>

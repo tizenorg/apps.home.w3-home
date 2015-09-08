@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Menü"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Weiter"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Nicht wiederholen"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Alles löschen"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Entfernen nicht möglich"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Zum Verschieben des Widgets tippen und halten."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Startbildschirm geändert"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Lädt..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Daten konnten nicht geladen werden. Für erneuten Versuch tippen"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Anwendung kann nicht hinzugefügt werden. Kein Platz mehr auf dem Startbildschirm."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Widget kann nicht hinzugefügt werden. Kein Platz mehr auf dem Startbildschirm."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Anwendung ist bereits vorhanden."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Widget bereits vorhanden."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Abbrechen"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Layout des Startbildschirms geändert."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Diese Anwendung wird vom Startbildschirm entfernt. Sie wird nicht vom Gerät gelöscht."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Anwendung entfernen"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Widget entfernen"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Dieses Widget wird vom Startbildschirm entfernt. Es wird nicht vom Gerät gelöscht."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Ultra-Energiesparmodus"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Widget konnte nicht hinzugefügt werden. Maximale Anzahl von Widgets (%d) erreicht."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Anwendung konnte nicht hinzugefügt werden. Maximale Anzahl an Anwendungen (%d) erreicht."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Seite kann nicht hinzugefügt werden."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Normalmodus"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Energiesparmodus deaktiviert."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Energiesparmodus aktiviert."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Akt. Apps"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Anwendung konnte nicht hinzugefügt werden. Maximale Anzahl an Anwendungen (%s) erreicht."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Widget konnte nicht hinzugefügt werden. Maximale Anzahl an Widgets (%s) erreicht."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Seite entfernen"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Diese Seite und der zugehörige Inhalt werden entfernt."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Entfernen"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "SIM-Karte einsetzen, um auf Netzdienste zuzugreifen"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Ruhemodus"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Ein"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Aus"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Element verschoben."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Zum Hinzufügen zweimal tippen."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Widget hinzufügen"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Element hinzugefügt."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Element entfernt."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Seite %1$d von %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Elemente im Benachrichtigungsfeld können nicht neu angeordnet werden."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Es ist %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Es ist %d:%d AM"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Es ist %d:%d PM"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d neue Elemente"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "Die max. Anzahl von Widgets (%s) ist erreicht. Löschen Sie einige und versuchen Sie es erneut."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Zurück zur Uhr: Nach rechts streichen."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Widgets zeigen: Nach links streichen."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Zurück zur Uhr: Nach links streichen."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Benachrichtigungen: Nach rechts streichen."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s deinstallieren?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Maximale Anzahl von Widgets (%s) erreicht."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Zweimal tippen, um das App-Fach zu öffnen."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 neues Element"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Zum Aktivieren zweimal tippen."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Uhr"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "Die Gerätetemperatur ist zu hoch."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Gear-Anwendungen über Mobilgerät herunterladen."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Beim Schlafen"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Weitere Anw. herunterl."
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Wenn der Energiesparmodus + aktiviert ist, ist die Aktion nicht verfügbar."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s ist nicht verfügbar, wenn das Bildschirmleseprogramm aktiviert ist."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Nicht stören"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Mobile Daten sind im Offline-Modus nicht verfügbar. Modus deaktiv. und erneut versuchen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Zurück zur Uhr: Nach oben streichen."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Herzlich willkommen! Viel Spass mit der Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Mobiles Netzwerk"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Anr. zur Gear weiterl."
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Start"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Beenden"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Willkommen! Unten tippen, um mehr über die Gear zu erfahren."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "Deaktivieren angefordert"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "Aktivieren angefordert"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Abwärts streichen, um Anzeigesymbole auf Uhr anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Von Unterkante hochstreichen, um die Apps anzuzeigen."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Von Oberkante hinunterstreichen, um zurückzugehen."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "Auf der Uhr von der oberen Kante nach unten streichen, um Anzeigesymbole anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "Auf der Uhr von der unteren Kante nach oben streichen, um Apps anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "Streichen Sie von der Uhr aus nach rechts, um Benachrichtigungen anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Nach links streichen, um zur Uhr zurückzukehren."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "Streichen Sie von der Uhr aus nach links, um die Widgets anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Nach rechts streichen, um zur Uhr zurückzukehren."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "Streichen Sie von der Uhr aus nach oben, um Apps anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Nach unten streichen, um zur Uhr zurückzukehren."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "Streichen Sie von der Uhr aus nach unten, um die Momente-Leiste anzuzeigen."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Nach oben streichen, um zur Uhr zurückzukehren."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "Die Uhr ist Ihr Startbildschirm. Um loszulegen, tippen Sie unten."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Zum Installieren und Deinstallieren von Anwendungen nutzen Sie die Samsung Gear-Anwendung auf Ihrem Mobilgerät."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Dies ist die Hauptstruktur des Startbildschirms."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "Dies ist das Layout Ihres Startbildschirms."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Leer"

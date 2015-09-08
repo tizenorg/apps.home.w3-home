@@ -1,0 +1,146 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+#include "../color_classes.edc"
+
+
+
+collections {
+	group {
+		name: "popup_checkview_internal";
+		parts {
+			part {
+				name: "label";
+				scale: 1;
+				type: SWALLOW;
+				description {
+					state: "default" 0.0;
+					fixed: 1 0;
+					rel1.relative: 1.0 0.15;
+					rel1.to_x: "left_pad";
+					rel2 {
+						relative: 0.0 0.0;
+						to_x: "right_pad";
+						to_y: "end_field";
+					}
+				}
+			}
+			part {
+				name: "bottom_pad";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					align: 0.0 1.0;
+					min: 0 4;
+					fixed: 0 1;
+					rel1.relative: 0.0 1.0;
+				}
+			}
+			part {
+				name: "pad_b";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					align: 0.0 1.0;
+					min: 0 50;
+					fixed: 0 1;
+					rel1 {
+						relative: 0.0 0.0;
+						to: "bottom_pad";
+					}
+					rel2 {
+						relative: 1.0 0.0;
+						to: "bottom_pad";
+					}
+				}
+			}
+			part {
+				name: "left_pad";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					fixed: 1 0;
+					min: 50 0;
+					rel1 {
+						relative: 0.0 0.0;
+					}
+					rel2 {
+						relative: 0.0 1.0;
+					}
+				}
+			}
+			part {
+				name: "right_pad";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					fixed: 1 0;
+					min: 40 0;
+					rel1 {
+						relative: 1.0 0.0;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+					}
+				}
+			}
+			part {
+				name: "end_field";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					align: 0.0 1.0;
+					min: 0 130;
+					max: 244 -1;
+					fixed: 0 1;
+					rel1 {
+						relative: 1.0 0.0;
+						to_x: "left_pad";
+						to_y: "pad_b";
+					}
+					rel2 {
+						relative: 0.0 0.0;
+						to_x: "right_pad";
+						to_y: "pad_b";
+					}
+				}
+			}
+			part {
+				name: "elm.swallow.end";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1.to: "end_field";
+					rel2.to: "end_field";
+					rel1 {
+						relative: 0.1 0.0;
+					}
+					rel2 {
+						relative: 1.0 1.0;
+					}
+				}
+			}
+		}
+	} //end group
+} //end collections

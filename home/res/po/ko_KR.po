@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "앱스"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "다음"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "위젯"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "다시 보지 않기"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "모두 삭제"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "제거할 수 없습니다."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "위젯을 이동하려면 길게 누르세요."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "홈 화면을 변경하였습니다."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "불러오는 중..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "데이터를 불러올 수 없습니다. 다시 시도하려면 누르세요."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "홈 화면에 공간이 없어 애플리케이션을 추가할 수 없습니다."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "홈 화면에 공간이 없어 위젯을 추가할 수 없습니다."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "동일한 애플리케이션이 있습니다."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "동일한 위젯이 있습니다."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "취소"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "홈 화면 구성을 변경하였습니다."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "선택한 애플리케이션을 홈 화면에서 제거합니다. 디바이스에서는 삭제되지 않습니다."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "애플리케이션 제거"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "위젯 제거"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "선택한 위젯을 홈 화면에서 제거합니다. 디바이스에서는 삭제되지 않습니다."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "초절전 모드"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "최대 위젯 수(%d)에 도달하여 추가할 수 없습니다."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "최대 애플리케이션 수(%d)에 도달하여 추가할 수 없습니다."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "페이지를 추가할 수 없습니다."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "일반 모드"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "[절전 모드]를 해제하였습니다."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "[절전 모드]를 실행하였습니다."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "최근 사용 앱"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "최대 애플리케이션 수(%s)에 도달하여 추가할 수 없습니다."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "최대 위젯 수(%s)에 도달하여 추가할 수 없습니다."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "페이지 제거"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "이 페이지 및 컨텐츠를 제거합니다."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "제거"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "네트워크 서비스를 이용하려면 SIM 카드를 삽입하세요."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "차단 모드"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "사용"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "해제"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "항목을 이동하였습니다."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "추가하려면 두 번 누르세요."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "위젯 추가"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "항목을 추가하였습니다."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "항목을 제거하였습니다."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "%2$d페이지 중 %1$d페이지입니다"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "알림보드 항목의 순서를 변경할 수 없습니다."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "%1$d시 %2$d분입니다."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "오전 %d시%d분입니다."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "오후 %d시%d분입니다."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "새 항목 %d개"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "최대 위젯 수(%s)에 도달하였습니다. 일부 위젯을 삭제한 후 다시 시도하세요."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "시계로 돌아가려면 오른쪽으로 미세요."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "위젯을 보려면 왼쪽으로 미세요."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "시계로 돌아가려면 왼쪽으로 미세요."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "알림을 보려면 오른쪽으로 미세요."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s을(를) 삭제할까요?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "최대 위젯 수(%s)에 도달하였습니다."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "앱 트레이를 열려면 두 번 누르세요."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "새 항목 1개"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "실행하려면 두 번 누르세요."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "시계"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "디바이스 온도가 너무 높습니다."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "모바일 디바이스를 사용하여 Gear 애플리케이션을 다운로드하세요."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "잠자는 중"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "애플리케이션 더보기"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "[절전+] 실행 중에는 작업을 실행할 수 없습니다."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "[스크린 리더] 실행 중에는 %s 기능을 사용할 수 없습니다."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "방해 금지"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "[비행기 탑승 모드] 실행 중에는 [모바일 데이터]를 실행할 수 없습니다. [비행기 탑승 모드]을 해제한 후 다시 시도하세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "시계로 돌아가려면 위로 미세요."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "준비를 완료하였습니다. Gear를 사용해보세요!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "모바일 네트워크"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Gear로 착신전환"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "시작"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "종료"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "환영합니다! Gear 사용 방법을 알아보려면 아래 버튼을 누르세요."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "해제하도록 요청하였습니다"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "실행하도록 요청하였습니다"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "시계에서 상태표시 아이콘을 보려면 화면 상단을 아래로 미세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "시계에서 앱을 보려면 화면 하단을 위로 미세요."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "확인"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "돌아가려면 화면 상단을 아래로 미세요."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "시계에서, 상태표시 아이콘을 보려면 화면 상단을 아래로 미세요."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "시계에서, 앱을 보려면 화면 하단을 위로 미세요."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "시계에서, 알림을 보려면 오른쪽으로 미세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "시계로 돌아가려면 왼쪽으로 미세요."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "시계에서, 위젯을 보려면 왼쪽으로 미세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "시계로 돌아가려면 오른쪽으로 미세요."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "시계에서, 앱을 보려면 위로 미세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "시계로 돌아가려면 아래로 미세요."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "시계에서, 모멘트 바를 보려면 아래로 미세요."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "시계로 돌아가려면 위로 미세요."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "시계가 내 홈 화면입니다. 시작하려면 아래를 누르세요."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "애플리케이션을 설치 또는 삭제하려면, 모바일 디바이스에서 Samsung Gear 애플리케이션을 사용하세요."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "홈 화면의 메인 구조입니다."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "홈 화면 구성입니다."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "비어 있음"

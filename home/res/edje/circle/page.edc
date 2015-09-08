@@ -1,0 +1,1036 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+#include "../color_classes.edc"
+
+#define DEL_IMAGE_MIN 54 54
+#define PLUS_IMAGE_MIN 90 90
+#define LINE_IMAGE_MIN (216+4) (288+4)
+#define TEXT_MIN 300 420
+
+
+
+styles {
+	style {
+		name: "max_text_style";
+		base: "font=TIZEN:style=Regular text_class=tizen style=shadow shadow_color=#0000004C font_size="18" color_class=AT0121 align=middle color=#FFFFFF ellipsis=1 wrap=mixed";
+	}
+}
+
+images {
+	image: "widget_circle_bg_stroke.png" COMP;
+	image: "widget_circle_bg.png" COMP;
+	image: "widget_circle_bg_ef.png" COMP;
+	image: "b_home_screen_widget_plus.png" COMP;
+	image: "b_home_screen_widget_del_bg.png" COMP;
+	image: "b_home_screen_widget_del_line.png" COMP;
+	image: "b_home_screen_widget_del_icon.png" COMP;
+	image: "b_widget_favorite_bg.png" COMP;
+}
+
+collections {
+	base_scale: 1.3;
+
+group {
+	name: "page";
+	parts {
+		part {
+			name: "bg";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; }
+				rel2 { relative: 1.0 1.0; }
+			}
+		}
+		part {
+			name: "inner";
+			type: SWALLOW;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "bg"; }
+				rel2 { relative: 1.0 1.0; to: "bg"; }
+				fixed: 1 1;
+				visible: 1;
+			}
+		}
+	}
+}
+group {
+	name: "page_inner";
+	parts {
+		part {
+			name: "focus";
+			type: SWALLOW;
+			scale : 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "item"; }
+				rel2 { relative: 1.0 1.0; to: "item"; }
+				color: 0 0 0 0;
+				fixed: 1 1;
+				visible: 1;
+			}
+		}
+		part {
+			name: "area";
+			type: SWALLOW;
+			mouse_events: 0;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				rel1.relative: 0.0 0.0;
+				rel2.relative: 1.0 1.0;
+				fixed: 1 1;
+				visible: 1;
+			}
+		}
+		part {
+			name: "normal";
+			type: RECT;
+			mouse_events: 0;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+				perspective {
+					zplane: 0;
+				}
+			}
+		}
+		part {
+			name: "zoom";
+			type: RECT;
+			mouse_events: 0;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+				perspective {
+					zplane: 120;
+				}
+			}
+		}
+		part {
+			name: "bg";
+			type: SWALLOW;
+			mouse_events: 0;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "item"; }
+				rel2 { relative: 1.0 1.0; to: "item"; }
+				fixed: 1 1;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "gradient,bg";
+			type: IMAGE;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "item"; }
+				rel2 { relative: 1.0 1.0; to: "item"; }
+				color_class: "AO031";
+				image {
+					normal: "b_widget_favorite_bg.png";
+				}
+				visible: 0;
+			}
+			description {
+				state: "show" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "item";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "area"; }
+				rel2 { relative: 0.5 0.5; to: "area"; }
+				fixed: 1 1;
+				align: 0.5 0.5;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "cover_clipper";
+			type: RECT;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "cover_ef"; }
+				rel2 { relative: 1.0 1.0; to: "cover_ef"; }
+				color: 0 0 0 0;
+				visible: 1;
+			}
+			description {
+				state: "select" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
+		}
+		part {
+			name: "cover_ef";
+			type: IMAGE;
+			clip_to: "cover_clipper";
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "item"; }
+				rel2 { relative: 0.5 0.5; to: "item"; }
+				image {
+					normal: "widget_circle_bg_ef.png";
+				}
+				color_class: "AO063";
+				/* This size is different from "item" */
+				min: ITEM_EDIT_EF_WIDTH ITEM_EDIT_EF_HEIGHT;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				visible: 0;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "select" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+			description {
+				state: "disable" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "select" 0.0;
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default" 0.0;
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "line_clipper";
+			type: RECT;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "line_ef"; offset: -30 -30; }
+				rel2 { relative: 1.0 1.0; to: "line_ef"; offset: 30 30; }
+				color: 255 255 255 0;
+				visible: 1;
+			}
+			description {
+				state: "select" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
+		}
+		part {
+			name: "line,widget";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "item"; }
+				rel2 { relative: 0.5 0.5; to: "item"; }
+				image {
+					normal: "widget_circle_bg_stroke.png";
+				}
+				/* this color class code is AO033 */
+				//color_class: "AO033";
+				color_class: "AO0481";
+				min: 234 234;
+				visible: 0;
+			}
+			description {
+				state: "show" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+		part {
+			name: "line_ef";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			clip_to: "line_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "cover_ef"; }
+				rel2 { relative: 1.0 1.0; to: "cover_ef"; }
+				image {
+					normal: "widget_circle_bg_ef.png";
+				}
+				color_class: "AO063";
+				align: 0.5 0.5;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "disable" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default" 0.0;
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default" 0.0;
+				map {
+					on: 1;
+				}
+
+			}
+		}
+		part {
+			name: "line";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 0;
+			clip_to: "line_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "item"; }
+				rel2 { relative: 0.5 0.5; to: "item"; }
+				color_class: "AO043";
+				min: ITEM_EDIT_LINE_WIDTH ITEM_EDIT_LINE_HEIGHT;
+				align: 0.5 0.5;
+				visible: 1;
+				fixed: 1 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "disable" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default" 0.0;
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default" 0.0;
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "item_event";
+			type: RECT;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1.to: "item";
+				rel2.to: "item";
+				color: 0 0 0 0;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "del_clipper";
+			type: RECT;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "del_event_region"; }
+				rel2 { relative: 1.0 1.0; to: "del_event_region"; }
+				color: 255 255 255 0;
+				visible: 1;
+			}
+			description {
+				state: "show" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
+		}
+		part {
+			name: "del_image_region";
+			type: SPACER;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 1.0 0.0; to: "item"; offset: -37 24; }
+				rel2 { relative: 1.0 0.0; to: "item"; offset: -37 24; }
+				align: 0.5 0.5;
+				min: DEL_IMAGE_MIN;
+				fixed: 1 1;
+			}
+		}
+		/* This part blocks events */
+		part {
+			name: "del_event_region";
+			type: RECT;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: -0.5 -0.5; to: "del_image_region"; }
+				rel2 { relative: 1.5 1.5; to: "del_image_region"; }
+				color: 0 0 0 0;
+				visible: 0;
+			}
+			description {
+				state: "show" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+		part {
+			name: "del_bg";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			clip_to: "del_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "del_image_region"; }
+				rel2 { relative: 0.5 0.5; to: "del_image_region"; }
+				image {
+					normal: "b_home_screen_widget_del_bg.png";
+				}
+				color_class: "AO044L1";
+				align: 0.5 0.5;
+				min: DEL_IMAGE_MIN;
+				fixed: 1 1;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "del_line";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			clip_to: "del_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "del_image_region"; }
+				rel2 { relative: 0.5 0.5; to: "del_image_region"; }
+				image {
+					normal: "b_home_screen_widget_del_line.png";
+				}
+				color_class: "AO044L2";
+				align: 0.5 0.5;
+				min: DEL_IMAGE_MIN;
+				fixed: 1 1;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "del_icon";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			clip_to: "del_clipper";
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "del_image_region"; }
+				rel2 { relative: 0.5 0.5; to: "del_image_region"; }
+				image {
+					normal: "b_home_screen_widget_del_icon.png";
+				}
+				color_class: "AO044L3";
+				align: 0.5 0.5;
+				min: DEL_IMAGE_MIN;
+				fixed: 1 1;
+				visible: 1;
+				map {
+					on: 0;
+					perspective: "normal";
+				}
+			}
+			description {
+				state: "zoom" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+					perspective: "zoom";
+				}
+			}
+			description {
+				state: "on" 0.0;
+				inherit: "default";
+				map {
+					on: 1;
+				}
+			}
+		}
+		part {
+			name: "remove_focus";
+			type: SWALLOW;
+			scale: 1;
+			mouse_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "del_event_region"; }
+				rel2 { relative: 1.0 1.0; to: "del_event_region"; }
+				color: 0 0 0 0;
+				visible: 0;
+			}
+			description {
+				state: "show" 0.0;
+				rel1 { relative: 0.0 0.0; to: "del_event_region"; }
+				rel2 { relative: 1.0 1.0; to: "del_event_region"; }
+				visible: 1;
+			}
+		}
+		part {
+			name: "blocker";
+			type: RECT;
+			mouse_events: 1;
+			scale: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; to: "item"; }
+				rel2 { relative: 1.0 1.0; to: "item"; }
+				color: 0 0 0 0;
+				visible: 0;
+			}
+			description {
+				state: "enable" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+	}
+	programs {
+		program {
+			signal: "show";
+			source: "del";
+			action: STATE_SET "show" 0.0;
+			target: "del_clipper";
+			target: "del_event_region";
+			target: "remove_focus";
+		}
+		program {
+			signal: "hide";
+			source: "del";
+			action: STATE_SET "default" 0.0;
+			target: "del_clipper";
+			target: "del_event_region";
+			target: "remove_focus";
+		}
+		program {
+			signal: "mouse,clicked,1";
+			source: "focus";
+			action: SIGNAL_EMIT "clicked" "page";
+		}
+		program {
+			name: "enable,bg";
+			signal: "enable";
+			source: "gradient,bg";
+			action: STATE_SET "show" 0.0;
+			target: "gradient,bg";
+		}
+		program {
+			name: "disable,bg";
+			signal: "disable";
+			source: "gradient,bg";
+			action: STATE_SET "default" 0.0;
+			target: "gradient,bg";
+		}
+		program {
+			source: "blocker";
+			signal: "enable";
+			action: STATE_SET "enable" 0.0;
+			target: "blocker";
+		}
+		program {
+			source: "blocker";
+			signal: "disable";
+			action: STATE_SET "default" 0.0;
+			target: "blocker";
+		}
+		program {
+			signal: "deselect";
+			source: "cover_clipper";
+			action: STATE_SET "default" 0.0;
+			target: "cover_clipper";
+			target: "cover_ef";
+		}
+		program {
+			signal: "select";
+			source: "cover_clipper";
+			action: STATE_SET "select" 0.0;
+			target: "cover_clipper";
+			target: "cover_ef";
+			transition: LINEAR 0.5;
+		}
+		program {
+			signal: "disable";
+			source: "line_ef";
+			action: STATE_SET "disable" 0.0;
+			target: "cover_ef";
+			target: "line_ef";
+			target: "line";
+			transition: LINEAR 0.5;
+		}
+		program {
+			signal: "deselect";
+			source: "line";
+			action: STATE_SET "default" 0.0;
+			target: "line_clipper";
+			transition: LINEAR 0.5;
+		}
+		program{
+			signal: "deselect,im";
+			source: "line";
+			action: STATE_SET "default" 0.0;
+			target: "line_clipper";
+		}
+		program {
+			signal: "hide";
+			source: "line,widget";
+			action: STATE_SET "default" 0.0;
+			target: "line,widget";
+		}
+		program {
+			signal: "show";
+			source: "line,widget";
+			action: STATE_SET "show" 0.0;
+			target: "line,widget";
+		}
+		program {
+			signal: "select";
+			source: "line";
+			action: STATE_SET "select" 0.0;
+			target: "line_clipper";
+			transition: LINEAR 0.5;
+		}
+		program {
+			signal: "on,zoom";
+			source: "inner";
+			action: STATE_SET "on" 0.0;
+			target: "item_event";
+			target: "bg";
+			target: "gradient,bg";
+			target: "item";
+			target: "del_bg";
+			target: "del_line";
+			target: "del_icon";
+			target: "cover_ef";
+			target: "line_ef";
+			target: "line";
+			after: "show,zoom";
+		}
+		program {
+			name: "show,zoom";
+			action: STATE_SET "zoom" 0.0;
+			transition: SIN_FAC 0.2 0.90;
+			target: "item_event";
+			target: "bg";
+			target: "gradient,bg";
+			target: "item";
+			target: "del_bg";
+			target: "del_line";
+			target: "del_icon";
+			target: "cover_ef";
+			target: "line_ef";
+			target: "line";
+		}
+		program {
+			signal: "reset,zoom";
+			source: "inner";
+			action: STATE_SET "on" 0.0;
+			transition: SIN_FAC 0.2 0.90;
+			target: "item_event";
+			target: "bg";
+			target: "gradient,bg";
+			target: "item";
+			target: "del_bg";
+			target: "del_line";
+			target: "del_icon";
+			target: "cover_ef";
+			target: "line_ef";
+			target: "line";
+			after: "off,zoom";
+		}
+		program {
+			name: "off,zoom";
+			action: STATE_SET "defalut" 0.0;
+			target: "item_event";
+			target: "bg";
+			target: "gradient,bg";
+			target: "item";
+			target: "del_bg";
+			target: "del_line";
+			target: "del_icon";
+			after: "on,cover";
+		}
+		program {
+			name: "on,cover";
+			action: STATE_SET "select" 0.0;
+			target: "line_ef";
+			target: "cover_ef";
+			target: "cover_clipper";
+			target: "line_clipper";
+		}
+	}
+}
+group {
+	name: "plus_item";
+	parts {
+		part {
+			name: "bg";
+			type: RECT;
+			scale: 1;
+			mouse_events: 1;
+			repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.0 0.0; }
+				rel2 { relative: 1.0 1.0; }
+				/* This size is different from "item" */
+				min: ITEM_EDIT_WIDTH ITEM_EDIT_HEIGHT;
+				fixed: 1 1;
+				color: 0 0 0 0;
+				visible: 1;
+			}
+		}
+		part {
+			name: "add,bg";
+			type: RECT;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "bg"; }
+				rel2 { relative: 0.5 0.5; to: "bg"; }
+				min: LINE_IMAGE_MIN;
+				fixed: 1 1;
+				color_class: "AO0111";
+				visible: 1;
+			}
+			description {
+				state: "edit" 0.0;
+				inherit: "default" 0.0;
+				color_class: "AO0481";
+			}
+		}
+		part {
+			name: "plus";
+			type: IMAGE;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.5 0.5; to: "add,bg"; }
+				rel2 { relative: 0.5 0.5; to: "add,bg"; }
+				image {
+					normal: "b_home_screen_widget_plus.png";
+				}
+				color_class: "AO035";
+				min: PLUS_IMAGE_MIN;
+				align: 0.5 0.5;
+				fixed: 1 1;
+				visible: 1;
+			}
+			description {
+				state: "press" 0.0;
+				inherit: "default" 0.0;
+				color_class: "AO035P";
+			}
+			description {
+				state: "edit" 0.0;
+				inherit: "default" 0.0;
+				color_class: "AO034";
+			}
+			description {
+				state: "edit,press" 0.0;
+				inherit: "default" 0.0;
+				color_class: "AO034P";
+			}
+			description {
+				state: "max" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
+		}
+		part {
+			name: "max_text";
+			type: TEXTBLOCK;
+			scale: 1;
+			mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				rel1 { relative: 0.1 0.05; to: "bg"; }
+				rel2 { relative: 0.9 0.95; to: "bg"; }
+				fixed: 1 0;
+				text {
+					style: "max_text_style";
+				}
+				visible: 0;
+			}
+			description {
+				state: "max" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+	}
+	programs {
+		program {
+			name: "button,down";
+			signal: "mouse,down,1";
+			source: "bg";
+			action: SIGNAL_EMIT "down" "plus_item";
+		}
+		program {
+			source: "plus";
+			signal: "press";
+			action: STATE_SET "press" 0.0;
+			target: "plus";
+		}
+		program {
+			name: "button,up";
+			signal: "mouse,up,1";
+			source: "bg";
+			action: SIGNAL_EMIT "up" "plus_item";
+		}
+		program {
+			name: "button,click";
+			signal: "mouse,clicked,1";
+			source: "bg";
+			action: SIGNAL_EMIT "click" "plus_item";
+		}
+		program {
+			source: "plus";
+			signal: "release";
+			action: STATE_SET "default" 0.0;
+			target: "plus";
+		}
+		program {
+			source: "plus";
+			signal: "edit,press";
+			action: STATE_SET "edit,press" 0.0;
+			target: "plus";
+		}
+		program {
+			source: "plus";
+			signal: "edit,release";
+			action: STATE_SET "edit" 0.0;
+			target: "plus";
+		}
+		program {
+			name: "hide_plus";
+			signal: "max";
+			source: "plus_in_edit";
+			action: STATE_SET "max" 0.0;
+			target: "max_text";
+			target: "plus";
+		}
+		program {
+			name: "show_plus";
+			signal: "no_max";
+			source: "plus_in_edit";
+			action: STATE_SET "default" 0.0;
+			target: "max_text";
+			after: "show,edit";
+		}
+		program {
+			name: "show,widget";
+			signal: "show,widget";
+			source: "plus_item";
+			action: STATE_SET "default" 0.0;
+			target: "add,bg";
+			target: "plus";
+		}
+		program {
+			name: "show,edit";
+			signal: "show,edit";
+			source: "plus_item";
+			action: STATE_SET "edit" 0.0;
+			target: "add,bg";
+			target: "plus";
+		}
+		program {
+			name: "show,widget,ani";
+			signal: "show,widget,ani";
+			source: "plus_item";
+			action: STATE_SET "edit" 0.0;
+			target: "add,bg";
+			target: "plus";
+			after: "show,widget,ani,2";
+		}
+		program {
+			name: "show,widget,ani,2";
+			action: STATE_SET "default" 0.0;
+			target: "add,bg";
+			target: "plus";
+			transition: LINEAR 0.5;
+		}
+
+	}
+}//end group
+}//end collections

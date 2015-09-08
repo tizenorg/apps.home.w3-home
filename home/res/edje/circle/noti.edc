@@ -1,0 +1,514 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+#include "../color_classes.edc"
+
+styles {
+	style {
+		name: "summary_text_style";
+		base: "font=Tizen:style=Regular text_class=tizen style=shadow shadow_color=#0000004C font_size=25 align=middle ellipsis=1 color=#FFFFFF wrap=mixed";
+	}
+}
+
+styles {
+	style {
+		name: "detail_text_style";
+		base: "font=Tizen:style=Regular text_class=tizen style=shadow shadow_color=#0000004C font_size=25 align=middle color=#FFFFFF wrap=mixed";
+	}
+}
+
+images {
+	image: "w_cover_view_ic_delete.png" COMP;
+}
+
+collections {
+	base_scale: 1.2;
+	group {
+		name: "summary";
+		parts {
+			part {
+				name: "bg";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "bg,rect";
+				type: RECT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 0 0 0 255;
+					visible: 1;
+				}
+			}
+			part {
+				name: "icon";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; offset: 0 3; }
+					rel2 { relative: 0.5 0.0; to: "bg"; offset: 0 3; }
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "title";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.2 1.0; to_x: "bg"; to_y: "icon"; }
+					rel2 { relative: 0.8 1.0; to_x: "bg"; to_y: "icon"; }
+					align: 0.5 0.0;
+					min: 0 47;
+					color: 255 255 255 255;
+					text {
+						size: 30;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+			}
+			part {
+				name: "time";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.1 1.0; to_x: "bg"; to_y: "title"; }
+					rel2 { relative: 0.9 1.0; to_x: "bg"; to_y: "title"; }
+					align: 0.5 0.0;
+					min: 0 32;
+					color: 255 255 255 255;
+					text {
+						size: 20;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+			}
+			part {
+				name: "time,pad";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "time"; }
+					rel2 { relative: 1.0 1.0; to_y: "bg"; to_y: "time"; }
+					align: 0.5 0.0;
+					min: 0 16;
+				}
+			}
+			part {
+				name: "text";
+				type: TEXTBLOCK;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.1 1.0; to_x: "bg"; to_y: "time,pad"; }
+					rel2 { relative: 0.9 0.0; to_x: "bg"; to_y: "count,up,pad"; }
+					align: 0.5 0.5;
+					min: 0 74;
+					text {
+						style: "summary_text_style";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+				}
+			}
+			part {
+				name: "launch,btn";
+				type: SWALLOW;
+				mouse_events: 1;
+				repeat_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to_x: "bg"; to_y: "text"; }
+					align: 0.0 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "del,btn";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 1.0; to: "bg"; offset: 0 -5; }
+					rel2 { relative: 0.5 1.0; to: "bg"; offset: 0 -5; }
+					align: 0.5 1.0;
+					min: 52 52;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 1;
+				}
+			}
+			part {
+				name: "del,btn,icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "del,btn"; }
+					rel2 { relative: 0.5 0.5; to: "del,btn"; }
+					image {
+						normal: "w_cover_view_ic_delete.png";
+					}
+					align: 0.5 1.0;
+					min: 52 52;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "count,down,pad";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to_x: "bg"; to_y: "del,btn,icon"; }
+					rel2 { relative: 1.0 0.0; to_y: "bg"; to_y: "del,btn,icon"; }
+					align: 0.5 0.0;
+					min: 0 12;
+				}
+			}
+			part {
+				name: "count";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.1 0.0; to_x: "bg"; to_y: "count,down,pad"; }
+					rel2 { relative: 0.9 0.0; to_x: "bg"; to_y: "count,down,pad"; }
+					align: 0.5 1.0;
+					min: 0 32;
+					color: 255 255 255 255;
+					text {
+						size: 20;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+			}
+			part {
+				name: "count,up,pad";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to_x: "bg"; to_y: "count"; }
+					rel2 { relative: 1.0 0.0; to_x: "bg"; to_y: "count"; }
+					align: 0.5 1.0;
+					min: 0 15;
+				}
+			}
+		}
+	}
+	group {
+		name: "detail";
+		parts {
+			part {
+				name: "bg";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					visible: 1;
+				}
+			}
+			part {
+				name: "bg,rect";
+				type: RECT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 10 10 10 255;
+					visible: 1;
+				}
+			}
+			part {
+				name: "icon";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg"; offset: 0 3; }
+					rel2 { relative: 0.5 0.0; to: "bg"; offset: 0 3; }
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "title,pad";
+				type: RECT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 0.0; to: "bg"; }
+					align: 0.5 0.0;
+					min: 0 40;
+					color: 0 0 0 255;
+					visible: 1;
+				}
+				description {
+					state: "show,icon" 0.0;
+					inherit: "default" 0.0;
+					visible: 0;
+				}
+			}
+			part {
+				name: "title";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.2 1.0; to_x: "bg"; to_y: "title,pad"; }
+					rel2 { relative: 0.8 1.0; to_x: "bg"; to_y: "title,pad"; }
+					align: 0.5 0.0;
+					min: 0 47;
+					color: 255 255 255 255;
+					text {
+						size: 30;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+				description {
+					state: "show,icon" 0.0;
+					inherit: "default" 0.0;
+					rel1 { relative: 0.2 1.0; to_x: "bg"; to_y: "icon"; }
+					rel2 { relative: 0.8 1.0; to_x: "bg"; to_y: "icon"; }
+				}
+			}
+			part {
+				name: "time";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.1 1.0; to_x: "bg"; to_y: "title"; }
+					rel2 { relative: 0.9 1.0; to_x: "bg"; to_y: "title"; }
+					align: 0.5 0.0;
+					min: 0 32;
+					color: 255 255 255 255;
+					text {
+						size: 20;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+			}
+			part {
+				name: "time,pad";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to_x: "bg"; to_y: "time"; }
+					rel2 { relative: 1.0 1.0; to_y: "bg"; to_y: "time"; }
+					align: 0.5 0.0;
+					min: 0 16;
+				}
+			}
+			part {
+				name: "text";
+				type: TEXTBLOCK;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.1 1.0; to_x: "bg"; to_y: "time,pad"; }
+					rel2 { relative: 0.9 1.0; to_x: "bg"; to_y: "time,pad"; }
+					align: 0.5 0.0;
+					text {
+						style: "detail_text_style";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+				}
+			}
+			part {
+				name: "del,btn";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 1.0; to: "bg"; offset: 0 -5; }
+					rel2 { relative: 0.5 1.0; to: "bg"; offset: 0 -5; }
+					align: 0.5 1.0;
+					min: 52 52;
+					fixed: 1 1;
+					align: 0.5 0.5;
+					visible: 1;
+				}
+			}
+			part {
+				name: "del,btn,icon";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				repeat_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "del,btn"; }
+					rel2 { relative: 0.5 0.5; to: "del,btn"; }
+					image {
+						normal: "w_cover_view_ic_delete.png";
+					}
+					align: 0.5 1.0;
+					min: 52 52;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+		}
+		programs {
+			program {
+				signal: "show,icon";
+				source: "icon";
+				action: STATE_SET "show,icon" 0.0;
+				target: "title,pad";
+				target: "title";
+			}
+			program {
+				signal: "hide,icon";
+				source: "icon";
+				action: STATE_SET "defualt" 0.0;
+				target: "title,pad";
+				target: "title";
+			}
+		}
+	}
+	group {
+		name: "simple";
+		parts {
+			part {
+				name: "bg";
+				type: SPACER;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+				}
+			}
+			part {
+				name: "bg,rect";
+				type: RECT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					color: 100 100 100 255;
+					visible: 1;
+				}
+			}
+			part {
+				name: "icon";
+				type: SWALLOW;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.0; to: "bg,rect"; offset: 0 8; }
+					rel2 { relative: 0.5 0.0; to: "bg,rect"; offset: 0 8; }
+					align: 0.5 0.0;
+					fixed: 1 1;
+					visible: 1;
+				}
+			}
+			part {
+				name: "title";
+				type: TEXT;
+				scale: 1;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 1.0; to: "bg"; }
+					rel2 { relative: 1.0 1.0; to: "bg"; }
+					align: 0.5 1.0;
+					min: 0 47;
+					color: 255 255 255 255;
+					text {
+						size: 24;
+						font: "TIZEN";
+						align: 0.5 0.5;
+						min: 0 1;
+					}
+					visible: 1;
+				}
+			}
+		}
+	}
+}
+
+
+
+// End of file

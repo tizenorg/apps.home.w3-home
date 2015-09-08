@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "एप्स"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "अर्को"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "विजिट"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "नदोहर्‍याउनुहोस्।"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "सबै मेटाउनुहोस्"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "हटाउन असमर्थ छ।"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "विजेटलाई सार्न ट्याप गरि समात्नुहोस्।"
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "गृह स्क्रीन परिवर्तित भयो।"
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "लोड हुँदै छ..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "डाटा लोड गर्न सकेन। पुन: प्रयास गर्नुहोस् मा ट्याप गर्नुहोस्।"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "अनुप्रयोग थप्‍न असक्षम। गृह स्क्रीनमा थप स्थान छैन।"
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "विजिट थप्न असक्षम। गृह स्क्रीनमा थप स्थान छैन।"
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "अनुप्रयोगहरू पहिलेनै अवस्थित छ।"
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "विजिट पहिलेनै अवस्थित छ।"
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "रद्द गर्नुहोस्"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "गृह स्क्रीन लेआउट परिवर्तन गरिएको छ।"
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "यो अनुप्रयोग गृह स्क्रीनबाट हटाइने छ। यसलाई यन्त्रबाट मेटाइने छैन।"
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "अनुप्रयोग हटाउनुहोस्"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "विजिट हटाउनुहोस्"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "यो विजिट गृह स्क्रीनबाट हटाइने छ। यसलाई यन्त्रबाट मेटाइने छैन।"
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "अल्ट्रा पावर बचत मोड"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "विजिट थप्न असक्षम। विजिटहरूको अधिकतम संख्या (%d) पुग्यो।"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "अनुप्रयोग थप्‍न असक्षम। अनुप्रयोगहरूको अधिकतम संख्या (%d) पुग्यो।"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "पृष्‍ठ थप्‍न असमर्थ।"
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "सामान्य मोड"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "पवर बचत मोड असक्षम भयो।"
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "पवर बचत गर्ने मोड सक्षम बनाइयो।"
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "हालका एप्‍स"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "अनुप्रयोग थप्‍न असक्षम। अनुप्रयोगहरूको अधिकतम संख्या (%s) पुग्यो।"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "विजिट थप्न असक्षम। विजिटहरूको अधिकतम संख्या (%s) पुग्यो।"
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "पृष्ठ हटाउनुहोस्"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "यो पृष्ठ र यसका सामग्री हटाइनेछ।"
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "हटाउनुहोस्"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "नेटवर्क सेवाहरु पहुँच गर्न SIM कार्ड घुसाउनुहोस्।"
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "ब्लकिङ मोड"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "अन"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "अफ"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "वस्तु सारियो।"
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "थप्न दुई पटक ट्याप गर्नुहोस्।"
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "विजेटहरु थप्नुहोस्"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "वस्तु थपियो।"
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "वस्तु हटाइयो।"
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "%2$d को %1$d पृष्ठहरू"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "सूचना बोर्ड वस्तुहरू पुनः क्रमबद्ध गर्न सकिँदैन।"
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "यो %1$d:%2$d हो।"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "अहिले %d:%d AM भयो।"
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "अहिले %d:%d PM भयो।"
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d नयाँ वस्तु"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "विजेटहरूको अधिकतम संख्या (%s) पुगेको छ। केही विजेटहरू मेटाएर फेरि प्रयास गर्नुहोस्।"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "घडीको पछाडि जान दायाँ स्वाइप गर्नुहोस्।"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "विजेटहरू हेर्न बायाँ स्वाइप गर्नुहोस्।"
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "घडीमा फर्कन बायाँ स्वाइप गर्नुहोस्।"
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "सूचनाहरू हेर्न दायाँ स्वाइप गर्नुहोस्।"
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "%s को स्थापना रद्द गर्ने?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "विजेटहरूको अधिकतम संख्या (%s) पुग्यो।"
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "एप ट्रे खोल्न दुईपटक ट्याप गर्नुहोस्।"
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 नया चीज"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "सक्षम गर्न दुई पटक ट्याप गर्नुहोस्।"
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "घडी"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "यन्त्रको तापक्रम अति उच्च छ।"
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "मोबाइल यन्त्र प्रयोग गरेर गियरका अनुप्रयोगहरू डाउनलोड गर्नुहोस्।"
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "सुतेको बेला"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "थप अनुप्रयोगहरू प्राप्त गर्नुहोस्"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "वेक-अप + सक्षम गरेको बेला कार्य उपलब्ध छैन।"
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "स्क्रीन रिडर सक्षम छँदा %s उपलब्ध हुँदैन।"
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "बाधा नपुर्याउनुहोला"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "उडान मोड सक्षम गरिएको बेला मोबाइल डाटा अन गर्न असक्षम। उडान मोडलाई असक्षम गरेर फेरि प्रयास गर्नुहोस्।"
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "घडीमा फर्कन माथितिर स्वाइप गर्नुहोस्।"
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "त्यति नै हो! गियर प्रयोग गर्न सुरू गर्नुहोस्!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "मोबाइल नेटवर्कहरू"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "गियरमा कलहरू फर्वाड गर्नुहोस्"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "सुरु"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "बाहिर निस्कनु"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "स्वागतम्! आफ्नो गियर कसरी प्रयोग गर्ने भन्ने बारे सिक्न तलको बटनमा ट्याप गर्नुहोस्।"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "असक्षम गर्न अनुरोध गरियो"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "सक्षम गर्न अनुरोध गरियो"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "घडीमा सूचक प्रतिमाहरू हेर्नको लागि शीर्ष किनारालाई तल स्वाइप गर्नुहोस्।"
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "घडीमा एप्स हेर्नको लागि तल्लो किनारालाई माथितिर स्वाइप गर्नुहोस्।"
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "ठीक छ"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "पछाडि जानको लागि शीर्ष किनारालाई तल स्वाइप गर्नुहोस्।"
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "अनुप्रयोगहरू स्थापना गर्न वा स्थापना रद्द गर्न, आफ्नो मोबाइल यन्त्रमा सैमसंग गियर अनुप्रयोग प्रयोग गर्नुहोस्।"
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "यो गृह स्क्रीनको मुख्य संरचना हो।"
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "खाली"

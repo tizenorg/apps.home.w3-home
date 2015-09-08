@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Aplicaţii"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Înainte"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Fără repet."
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Şterg. totală"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Imposibil de eliminat"
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Ţineţi apăsat pe un widget pentru a-l muta."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Ecranul de pornire s-a modificat."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Încărcare..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Datele nu pot fi încărcate. Atingeţi pentru a reîncerca."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Aplicaţia nu poate fi adăugată. Ecranul de pornire este plin."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Widgetul nu poate fi adăugat. Ecranul de pornire este plin."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Aplicaţia există deja."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Widgetul există deja."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Anulare"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Aspectul ecranului de pornire s-a schimbat."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Aplicaţia va fi eliminată din ecranul de pornire. Aceasta nu va fi ştearsă de pe dispozitiv."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Eliminare aplicaţie"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Eliminare widget"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Widgetul va fi eliminat din ecranul de pornire. Acesta nu va fi şters de pe dispozitiv."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Mod Econ. maximă energie"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Widgetul nu poate fi adăugat. A fost atins numărul maxim de widgeturi (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Aplicaţia nu poate fi adăugată. A fost atins numărul maxim de aplicaţii (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Pagina nu poate fi adăugată."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Mod normal"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Modul de economisire a energiei a fost dezactivat."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Modul de economisire a energiei a fost activat."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Apl. recente"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Aplicaţia nu poate fi adăugată. A fost atins numărul maxim de aplicaţii (%s)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Widgetul nu poate fi adăugat. A fost atins numărul maxim de widgeturi (%s)."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Eliminare pagină"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Pagina şi conţinutul acesteia va fi şters."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Eliminare"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Introduceţi cartela SIM pentru a accesa serviciile de reţea."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Modul Blocare"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Pornit"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Oprit"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Elementul a fost mutat."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Atingeţi de două ori pentru a adăuga."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Adăugare widget"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Elementul a fost adăugat."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Elementul a fost eliminat."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Pagina %1$d din %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Nu se pot reordona elementele panoului de notificări."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Este %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Este ora %d:%d a.m."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Este ora %d:%d p.m."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d elemente noi"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "A fost atins numărul maxim de widgeturi (%s). Ştergeţi câteva widgeturi şi încercaţi din nou."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Glis. la dr. pt. a reveni la ceas."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Glis. la stânga pt. a vedea widgeturi."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Glis. la stânga pt. a reveni la ceas."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Glis. la stânga pt. a viz. notificări."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Dezinstalaţi %s?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "S-a atins numărul maxim de widgeturi (%s)."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Atingeţi de două ori pentru a deschide bara de aplicaţii."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 element nou"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Atingeţi de două ori pentru a activa."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Ceas"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "Temperatura dispozitivului este prea ridicată."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Descărcaţi aplicaţii pentru Gear utilizând dispozitivul mobil."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Când dormiţi"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Obţineţi m. m. aplicaţii"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Acţiunea nu este disponibilă când este activat modul Economisire energie +."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s nu este disponibilă când Cititorul de ecran este activat."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Nu deranjaţi"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Datele mob. nu se pot act. când este activ modul Avion. Dezact. modul Avion şi reîncercaţi."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Glisaţi în sus pt. a reveni la ceas."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Gata! Începeţi utilizarea Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Reţele mobile"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Red. apeluri Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Start"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Ieşire"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Bun venit! At. urm. buton pt. a afla cum să utilizaţi Gear."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "S-a solicitat dezactivarea"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "S-a solicitat activarea"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Glis. în jos marg. de sus pt. viz. pe ceas a pictogr. de indicaţii."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Glisaţi în sus marginea de jos pt. a viz. ap. pe ceas."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Glisaţi în jos marginea de sus pentru a reveni."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Pentru a instala sau a dezinstala aplicaţii, utilizaţi aplicaţia Samsung Gear de pe dispozitivul mobil."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Aceasta este structura principală a ecranului Acasă."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Liber"

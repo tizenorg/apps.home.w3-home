@@ -1,0 +1,357 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "conf.edc"
+#include "../color_classes.edc"
+
+collections {
+   group {
+      name: "elm/index/item/vertical/clock/thumbnail";
+      alias: "elm/index/item_odd/vertical/clock/thumbnail";
+      alias: "elm/index/item/horizontal/clock/thumbnail";
+      alias: "elm/index/item_odd/horizontal/clock/thumbnail";
+      images {
+         image: "indicator_clock_on_normal.png" COMP;
+         image: "indicator_clock_on_focused.png" COMP;
+         image: "indicator_clock_on_normal_ef.png" COMP;
+         image: "indicator_clock_on_focused_ef.png" COMP;
+      }
+      parts {
+         part { name:"bg";
+            type : RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+               min: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               max: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               visible: 0;
+               align: 0.5 0.5;
+            }
+         }
+         part { name: "indicator1_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_clock_on_normal_ef.png";
+               color_class: "AO062";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator1";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_clock_on_normal.png";
+               color_class: "AO032";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator2_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_clock_on_focused_ef.png";
+               color_class: "AO062P";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part { name: "indicator2";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_clock_on_focused.png";
+               color_class: "AO0321";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      } //parts
+      programs {
+         program { name: "active";
+            signal: "elm,state,active";
+            source: "elm";
+            action: STATE_SET "active" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+         program { name: "inactive";
+            signal: "elm,state,inactive";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+      } //programs
+   } // group
+   group {
+		name: "elm/index/item/vertical/noti/thumbnail";
+		alias: "elm/index/item_odd/vertical/noti/thumbnail";
+		alias: "elm/index/item/horizontal/noti/thumbnail";
+		alias: "elm/index/item_odd/horizontal/noti/thumbnail";
+      images {
+         image: "indicator_panel_on_normal.png" COMP;
+         image: "indicator_panel_on_focused.png" COMP;
+         image: "indicator_panel_on_normal_ef.png" COMP;
+         image: "indicator_panel_on_focused_ef.png" COMP;
+      }
+      parts {
+         part { name:"bg";
+            type : RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+               min: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               max: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               visible: 0;
+               align: 0.5 0.5;
+            }
+         }
+         part { name: "indicator1_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_panel_on_normal_ef.png";
+               color_class: "AO062";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator1";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_panel_on_normal.png";
+               color_class: "AO032";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator2_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_panel_on_focused_ef.png";
+               color_class: "AO062P";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part { name: "indicator2";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_panel_on_focused.png";
+               color_class: "AO0321";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      } //parts
+      programs {
+         program { name: "active";
+            signal: "elm,state,active";
+            source: "elm";
+            action: STATE_SET "active" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+         program { name: "inactive";
+            signal: "elm,state,inactive";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+      } //programs
+   } // group
+   group {
+		name: "elm/index/item/vertical/page/thumbnail";
+		alias: "elm/index/item_odd/vertical/page/thumbnail";
+		alias: "elm/index/item/horizontal/page/thumbnail";
+		alias: "elm/index/item_odd/horizontal/page/thumbnail";
+      images {
+         image: "indicator_on_normal.png" COMP;
+         image: "indicator_on_focused.png" COMP;
+         image: "indicator_on_normal_ef.png" COMP;
+         image: "indicator_on_focused_ef.png" COMP;
+      }
+      parts {
+         part { name:"bg";
+            type : RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+               color: 0 0 0 0;
+               min: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               max: INDEX_THUMBNAIL_HOME_BG_SIZE;
+               visible: 0;
+               align: 0.5 0.5;
+            }
+         }
+         part { name: "indicator1_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_on_normal_ef.png";
+               color_class: "AO062";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator1";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_on_normal.png";
+               color_class: "AO032";
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part { name: "indicator2_ef";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_on_focused_ef.png";
+               color_class: "AO062P";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part { name: "indicator2";
+            mouse_events: 0;
+            scale: 1;
+            description { state: "default" 0.0;
+               align: 0.5 0.5;
+               fixed: 1 1;
+               min: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               max: INDEX_THUMBNAIL_HOME_IND_SIZE;
+               image.normal: "indicator_on_focused.png";
+               color_class: "AO0321";
+               visible: 0;
+            }
+            description { state: "active" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      } //parts
+      programs {
+         program { name: "active";
+            signal: "elm,state,active";
+            source: "elm";
+            action: STATE_SET "active" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+         program { name: "inactive";
+            signal: "elm,state,inactive";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "indicator1";
+            target: "indicator2";
+            target: "indicator1_ef";
+            target: "indicator2_ef";
+         }
+      } // programs
+   } //group
+} // collections
+
+/* End of a file */

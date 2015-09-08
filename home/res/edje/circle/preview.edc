@@ -1,0 +1,547 @@
+/*
+ * Samsung API
+ * Copyright (c) 2013 Samsung Electronics Co., Ltd.
+ *
+ * Licensed under the Flora License, Version 1.1 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://floralicense.org/license/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+#include "conf.edc"
+#include "../color_classes.edc"
+
+styles {
+	style {
+		name: "preview,title";
+		base: "font=Tizen text_class=AT0311 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0311 wrap=word"; # ellipsis=1.0
+		tag: "br" "\n";
+		tag: "hilight" "+ font=Tizen:style=Bold";
+		tag: "b" "+ font=Tizen:style=Bold";
+		tag: "tag" "\t";
+	}
+}
+styles {
+	style {
+		name: "preview,title,dim";
+		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
+		tag: "br" "\n";
+		tag: "hilight" "+ font=Tizen:style=Bold";
+		tag: "b" "+ font=Tizen:style=Bold";
+		tag: "tag" "\t";
+	}
+}
+
+styles {
+	style {
+		name: "preview,title,press";
+		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
+		tag: "br" "\n";
+		tag: "hilight" "+ font=Tizen:style=Bold";
+		tag: "b" "+ font=Tizen:style=Bold";
+		tag: "tag" "\t";
+	}
+}
+
+images {
+	image: "b_widget_favorite_bg.png" COMP;
+	image: "b_home_screen_widget_line.#.png" COMP;
+	image: "b_home_screen_widget_line_ef.png" COMP;
+	image: "b_home_screen_edit_cover.png" COMP;
+	image: "b_home_screen_edit_cover_ef.png" COMP;
+	image: "b_home_screen_widget_check.png" COMP;
+	image: "b_home_screen_widget_check_ef.png" COMP;
+}
+
+#define HEIGHT (ADD_VIEWER_TEXT_HEIGHT + ADD_VIEWER_PAD + ADD_VIEWER_PREVIEW_HEIGHT)
+
+collections {
+	group {
+		name: "bg";
+		parts {
+			part {
+				name: "bg_bottom";
+				type: RECT;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					color: 0 0 0 0;
+				}
+			}
+			part {
+				name: "bg";
+				type: RECT;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					color_class: "AO041";
+					visible: 0;
+				}
+			}
+			part {
+				name: "empty";
+				type: TEXT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					text {
+						text_class: "AT0132";
+						align: 0.5 0.5;
+						ellipsis: 0.0;
+						min: 1 1;
+					}
+					visible: 1;
+				}
+			}
+		}
+	}
+
+	/* Icon group */
+	group {
+		name: "default,1x1";
+	}
+	group {
+		name: "default,2x2";
+	}
+
+	/* Preview group */
+	group {
+		name: "preview,1x1";
+	}
+	group {
+		name: "preview,2x2";
+		script {
+			public g_focus = 0;
+		}
+		parts {
+			part {
+				name: "entire,bg";
+				type: RECT;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 1.0; }
+					min: ADD_VIEWER_PREVIEW_WIDTH HEIGHT;
+					color: 0 0 0 0;
+				}
+			}
+
+			part {
+				name: "title";
+				type: TEXTBLOCK;
+				scale: 1;
+				multiline: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 ADD_VIEWER_TEXT_HEIGHT/HEIGHT; }
+					text {
+						style: "preview,title";
+						align: 0.5 1.0;
+						min: 0 1;
+					}
+					min: 0 ADD_VIEWER_TEXT_HEIGHT;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					text { style: "preview,title,dim"; }
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					text { style: "preview,title,press"; }
+				}
+			}
+
+			part {
+				name: "pad";
+				type: SPACER;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 ADD_VIEWER_TEXT_HEIGHT/HEIGHT; }
+					rel2 { relative: 1.0 (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD)/HEIGHT; }
+					min: 0 ADD_VIEWER_PAD;
+				}
+			}
+
+			part {
+				name: "bg";
+				type: SWALLOW;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "preview"; }
+					rel2 { relative: 1.0 1.0; to, "preview"; }
+				}
+			}
+
+			part {
+				name: "gradient,bg";
+				type: IMAGE;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 0.0; to, "preview"; }
+					rel2 { relative: 1.0 1.0; to, "preview"; }
+					image { normal: "b_widget_favorite_bg.png"; }
+					color_class: "AO031";
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+
+			part {
+				name: "preview";
+				type: SWALLOW;
+				scale: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.0 (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD)/HEIGHT; }
+					rel2 { relative: 1.0 1.0; }
+					min: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_PREVIEW_HEIGHT; // 216, 288
+				}
+				description {
+					state: "pressed" 0.0;
+					rel1 { relative: 5/ADD_VIEWER_PREVIEW_WIDTH (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD+5)/HEIGHT; }
+					rel2 { relative: (ADD_VIEWER_PREVIEW_WIDTH-5)/ADD_VIEWER_PREVIEW_WIDTH (HEIGHT-5)/HEIGHT; }
+					min: (ADD_VIEWER_PREVIEW_WIDTH-10) (ADD_VIEWER_PREVIEW_HEIGHT-10);
+				}
+			}
+			part {
+				name: "check_ef";
+				type: IMAGE;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: (ADD_VIEWER_PREVIEW_WIDTH-54)/ADD_VIEWER_PREVIEW_WIDTH (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD)/HEIGHT; }
+					rel2 { relative: 1.0 (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD+54)/HEIGHT; }
+					image {
+						normal: "b_home_screen_widget_check_ef.png";
+					}
+					color_class: "AO063";
+					min: 54 54;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "check";
+				type: IMAGE;
+				description {
+					state: "default" 0.0;
+					rel1 { relative: (ADD_VIEWER_PREVIEW_WIDTH-54)/ADD_VIEWER_PREVIEW_WIDTH (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD)/HEIGHT; }
+					rel2 { relative: 1.0 (ADD_VIEWER_TEXT_HEIGHT+ADD_VIEWER_PAD+54)/HEIGHT; }
+					image {
+						normal: "b_home_screen_widget_check.png";
+					}
+					color_class: "AO042";
+					min: 54 54;
+					visible: 0;
+				}
+				description {
+					state: "show" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "cover_ef";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.to: "preview";
+					rel2.to: "preview";
+					image {
+						normal: "b_home_screen_edit_cover_ef.png";
+					}
+					color_class: "AO065";
+					fixed: 1 1;
+					min: ITEM_EDIT_EF_WIDTH ITEM_EDIT_EF_HEIGHT;
+					align: 0.5 0.5;
+					visible: 0;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					visible: 1;
+				}
+			}
+			part {
+				name: "cover";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.to: "preview";
+					rel2.to: "preview";
+					image {
+						normal: "b_home_screen_edit_cover.png";
+					}
+					color_class: "AO0482";
+					min: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_PREVIEW_HEIGHT;
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO0661";
+				}
+			}
+			part {
+				name: "line_ef";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				clip_to: "line_clipper";
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "preview"; }
+					rel2 { relative: 0.5 0.5; to: "preview"; }
+					image {
+						normal: "b_home_screen_widget_line_ef.png";
+					}
+					color_class: "AO063";
+					fixed: 1 1;
+					min: ITEM_EDIT_EF_WIDTH ITEM_EDIT_EF_HEIGHT;
+					align: 0.5 0.5;
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO0663";
+				}
+			}
+			part {
+				name: "line_clipper";
+				type: RECT;
+				mouse_events: 0;
+				description {
+					state: "default" 0.0;
+					rel1.to: "line_ef";
+					rel2.to: "line_ef";
+					color: 255 255 255 255;
+					visible: 1;
+				}
+				description {
+					state: "hide" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 0;
+				}
+			}
+			part {
+				name: "line";
+				type: IMAGE;
+				scale: 1;
+				mouse_events: 1;
+				clip_to: "line_clipper";
+				description {
+					state: "default" 0.0;
+					rel1 { relative: 0.5 0.5; to: "preview"; }
+					rel2 { relative: 0.5 0.5; to: "preview"; }
+					image {
+						normal: "b_home_screen_widget_line.#.png";
+					}
+					color_class: "AO043";
+					min: ADD_VIEWER_PREVIEW_LINE_WIDTH ADD_VIEWER_PREVIEW_LINE_HEIGHT;
+					align: 0.5 0.5;
+					visible: 1;
+				}
+				description {
+					state: "pressed" 0.0;
+					inherit: "default" 0.0;
+					color_class: "AO0662";
+				}
+			}
+			part {
+				name: "preview,dbg";
+				type: RECT;
+				mouse_events: 1;
+				description {
+					state: "default" 0.0;
+					rel1 { to, "preview"; }
+					rel2 { to, "preview"; }
+					color: 0 0 0 0;
+				}
+			}
+		} // parts
+
+		programs {
+			program {
+				name: "pressed";
+				source: "preview,dbg";
+				signal: "mouse,down,1";
+				script {
+					if (get_int(g_focus) != 0) {
+						set_state(PART:"preview", "pressed", 0.0);
+						set_state(PART:"title", "pressed", 0.0);
+						set_state(PART:"cover", "pressed", 0.0);
+						set_state(PART:"line", "pressed", 0.0);
+						set_state(PART:"line_ef", "pressed", 0.0);
+						set_state(PART:"line_clipper", "default", 0.0);
+						set_state(PART:"cover_ef", "default", 0.0);
+					} else {
+						set_state(PART:"preview", "pressed", 0.0);
+						set_state(PART:"cover", "pressed", 0.0);
+						set_state(PART:"title", "hide", 0.0);
+						set_state(PART:"line", "pressed", 0.0);
+						set_state(PART:"line_ef", "pressed", 0.0);
+						set_state(PART:"line_clipper", "hide", 0.0);
+						set_state(PART:"cover_ef", "hide", 0.0);
+					}
+				}
+			}
+			program {
+				name: "released";
+				source: "preview,dbg";
+				signal: "mouse,up,1";
+				script {
+					if (get_int(g_focus) != 0) {
+						set_state(PART:"preview", "default", 0.0);
+						set_state(PART:"title", "default", 0.0);
+						set_state(PART:"cover", "default", 0.0);
+						set_state(PART:"line", "default", 0.0);
+						set_state(PART:"line_ef", "default", 0.0);
+						set_state(PART:"line_clipper", "default", 0.0);
+						set_state(PART:"cover_ef", "default", 0.0);
+					} else {
+						set_state(PART:"preview", "default", 0.0);
+						set_state(PART:"cover", "default", 0.0);
+						set_state(PART:"line", "default", 0.0);
+						set_state(PART:"line_ef", "default", 0.0);
+						set_state(PART:"title", "hide", 0.0);
+						set_state(PART:"line_clipper", "hide", 0.0);
+						set_state(PART:"cover_ef", "hide", 0.0);
+					}
+				}
+			}
+			program {
+				name: "released,force";
+				source: "preview,dbg";
+				signal: "reset";
+				action: STATE_SET "default" 0.0;
+				target: "preview";
+			}
+			program {
+				name: "clicked";
+				source: "preview,dbg";
+				signal: "mouse,clicked,1";
+				action: SIGNAL_EMIT "clicked" "preview";
+			}
+
+			program {
+				name: "enable,bg";
+				source: "gradient,bg";
+				signal: "enable";
+				action: STATE_SET "show" 0.0;
+				target: "gradient,bg";
+			}
+			program {
+				name: "disable,bg";
+				source: "gradient,bg";
+				signal: "disable";
+				action: STATE_SET "default" 0.0;
+				target: "gradient,bg";
+			}
+			program {
+				name: "show,line";
+				signal: "show";
+				source: "line";
+				action: STATE_SET "default" 0.0;
+				target: "title";
+				after: "show,after";
+			}
+			program {
+				name: "show,after";
+				script {
+					set_int(g_focus, 1);
+				}
+				after: "show,after,2";
+			}
+			program {
+				name: "show,after,2";
+				action: STATE_SET "default" 0.0;
+				target: "line_clipper";
+				target: "cover_ef";
+				transition: LINEAR 0.5;
+			}
+			program {
+				name: "hide,line";
+				signal: "hide";
+				source: "line";
+				action: STATE_SET "hide" 0.0;
+				target: "title";
+				after: "hide,after";
+			}
+			program {
+				name: "hide,after";
+				script {
+					set_int(g_focus, 0);
+				}
+				after: "hide,after,2";
+			}
+			program {
+				name: "hide,after,2";
+				action: STATE_SET "hide" 0.0;
+				target: "line_clipper";
+				target: "cover_ef";
+				transition: LINEAR 0.5;
+			}
+			program {
+				name: "hide,line,im";
+				signal: "hide,im";
+				source: "line";
+				script {
+					set_int(g_focus, 0);
+				}
+				after: "hide,im,after";
+			}
+			program {
+				name: "hide,im,after";
+				action: STATE_SET "hide" 0.0;
+				target: "line_clipper";
+				target: "title";
+				target: "cover_ef";
+			}
+			program {
+				name: "duplicated,mark,show";
+				signal: "show";
+				source: "duplicated";
+				action: STATE_SET "show" 0.0;
+				target: "check_ef";
+				target: "check";
+			}
+			program {
+				name: "duplicated,mark,hide";
+				signal: "hide";
+				source: "duplicated";
+				action: STATE_SET "default" 0.0;
+				target: "check_ef";
+				target: "check";
+			}
+		} // programs
+	} // group
+} // collections
+
+/* End of a file */

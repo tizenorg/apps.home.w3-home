@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Applicazioni"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Avanti"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Non ripetere"
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Elimina tutto"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Impossibile rimuovere."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Toccate e tenete premuto un widget per spostarlo."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Schermata Home modificata."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Caricamento..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Impossibile caricare i dati. Toccate per riprovare."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Impossibile aggiungere applicazione. Spazio insufficiente nella schermata Home."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Impossibile aggiungere widget. Spazio insufficiente nella schermata Home."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Applicazione già esistente."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Widget già esistente."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Annulla"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Layout della schermata Home modificato."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Quest'applicazione verrà rimossa dalla schermata Home. Non verrà eliminata dal dispositivo."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Rimuovi applicazione"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Rimuovi widget"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Questo widget verrà rimosso dalla schermata Home. Non verrà eliminato dal dispositivo."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Risparmio energetico avanzato."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Impossibile aggiungere il widget. Il numero massimo di widget (%d) è stato raggiunto."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Impossibile aggiungere l'applicazione. Il numero massimo di applicazioni (%d) è stato raggiunto."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Impossibile aggiungere la pagina."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Modalità normale"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Modalità di risparmio energetico disattivata."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Modalità di risparmio energetico attivata."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "App recenti"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Impossibile aggiungere l'applicazione. Il numero massimo di applicazioni (%s) è stato raggiunto."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Impossibile aggiungere il widget. Il numero massimo di widget (%s) è stato raggiunto."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Rimuovi pagina"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Questa pagina e il relativo contenuto verranno rimossi."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Rimuovi"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Inserite una scheda SIM per accedere ai servizi di rete."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Modalità di blocco"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Attivo"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Non attivo"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Elemento spostato."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Toccate due volte per aggiungere."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Aggiungi widget"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Elemento aggiunto."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Elemento rimosso."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Pagina %1$d di %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Impossibile riordinare gli elementi dell'area notifiche."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Sono le %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Sono le %d:%d AM."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Sono le %d:%d PM."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d nuovi elementi"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "È stato raggiunto il numero massimo di widget (%s). Eliminate alcuni widget e riprovate."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Trascinate a dx per tornare all'orologio."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Trascinate a sx per vedere i widget."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Trascinate a sx per tornare all'orologio."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Trascinate a dx per vedere le notifiche."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Disinstallare %s?"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Numero massimo di widget (%s) raggiunto."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Toccate due volte per aprire la barra delle applicazioni."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 nuovo elemento"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Toccate due volte per attivare."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Orologio"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "La temperatura del dispositivo è troppo alta."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Potete scaricare applicazioni Gear mediante il dispositivo mobile."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Mentre dormite"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Ottieni altre applicaz."
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Azione non disponibile mentre il Risparmio energetico + è attivato."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "%s non è disponibile mentre Lettore schermo è attivo."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Non disturbare"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Imposs. attiv. la conness. dati se la mod. offline è attivata. Disattivatela e riprovate."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Trascina in alto per tornare all'orologio."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Perfetto, entra in Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Reti mobili"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Inol. ch. su Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Avvia"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Esci"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Benvenuti! Per imparare a usare Gear toccate il pulsante."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "Richiesta di disattivazione"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "Richiesta di attivazione"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Trasc. bordo super. in basso per vedere icone su orolog."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Trasc. bordo infer. in alto per vedere le app su orolog."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Trascinate il bordo super. in basso per tornare indietro."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "Nell'orologio, trascinate verso il basso dal bordo superiore per visualizzare le icone degli indicatori."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "Nell'orologio, trascinate verso l'alto dal bordo inferiore per visualizzare le applicazioni."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "Dall'orologio, trascinate il dito a destra per visualizzare le notifiche."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Trascinate il dito a sinistra per tornare all'orologio."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "Dall'orologio, trascinate il dito a sinistra per visualizzare i widget."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Trascinate il dito a destra per tornare a orologio."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "Dall'orologio, trascinate il dito verso l'alto per visualizzare le app."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Trascinate il dito verso il basso per tornare all'orologio."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "Dall'orologio, trascinate il dito verso il basso per visualizzare la barra dei momenti."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Trascinate il dito verso l'alto per tornare all'orologio."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "L'orologio è impostato come schermata Home. Toccate sotto per iniziare."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Per installare o disinstallare le applicazioni, utilizzate l'applicazione Samsung Gear sul dispositivo mobile."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Questa è la struttura principale della schermata Home."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "Questo è il layout della schermata Home."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Vuoto"

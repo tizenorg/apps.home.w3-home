@@ -1,0 +1,284 @@
+msgid "IDS_IDLE_BODY_APPS"
+msgstr "Εφαρμογές"
+
+msgid "IDS_ST_BUTTON_NEXT"
+msgstr "Επόμενο"
+
+msgid "IDS_IDLE_HEADER_WIDGET"
+msgstr "Widget"
+
+msgid "IDS_CLOCK_BODY_DONT_REPEAT_ABB"
+msgstr "Όχι επανάλ."
+
+msgid "IDS_WNOTI_BODY_DELETE_ALL_ABB2"
+msgstr "Διαγραφή όλων"
+
+msgid "IDS_IM_POP_UNABLE_TO_REMOVE"
+msgstr "Δεν είναι δυνατή η αφαίρεση."
+
+msgid "IDS_COM_BODY_TAP_AND_HOLD_A_WIDGET_TO_MOVE_IT_ABB"
+msgstr "Πατ. παρατετ. ένα widget για να το μετακινήσετε."
+
+msgid "IDS_ST_BODY_HOME_SCREEN_CHANGED_ABB"
+msgstr "Η αρχική οθόνη άλλαξε."
+
+msgid "IDS_IDLE_POP_LOADING_ING"
+msgstr "Φόρτωση..."
+
+msgid "IDS_HS_BODY_UNABLE_TO_LOAD_DATA_TAP_TO_RETRY"
+msgstr "Δεν είναι δυνατή η φόρτωση δεδομένων. Πατήστε για να δοκιμάσετε ξανά."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_APPLICATION_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Δεν είναι δυνατή η προσθήκη της εφαρμογής. Δεν υπάρχει χώρος στην αρχική οθόνη."
+
+msgid "IDS_HS_POP_UNABLE_TO_ADD_WIDGET_NO_MORE_ROOM_ON_HOME_SCREEN"
+msgstr "Δεν είναι δυνατή η προσθήκη του widget. Δεν υπάρχει χώρος στην αρχική οθόνη."
+
+msgid "IDS_HS_TPOP_APPLICATION_ALREADY_EXISTS"
+msgstr "Η εφαρμογή υπάρχει ήδη."
+
+msgid "IDS_HS_TPOP_WIDGET_ALREADY_EXISTS"
+msgstr "Το widget υπάρχει ήδη."
+
+msgid "IDS_COM_POP_CANCEL"
+msgstr "Ακύρωση"
+
+msgid "IDS_HS_TPOP_HOME_SCREEN_LAYOUT_CHANGED"
+msgstr "Η διάταξη της αρχικής οθόνης άλλαξε."
+
+msgid "IDS_HS_POP_THIS_APPLICATION_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Αυτή η εφαρμογή θα καταργηθεί από την αρχική οθόνη. Δεν πρόκειται να διαγραφεί από τη συσκευή."
+
+msgid "IDS_HS_HEADER_REMOVE_APPLICATION_ABB"
+msgstr "Κατάργηση εφαρμογής"
+
+msgid "IDS_HS_HEADER_REMOVE_WIDGET_ABB"
+msgstr "Κατάργηση widget"
+
+msgid "IDS_HS_POP_THIS_WIDGET_WILL_BE_REMOVED_FROM_THE_HOME_SCREEN_IT_WILL_NOT_BE_DELETED_FROM_THE_DEVICE"
+msgstr "Αυτό το widget θα καταργηθεί από την αρχική οθόνη. Δεν πρόκειται να διαγραφεί από τη συσκευή."
+
+msgid "IDS_ST_MBODY_ULTRA_POWER_SAVING_MODE"
+msgstr "Λειτ. εξοικ. ενέργ. Ultra"
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Δεν είναι δυνατή η προσθήκη widget. Συμπληρώθηκε ο μέγιστος αριθμός widget (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPD_REACHED"
+msgstr "Δεν είναι δυνατή η προσθήκη εφαρμογής. Συμπληρώθηκε ο μέγιστος αριθμός εφαρμογών (%d)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_PAGE"
+msgstr "Δεν είναι δυνατή η προσθήκη σελίδας."
+
+msgid "IDS_ST_BODY_NORMAL_MODE"
+msgstr "Κανονική λειτουργία"
+
+msgid "IDS_SMR_TPOP_POWER_SAVING_MODE_DISABLED"
+msgstr "Η λειτουργία εξοικονόμησης ενέργειας απενεργοποιήθηκε."
+
+msgid "IDS_ST_TPOP_POWER_SAVING_MODE_ENABLED"
+msgstr "Η λειτουργία εξοικονόμησης ενέργειας ενεργοποιήθηκε."
+
+msgid "IDS_ST_OPT_RECENT_APPS_ABB"
+msgstr "Πρόσφ. εφ."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_APPLICATION_MAXIMUM_NUMBER_OF_APPLICATIONS_HPS_REACHED"
+msgstr "Δεν είναι δυνατή η προσθήκη εφαρμογής. Συμπληρώθηκε ο μέγιστος αριθμός εφαρμογών (%s)."
+
+msgid "IDS_HS_TPOP_UNABLE_TO_ADD_WIDGET_MAXIMUM_NUMBER_OF_WIDGETS_HPS_REACHED"
+msgstr "Δεν είναι δυνατή η προσθήκη widget. Συμπληρώθηκε ο μέγιστος αριθμός widget (%s)."
+
+msgid "IDS_HS_BODY_REMOVE_PAGE"
+msgstr "Κατάργηση σελίδας"
+
+msgid "IDS_HS_POP_THIS_PAGE_AND_ITS_CONTENT_WILL_BE_REMOVED"
+msgstr "Αυτή η σελίδα και το περιεχόμενό της θα καταργηθεί."
+
+msgid "IDS_COM_BUTTON_REMOVE_ABB"
+msgstr "Κατάργηση"
+
+msgid "IDS_ST_POP_INSERT_SIM_CARD_TO_ACCESS_NETWORK_SERVICES"
+msgstr "Εισάγετε την κάρτα SIM για παροχή πρόσβασης στις υπηρεσίες δικτύου."
+
+msgid "IDS_ST_BUTTON2_BLOCKING_MODE"
+msgstr "Λειτουργία αποκλεισμού"
+
+msgid "IDS_COM_BODY_ON_M_STATUS"
+msgstr "Ενεργό"
+
+msgid "IDS_COM_BODY_OFF_M_STATUS"
+msgstr "Ανενεργό"
+
+msgid "IDS_TTS_BODY_ITEM_MOVED"
+msgstr "Το στοιχείο μετακινήθηκε."
+
+msgid "IDS_KM_BODY_DOUBLE_TAP_TO_ADD"
+msgstr "Πατήστε δύο φορές για προσθήκη."
+
+msgid "IDS_HS_BODY_ADD_WIDGET"
+msgstr "Προσθήκη widget"
+
+msgid "IDS_TTS_BODY_ITEM_ADDED"
+msgstr "Προσθήκη στοιχείου."
+
+msgid "IDS_TTS_BODY_ITEM_REMOVED"
+msgstr "Το στοιχείο καταργήθηκε."
+
+msgid "IDS_AT_BODY_PAGE_P1SD_OF_P2SD_T_TTS"
+msgstr "Σελίδα %1$d από %2$d"
+
+msgid "IDS_HS_TPOP_CANNOT_REORDER_NOTIFICATION_BOARD_ITEMS"
+msgstr "Δεν είναι δυνατή η αναδιάταξη στοιχείων του πίνακα ειδοποιήσεων."
+
+msgid "IDS_LCKSCN_BODY_IT_IS_P1SD_CP2SD_T_TTS"
+msgstr "Η ώρα είναι %1$d:%2$d."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_AM"
+msgstr "Η ώρα είναι %d:%d πμ."
+
+msgid "IDS_TTS_BODY_IT_IS_PD_CPD_PM"
+msgstr "Η ώρα είναι %d:%d μμ."
+
+msgid "IDS_TTS_BODY_PD_NEW_ITEMS"
+msgstr "%d νέα στοιχεία"
+
+msgid "IDS_HS_BODY_THE_MAXIMUM_NUMBER_OF_WIDGETS_HPD_HAS_BEEN_REACHED_DELETE_SOME_WIDGETS_AND_TRY_AGAIN_ABB"
+msgstr "Συμπληρώθηκε ο μέγιστος αριθμός widget (%s). Διαγράψτε μερικά widget και προσπαθήστε ξανά."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Κάντε σάρ. δεξιά για επισ. στο ρολόι."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_VIEW_WIDGETS_ABB"
+msgstr "Κάντε σάρ. αριστ. για να δείτε widget."
+
+msgid "IDS_HELP_POP_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ABB"
+msgstr "Κάντε σάρ. αριστ. για επισ. στο ρολόι."
+
+msgid "IDS_HELP_POP_SWIPE_RIGHT_TO_VIEW_NOTIFICATIONS_ABB"
+msgstr "Κάντε σάρωση δεξιά για να δείτε ειδοπ."
+
+msgid "IDS_AT_POP_UNINSTALL_PS_Q"
+msgstr "Κατάργηση της εγκατάστασης του %s;"
+
+msgid "IDS_HS_TPOP_MAXIMUM_NUMBER_OF_WIDGETS_HPD_REACHED"
+msgstr "Συμπληρώθηκε ο μέγιστος αριθμός widget (%s)."
+
+msgid "IDS_HELP_BODY_DOUBLE_TAP_TO_OPEN_APP_TRAY_TTS"
+msgstr "Πατήστε δύο φορές για να ανοίξετε τη γραμμή εφαρμογών."
+
+msgid "IDS_TTS_BODY_1_NEW_ITEM"
+msgstr "1 νέο στοιχείο"
+
+msgid "IDS_HS_BODY_DOUBLE_TAP_TO_ENABLE_TTS"
+msgstr "Πατήστε δύο φορές για ενεργοποίηση."
+
+msgid "IDS_ST_BUTTON2_CLOCK"
+msgstr "Ρολόι"
+
+msgid "IDS_SM_BODY_THE_DEVICE_TEMPERATURE_IS_TOO_HIGH"
+msgstr "Η θερμοκρασία της συσκευής είναι υπερβολικά υψηλή."
+
+msgid "IDS_HS_TPOP_DOWNLOAD_GEAR_APPLICATIONS_USING_MOBILE_DEVICE_ABB"
+msgstr "Κάντε λήψη εφαρμογών Gear χρησιμοποιώντας την κινητή συσκευή."
+
+msgid "IDS_HEALTH_OPT_WHILE_SLEEPING_ABB"
+msgstr "Κατά τον ύπνο"
+
+msgid "IDS_HS_BUTTON_GET_MORE_APPLICATIONS_ABB2"
+msgstr "Λήψη περισσ. εφαρμογών"
+
+msgid "IDS_ST_TPOP_ACTION_NOT_AVAILABLE_WHILE_POWER_SAVING_PLUS_ENABLED"
+msgstr "Η ενέργεια δεν είναι διαθέσιμη όταν η «Εξοικονόμηση ενέργειας +» είναι ενεργοποιημένη."
+
+msgid "IDS_SCR_POP_PS_IS_NOT_AVAILABLE_WHILE_SCREEN_READER_IS_ENABLED"
+msgstr "Η λειτουργία %s δεν είναι διαθέσιμη όταν είναι ενεργοποιημένο το Εργαλείο ανάγνωσης οθόνης."
+
+msgid "IDS_ST_MBODY_DO_NOT_DISTURB_ABB"
+msgstr "Μην ενοχλείτε"
+
+msgid "IDS_ST_TPOP_UNABLE_TO_TURN_ON_MOBILE_DATA_WHILE_FLIGHT_MODE_ENABLED_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN_ABB"
+msgstr "Δεν επιτρ. ταυτ. ενεργ. δεδ. κιν. τηλ. και λειτ. πτήσ. Απεν. τη λειτ. πτήσ. και δοκ. ξανά."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UPWARDS_TO_GO_BACK_TO_CLOCK_ABB"
+msgstr "Κάντε σάρ. επάνω για επισ. στο ρολόι."
+
+msgid "IDS_WMGR_POP_THATS_IT_E_GET_INTO_GEAR_E"
+msgstr "Αυτό ήταν! Ξεκινήστε με το Gear!"
+
+msgid "IDS_ST_MBODY_MOBILE_NETWORKS_ABB"
+msgstr "Δίκτυα κινητής"
+
+msgid "IDS_CST_OPT_FWD_CALLS_TO_GEAR_ABB"
+msgstr "Πρ. κλ. στο Gear"
+
+msgid "IDS_ST_BUTTON_START"
+msgstr "Έναρξη"
+
+msgid "IDS_ST_BUTTON_EXIT"
+msgstr "Έξοδος"
+
+msgid "IDS_WMGR_BODY_WELCOME_E_TAP_THE_BUTTON_BELOW_TO_LEARN_HOW_TO_USE_YOUR_GEAR_ABB"
+msgstr "Καλώς ορίσατε! Για να μάθετε για το Gear, πατήστε το κουμπί."
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_DISABLE"
+msgstr "Έγινε αίτηση για απενεργοποίηση"
+
+msgid "IDS_WMGR_NPBODY_REQUESTED_TO_ENABLE"
+msgstr "Έγινε αίτηση για ενεργοποίηση"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_SEE_INDICATOR_ICONS_ON_CLOCK_ABB"
+msgstr "Σύρ. κάτω την πάνω άκρη, για προβ. ενδείξεων στο ρολόι."
+
+msgid "IDS_WNOTI_BODY_SWIPE_BOTTOM_EDGE_UP_TO_VIEW_APPS_ON_CLOCK_ABB"
+msgstr "Σύρ. επάνω το κάτω άκρο για προβολή εφαρμογών στο ρολόι."
+
+msgid "IDS_ST_BUTTON_OK"
+msgstr "OK"
+
+msgid "IDS_WNOTI_BODY_SWIPE_TOP_EDGE_DOWN_TO_GO_BACK_ABB"
+msgstr "Για επιστροφή, σύρετε της επάνω άκρη προς τα κάτω."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_DOWN_FROM_TOP_EDGE_FOR_INDICATOR_ICONS_VZW"
+msgstr "On clock, swipe down from top edge for indicator icons."
+
+msgid "IDS_WNOTI_BODY_ON_CLOCK_SWIPE_UP_FROM_BOTTOM_EDGE_TO_VIEW_APPS_VZW"
+msgstr "On clock, swipe up from bottom edge to view apps."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_RIGHT_TO_SEE_NOTIFICATIONS_ATNT"
+msgstr "From the clock, swipe right to see notifications."
+
+msgid "IDS_WNOTI_BODY_SWIPE_LEFT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe left to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_LEFT_TO_SEE_WIDGETS_ATNT"
+msgstr "From the clock, swipe left to see widgets."
+
+msgid "IDS_WNOTI_BODY_SWIPE_RIGHT_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe right to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_UP_TO_VIEW_APPS_ATNT"
+msgstr "From the clock, swipe up to view apps."
+
+msgid "IDS_WNOTI_BODY_SWIPE_DOWN_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe down to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_FROM_THE_CLOCK_SWIPE_DOWN_TO_SEE_THE_MOMENTS_BAR_ATNT"
+msgstr "From the clock, swipe down to see the Moments bar."
+
+msgid "IDS_WNOTI_BODY_SWIPE_UP_TO_GO_BACK_TO_THE_CLOCK_ATNT"
+msgstr "Swipe up to go back to the clock."
+
+msgid "IDS_WNOTI_BODY_THE_CLOCK_IS_YOUR_HOME_SCREEN_TAP_BELOW_TO_GET_STARTED_ATNT"
+msgstr "The clock is your home screen. Tap below to get started."
+
+msgid "IDS_HS_POP_TO_INSTALL_OR_UNINSTALL_APPLICATIONS_USE_THE_SAMSUNG_GEAR_APPLICATION_ON_YOUR_MOBILE_DEVICE"
+msgstr "Για την εγκατάσταση ή την κατάργηση εγκατάστασης εφαρμογών, χρησιμοποιήστε την εφαρμογή Samsung Gear στην κινητή συσκευή σας."
+
+msgid "IDS_WNOTI_BODY_THIS_IS_THE_MAIN_STRUCTURE_OF_THE_HOME_SCREEN"
+msgstr "Αυτή είναι η κύρια δομή της αρχικής οθόνης."
+
+msgid "IDS_TTRL_BODY_THIS_IS_YOUR_HOME_SCREEN_LAYOUT_VZW"
+msgstr "This is your home screen layout."
+
+msgid "IDS_ST_BODY_EMPTY"
+msgstr "Κενό"

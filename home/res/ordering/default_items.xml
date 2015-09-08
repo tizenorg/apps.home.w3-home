@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<favorite>
+		<packagename>org.tizen.w-music-player.livebox</packagename>
+		<classname>org.tizen.w-music-player.livebox</classname>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.shealth.dbox</packagename>
+		<classname>org.tizen.shealth.dbox</classname>
+		<screen>0</screen>
+		<cellX>1</cellX>
+		<cellY>0</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.w-magazine.dbox.home</packagename>
+		<classname>org.tizen.w-magazine.dbox.home</classname>
+		<screen>0</screen>
+		<cellX>0</cellX>
+		<cellY>1</cellY>
+	</favorite>
+	<favorite>
+		<packagename>org.tizen.w-calendar2.win</packagename>
+		<classname>org.tizen.w-calendar2.win</classname>
+		<screen>0</screen>
+		<cellX>1</cellX>
+		<cellY>1</cellY>
+	</favorite>
+</data>

@@ -20,7 +20,7 @@
 styles {
 	style {
 		name: "preview,title";
-		base: "font=Tizen text_class=AT0311 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0311 ellipsis=1.0";
+		base: "font=Tizen text_class=AT0311 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0311 wrap=word"; # ellipsis=1.0
 		tag: "br" "\n";
 		tag: "hilight" "+ font=Tizen:style=Bold";
 		tag: "b" "+ font=Tizen:style=Bold";
@@ -30,7 +30,7 @@ styles {
 styles {
 	style {
 		name: "preview,title,dim";
-		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 ellipsis=1.0";
+		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
 		tag: "br" "\n";
 		tag: "hilight" "+ font=Tizen:style=Bold";
 		tag: "b" "+ font=Tizen:style=Bold";
@@ -41,7 +41,7 @@ styles {
 styles {
 	style {
 		name: "preview,title,press";
-		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 ellipsis=1.0";
+		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
 		tag: "br" "\n";
 		tag: "hilight" "+ font=Tizen:style=Bold";
 		tag: "b" "+ font=Tizen:style=Bold";
@@ -144,16 +144,14 @@ collections {
 				multiline: 1;
 				description {
 					state: "default" 0.0;
-					rel1 { relative: 0.5 ADD_VIEWER_TEXT_HEIGHT/2/HEIGHT; }
-					rel2 { relative: 0.5 ADD_VIEWER_TEXT_HEIGHT/2/HEIGHT; }
-					min: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_TEXT_HEIGHT;
-					max: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_TEXT_HEIGHT;
-					fixed: 1 1;
+					rel1 { relative: 0.0 0.0; }
+					rel2 { relative: 1.0 ADD_VIEWER_TEXT_HEIGHT/HEIGHT; }
 					text {
 						style: "preview,title";
-						align: 0.5 0.5;
+						align: 0.5 1.0;
 						min: 0 1;
 					}
+					min: 0 ADD_VIEWER_TEXT_HEIGHT;
 				}
 				description {
 					state: "hide" 0.0;

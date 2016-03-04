@@ -17,38 +17,6 @@
 #include "conf.edc"
 #include "../color_classes.edc"
 
-styles {
-	style {
-		name: "preview,title";
-		base: "font=Tizen text_class=AT0311 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0311 wrap=word"; # ellipsis=1.0
-		tag: "br" "\n";
-		tag: "hilight" "+ font=Tizen:style=Bold";
-		tag: "b" "+ font=Tizen:style=Bold";
-		tag: "tag" "\t";
-	}
-}
-styles {
-	style {
-		name: "preview,title,dim";
-		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
-		tag: "br" "\n";
-		tag: "hilight" "+ font=Tizen:style=Bold";
-		tag: "b" "+ font=Tizen:style=Bold";
-		tag: "tag" "\t";
-	}
-}
-
-styles {
-	style {
-		name: "preview,title,press";
-		base: "font=Tizen text_class=AT0312 style=shadow shadow_color=#0000004C font_size=40 align=center color=#FFFFFF color_class=AT0312 wrap=word"; # ellipsis=1.0
-		tag: "br" "\n";
-		tag: "hilight" "+ font=Tizen:style=Bold";
-		tag: "b" "+ font=Tizen:style=Bold";
-		tag: "tag" "\t";
-	}
-}
-
 images {
 	image: "b_widget_favorite_bg.png" COMP;
 	image: "b_home_screen_widget_line.#.png" COMP;
@@ -136,35 +104,29 @@ collections {
 					color: 0 0 0 0;
 				}
 			}
-
 			part {
 				name: "title";
-				type: TEXTBLOCK;
+				type: SWALLOW;
 				scale: 1;
-				multiline: 1;
 				description {
 					state: "default" 0.0;
-					rel1 { relative: 0.0 0.0; }
-					rel2 { relative: 1.0 ADD_VIEWER_TEXT_HEIGHT/HEIGHT; }
-					text {
-						style: "preview,title";
-						align: 0.5 1.0;
-						min: 0 1;
-					}
-					min: 0 ADD_VIEWER_TEXT_HEIGHT;
+					rel1 { relative: 0.5 0.0; to: "preview"; }
+					rel2 { relative: 0.5 0.0; to: "preview"; }
+					min: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_TEXT_HEIGHT;
+					max: ADD_VIEWER_PREVIEW_WIDTH ADD_VIEWER_TEXT_HEIGHT;
+					align: 0.5 1.0;
+					fixed: 1 1;
+					visible: 1;
 				}
 				description {
 					state: "hide" 0.0;
 					inherit: "default" 0.0;
-					text { style: "preview,title,dim"; }
 				}
 				description {
 					state: "pressed" 0.0;
 					inherit: "default" 0.0;
-					text { style: "preview,title,press"; }
 				}
 			}
-
 			part {
 				name: "pad";
 				type: SPACER;

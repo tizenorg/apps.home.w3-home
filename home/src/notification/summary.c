@@ -16,6 +16,7 @@
  */
 
 #include <Elementary.h>
+#include <pkgmgr-info.h>
 
 #include "util.h"
 #include "log.h"
@@ -143,6 +144,7 @@ HAPI Evas_Object *summary_create_item(Evas_Object *page, const char *pkgname, co
 	Evas_Object *icon = NULL;
 	Evas_Object *launch_button = NULL;
 	Evas_Object *delete_button = NULL;
+	pkgmgrinfo_appinfo_h appinfo_h = NULL;
 
 	char *text_time = NULL;
 	char buf[BUFSZE] = {0, };
@@ -169,22 +171,38 @@ HAPI Evas_Object *summary_create_item(Evas_Object *page, const char *pkgname, co
 	evas_object_show(rect);
 	elm_object_part_content_set(item, "bg", rect);
 
-	/* Icon */
-	if (icon_path) {
-		icon = elm_icon_add(item);
-		goto_if(!icon, ERROR);
-		goto_if(elm_image_file_set(icon, icon_path, NULL) == EINA_FALSE, ERROR);
+    /* Icon */
+    icon = elm_icon_add(item);
+    goto_if(!icon, ERROR);
+    if (icon_path) {
+        goto_if(elm_image_file_set(icon, icon_path, NULL) == EINA_FALSE, ERROR);
+    }
+    else {
+		goto_if(0 > pkgmgrinfo_appinfo_get_appinfo(pkgname, &appinfo_h), ERROR);
+		goto_if(PMINFO_R_OK != pkgmgrinfo_appinfo_get_icon(appinfo_h, &icon_path), ERROR);
 
-		elm_image_preload_disabled_set(icon, EINA_TRUE);
-		elm_image_smooth_set(icon, EINA_TRUE);
-		elm_image_no_scale_set(icon, EINA_FALSE);
+		if (icon_path == NULL || strlen(icon_path) == 0) {
+			_D("actual icon_path [%s]", RESDIR"/images/unknown.png");
+			goto_if(elm_image_file_set(icon, RESDIR"/images/unknown.png", NULL) == EINA_FALSE, ERROR);
+		}
+		else {
+			goto_if(elm_image_file_set(icon, icon_path, NULL) == EINA_FALSE, ERROR);
+		}
 
-		evas_object_size_hint_min_set(icon, NOTIFICATION_ICON_WIDTH, NOTIFICATION_ICON_HEIGHT);
-		evas_object_show(icon);
+		if (appinfo_h) {
+			pkgmgrinfo_appinfo_destroy_appinfo(appinfo_h);
+			appinfo_h = NULL;
+		}
+    }
+    elm_image_preload_disabled_set(icon, EINA_TRUE);
+    elm_image_smooth_set(icon, EINA_TRUE);
+    elm_image_no_scale_set(icon, EINA_FALSE);
 
-		elm_object_part_content_set(item, "icon", icon);
-		elm_object_signal_emit(item, "show,icon", "icon");
-	}
+    evas_object_size_hint_min_set(icon, NOTIFICATION_ICON_WIDTH, NOTIFICATION_ICON_HEIGHT);
+    evas_object_show(icon);
+
+    elm_object_part_content_set(item, "icon", icon);
+    elm_object_signal_emit(item, "show,icon", "icon");
 
 	/* Title */
 	if (title) {
@@ -233,6 +251,8 @@ ERROR:
 	if (icon) evas_object_del(icon);
 	if (rect) evas_object_del(rect);
 	if (item) evas_object_del(item);
+	if (appinfo_h)
+		pkgmgrinfo_appinfo_destroy_appinfo(appinfo_h);
 	return NULL;
 }
 

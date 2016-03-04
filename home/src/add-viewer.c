@@ -832,32 +832,62 @@ static void preview_move_cb(void *data, Evas *e, Evas_Object *obj, void *event_i
 	}
 }
 
+static void _operator_name_slide_mode_set(Evas_Object *name)
+{
+	Evas_Object *name_edje;
+	Evas_Object *tb;
+	Evas_Coord tb_w=0;
+
+	if (name == NULL) {
+		ErrPrint("paramter error!");
+	}
+
+	elm_label_slide_mode_set(name, ELM_LABEL_SLIDE_MODE_NONE);
+
+	name_edje = elm_layout_edje_get(name);
+	if (!name_edje) {
+		ErrPrint("Failed to get label edje");
+		return;
+	}
+
+	tb = (Evas_Object*)edje_object_part_object_get(name_edje, "elm.text");
+	if (!tb) {
+		ErrPrint("Failed to get label tb");
+		return;
+	}
+
+	evas_object_textblock_size_native_get(tb, &tb_w, NULL);
+
+	if((tb_w>0) && (tb_w>ELM_SCALE_SIZE(ADD_VIEWER_TEXT_WIDTH))) {
+		elm_label_slide_mode_set(name, ELM_LABEL_SLIDE_MODE_AUTO);
+	}
+	elm_label_slide_go(name);
+}
+
 static Evas_Object *winset_preview_add(struct widget_data *widget_data, Evas_Object *parent, struct add_viewer_package *package, const char *name, int type, int no_event)
 {
 	const char *size_str;
 	const char *icon_group;
 	Evas_Object *preview;
 	Evas_Object *thumbnail;
+	Evas_Object *label;
 	int w;
 	int h;
 	int ret;
 	int idx;
 	char *filename;
 	Evas_Object *bg;
+	char buf[512] = {0, };
 
 	filename = widget_service_get_preview_image_path(add_viewer_package_list_pkgname(package), type);
 
 	switch (type) {
-	case WIDGET_SIZE_TYPE_1x1:
-		size_str = "preview,1x1";
-		icon_group = "default,1x1";
-		idx = 8;
-		break;
 	case WIDGET_SIZE_TYPE_2x2:
 		size_str = "preview,2x2";
 		icon_group = "default,2x2";
 		idx = 8;
 		break;
+	case WIDGET_SIZE_TYPE_1x1:
 	case WIDGET_SIZE_TYPE_2x1:
 	case WIDGET_SIZE_TYPE_4x1:
 	case WIDGET_SIZE_TYPE_4x2:
@@ -977,7 +1007,29 @@ static Evas_Object *winset_preview_add(struct widget_data *widget_data, Evas_Obj
 		name = add_viewer_package_list_name(package);
 	}
 
-	elm_object_part_text_set(preview, "title", name);
+	label = elm_label_add(preview);
+	if (!label) {
+		ErrPrint("Failed to create the label\n");
+		evas_object_del(preview);
+		evas_object_del(thumbnail);
+		return NULL;
+	}
+	if (name) {
+		snprintf(buf, sizeof(buf), "<align=center><color=#FFFFFF>%s</color></align>", name);
+	} else {
+		snprintf(buf, sizeof(buf), "<align=center><color=#FFFFFF>%s</color></align>", " ");
+	}
+	elm_object_text_set(label, buf);
+	elm_object_style_set(label, "slide_short");
+	elm_label_wrap_width_set(label, ELM_SCALE_SIZE(ADD_VIEWER_TEXT_WIDTH));
+	evas_object_size_hint_weight_set(label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(label, EVAS_HINT_FILL, EVAS_HINT_FILL);
+
+	_operator_name_slide_mode_set(label);
+	evas_object_show(label);
+	elm_object_part_content_set(preview, "title", label);
+
+	//elm_object_part_text_set(preview, "title", name);
 
 	DbgPrint("[%s] Image %dx%d\n", name, w, h);
 	edje_object_size_min_calc(elm_layout_edje_get(preview), &w, &h);

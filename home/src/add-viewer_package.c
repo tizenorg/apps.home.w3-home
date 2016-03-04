@@ -240,11 +240,11 @@ static int widget_list_callback(const char *appid, const char *widget_id, int is
 		 * If it is preloaded packages, we have not to display it on the list.
 		 */
 		switch (size_types[0]) {
-		case WIDGET_SIZE_TYPE_1x1:
-		case WIDGET_SIZE_TYPE_2x1:
 		case WIDGET_SIZE_TYPE_2x2:
 			preloaded = is_preloaded(appid);
 			break;
+		case WIDGET_SIZE_TYPE_1x1:
+		case WIDGET_SIZE_TYPE_2x1:
 		default:
 			break;
 		}
@@ -256,20 +256,12 @@ static int widget_list_callback(const char *appid, const char *widget_id, int is
 		preview = NULL;
 
 		switch (size_types[cnt]) {
-		case WIDGET_SIZE_TYPE_1x1:
-		case WIDGET_SIZE_TYPE_2x1:
 		case WIDGET_SIZE_TYPE_2x2:
 #if defined(CHECK_PRELOAD)
 			if (preloaded) {
 				continue;
 			}
 #endif
-		case WIDGET_SIZE_TYPE_4x1:
-		case WIDGET_SIZE_TYPE_4x2:
-		case WIDGET_SIZE_TYPE_4x3:
-		case WIDGET_SIZE_TYPE_4x4:
-		case WIDGET_SIZE_TYPE_4x5:
-		case WIDGET_SIZE_TYPE_4x6:
 			preview = calloc(1, sizeof(*preview));
 			if (!preview) {
 				ErrPrint("Heap: %s\n", strerror(errno));
@@ -285,6 +277,14 @@ static int widget_list_callback(const char *appid, const char *widget_id, int is
 			preview->data = NULL;
 			preview_list = eina_list_append(preview_list, preview);
 			break;
+		case WIDGET_SIZE_TYPE_1x1:
+		case WIDGET_SIZE_TYPE_2x1:
+		case WIDGET_SIZE_TYPE_4x1:
+		case WIDGET_SIZE_TYPE_4x2:
+		case WIDGET_SIZE_TYPE_4x3:
+		case WIDGET_SIZE_TYPE_4x4:
+		case WIDGET_SIZE_TYPE_4x5:
+		case WIDGET_SIZE_TYPE_4x6:
 		case WIDGET_SIZE_TYPE_EASY_1x1:
 		case WIDGET_SIZE_TYPE_EASY_3x1:
 		case WIDGET_SIZE_TYPE_EASY_3x3:
